@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/christianwainright/hushlight/security/advisories/new
+    about: Privately, please. Don't open a public issue for it.
+  - name: Questions about using the app
+    url: https://christianwainright.com/hushlight/support
+    about: The support page answers the common ones and has the contact address.

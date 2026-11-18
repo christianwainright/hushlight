@@ -1,46 +1,13 @@
-# Dependabot — and it has exactly one thing to watch.
-#
-# This app's whole dependency surface is two GitHub Actions. That is not an
-# accident: CLAUDE.md's privacy ratchet forbids third-party code, every Swift
-# package is path-based, and `ci.yml` fails any `Package.swift` that names a remote
-# source. So there is no `swift` entry below — Dependabot would find nothing, and an
-# empty ecosystem in this file would read as coverage where there is none. If a
-# remote package ever appears, CI stops it before Dependabot would ever see it.
-#
-# **What this file does not cover, so nobody assumes it does:**
-#
-#   - `brew install xcodegen`, in both workflows. Unpinned, so each run takes
-#     whatever Homebrew has that day. No Dependabot ecosystem covers a bare brew
-#     install. The exposure is small and loud rather than silent — a breaking
-#     XcodeGen release fails at "Generate project", before anything is signed or
-#     uploaded — but it *is* the one moving part here that nothing watches.
-#   - The Xcode toolchain and simulator runtimes, which come from the runner image
-#     and move when GitHub moves them. "Select Xcode" prints the version on every
-#     run for exactly that reason (HL-040).
-#
-# Version updates are scheduled; **security** updates are a separate switch in
-# Settings → Code security, and are worth having on.
-
+# The app has no package dependencies (zero third-party code, by rule), so the only
+# thing to keep current is the GitHub-owned actions the workflows use.
 version: 2
-
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      # Monthly, because two actions do not justify a weekly PR, and a bot that
-      # opens noise is a bot whose PRs stop being read. Security alerts do not
-      # wait for this schedule.
       interval: monthly
-    # One PR for all of them rather than one each. With this few dependencies the
-    # grouping is the difference between a single review and a trickle.
     groups:
       actions:
-        patterns:
-          - "*"
-    open-pull-requests-limit: 3
+        patterns: ["*"]
     commit-message:
-      prefix: "ci"
-    # Majors included deliberately. The Node-runtime bumps that GitHub ships as
-    # majors (v4 → v7 was three of them, all runtime) are exactly what needs to
-    # arrive here, and every action in this repo is used with default inputs, so a
-    # major is a read of the changelog rather than a migration.
+      prefix: "CI"

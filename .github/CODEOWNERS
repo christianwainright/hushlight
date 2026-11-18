@@ -1,0 +1,4 @@
+# Every path, and especially .github/ (the workflows that can reach the release
+# environment), is reviewed by the maintainer.
+*           @christianwainright
+/.github/   @christianwainright
