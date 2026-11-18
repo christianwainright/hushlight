@@ -1,0 +1,1114 @@
+{
+  "actions" : [
+    {
+      "at" : 12,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 19,
+      "kind" : "killApp"
+    },
+    {
+      "at" : 29,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 142,
+      "kind" : "launchApp"
+    },
+    {
+      "at" : 2068,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2073,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4934,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4939,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6488,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6490,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6491,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7298,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7303,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8139,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8141,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8144,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8923,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8934,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8935,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9809,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9818,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10530,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10550,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11326,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 24477,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 24506,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 25135,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 25164,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 26070,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 26471,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 26849,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 27257,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 27717,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 27718,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 28256,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 28256,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 28304,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 28337,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 28351,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 28689,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 28694,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 29202,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 29243,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 29244,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 29726,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 29737,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 30131,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 30136,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 30561,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 30582,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 30999,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 31004,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 31344,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 31373,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 31523,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 31530,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 31532,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 31822,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 31836,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 32208,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 32230,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 32511,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 32518,
+      "kind" : "killApp"
+    },
+    {
+      "at" : 32532,
+      "deltaSeconds" : -310,
+      "kind" : "clockSet"
+    },
+    {
+      "at" : 32554,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 32737,
+      "kind" : "launchApp"
+    },
+    {
+      "at" : 32898,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 33259,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 33532,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 33853,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 34111,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 34487,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 34778,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 35063,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 35360,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 35675,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 35979,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 36270,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 36599,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 36850,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 37247,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 37250,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 37531,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 37816,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 38044,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 38317,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 38545,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 38818,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 38820,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 40662,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 40674,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 40800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 40864,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41038,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41072,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41252,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41290,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41449,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41488,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41611,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41665,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41789,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41829,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 41983,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 41989,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 42132,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42133,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42199,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 42278,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42279,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42328,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 42632,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42698,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 42881,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 42922,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43061,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43101,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43219,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43256,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43388,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43412,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43523,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43562,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43681,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43684,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43686,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 43865,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 43888,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 44000,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44047,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 44142,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44145,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44268,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44269,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44418,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 44418,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44490,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 44606,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44691,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 44850,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 45040,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 45041,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 45169,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 45328,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 45478,
+      "kind" : "tapStart"
+    }
+  ],
+  "archetype" : "classicNullipara",
+  "expectedDetection" : [
+    "archetype:classicNullipara",
+    "noise:chaotic",
+    "onsetExpected",
+    "suspectExpected"
+  ],
+  "generatorVersion" : "1.0.0",
+  "id" : "classicNullipara-v0-chaotic-r0-fiveOneOne-A1089CA3EE5B42C8",
+  "noiseProfile" : "chaotic",
+  "paramVariant" : 0,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 11603696667812643528,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 29,
+      "start" : 0
+    },
+    {
+      "end" : 2073,
+      "start" : 2035
+    },
+    {
+      "end" : 4939,
+      "start" : 4905
+    },
+    {
+      "end" : 6503,
+      "start" : 6467
+    },
+    {
+      "end" : 7303,
+      "start" : 7275
+    },
+    {
+      "end" : 8144,
+      "start" : 8106
+    },
+    {
+      "end" : 8939,
+      "start" : 8907
+    },
+    {
+      "end" : 9818,
+      "start" : 9786
+    },
+    {
+      "end" : 10550,
+      "start" : 10511
+    },
+    {
+      "end" : 11331,
+      "start" : 11294
+    },
+    {
+      "end" : 12606,
+      "start" : 12559
+    },
+    {
+      "end" : 13696,
+      "start" : 13661
+    },
+    {
+      "end" : 14435,
+      "start" : 14392
+    },
+    {
+      "end" : 15287,
+      "start" : 15249
+    },
+    {
+      "end" : 16222,
+      "start" : 16184
+    },
+    {
+      "end" : 16671,
+      "start" : 16631
+    },
+    {
+      "end" : 17253,
+      "start" : 17205
+    },
+    {
+      "end" : 17731,
+      "start" : 17697
+    },
+    {
+      "end" : 18359,
+      "start" : 18309
+    },
+    {
+      "end" : 19009,
+      "start" : 18958
+    },
+    {
+      "end" : 19430,
+      "start" : 19388
+    },
+    {
+      "end" : 20156,
+      "start" : 20109
+    },
+    {
+      "end" : 21009,
+      "start" : 20959
+    },
+    {
+      "end" : 21601,
+      "start" : 21568
+    },
+    {
+      "end" : 22189,
+      "start" : 22120
+    },
+    {
+      "end" : 22818,
+      "start" : 22766
+    },
+    {
+      "end" : 23346,
+      "start" : 23299
+    },
+    {
+      "end" : 23938,
+      "start" : 23898
+    },
+    {
+      "end" : 24506,
+      "start" : 24463
+    },
+    {
+      "end" : 25164,
+      "start" : 25112
+    },
+    {
+      "end" : 25655,
+      "start" : 25606
+    },
+    {
+      "end" : 26097,
+      "start" : 26054
+    },
+    {
+      "end" : 26512,
+      "start" : 26471
+    },
+    {
+      "end" : 26894,
+      "start" : 26849
+    },
+    {
+      "end" : 27304,
+      "start" : 27257
+    },
+    {
+      "end" : 27765,
+      "start" : 27717
+    },
+    {
+      "end" : 28304,
+      "start" : 28256
+    },
+    {
+      "end" : 28351,
+      "start" : 28304
+    },
+    {
+      "end" : 28694,
+      "start" : 28660
+    },
+    {
+      "end" : 29243,
+      "start" : 29185
+    },
+    {
+      "end" : 29737,
+      "start" : 29694
+    },
+    {
+      "end" : 30148,
+      "start" : 30110
+    },
+    {
+      "end" : 30582,
+      "start" : 30533
+    },
+    {
+      "end" : 31004,
+      "start" : 30967
+    },
+    {
+      "end" : 31373,
+      "start" : 31322
+    },
+    {
+      "end" : 31836,
+      "start" : 31783
+    },
+    {
+      "end" : 32230,
+      "start" : 32182
+    },
+    {
+      "end" : 32554,
+      "start" : 32495
+    },
+    {
+      "end" : 32921,
+      "start" : 32858
+    },
+    {
+      "end" : 33338,
+      "start" : 33259
+    },
+    {
+      "end" : 33588,
+      "start" : 33532
+    },
+    {
+      "end" : 33921,
+      "start" : 33853
+    },
+    {
+      "end" : 34175,
+      "start" : 34111
+    },
+    {
+      "end" : 34535,
+      "start" : 34487
+    },
+    {
+      "end" : 34831,
+      "start" : 34778
+    },
+    {
+      "end" : 35133,
+      "start" : 35063
+    },
+    {
+      "end" : 35410,
+      "start" : 35360
+    },
+    {
+      "end" : 35723,
+      "start" : 35675
+    },
+    {
+      "end" : 36039,
+      "start" : 35979
+    },
+    {
+      "end" : 36321,
+      "start" : 36270
+    },
+    {
+      "end" : 36649,
+      "start" : 36599
+    },
+    {
+      "end" : 36904,
+      "start" : 36850
+    },
+    {
+      "end" : 37299,
+      "start" : 37247
+    },
+    {
+      "end" : 37588,
+      "start" : 37531
+    },
+    {
+      "end" : 37874,
+      "start" : 37816
+    },
+    {
+      "end" : 38093,
+      "start" : 38044
+    },
+    {
+      "end" : 38380,
+      "start" : 38317
+    },
+    {
+      "end" : 38613,
+      "start" : 38545
+    },
+    {
+      "end" : 38872,
+      "start" : 38818
+    },
+    {
+      "end" : 39119,
+      "start" : 39057
+    },
+    {
+      "end" : 39452,
+      "start" : 39361
+    },
+    {
+      "end" : 39674,
+      "start" : 39617
+    },
+    {
+      "end" : 39867,
+      "start" : 39802
+    },
+    {
+      "end" : 40043,
+      "start" : 39976
+    },
+    {
+      "end" : 40233,
+      "start" : 40188
+    },
+    {
+      "end" : 40445,
+      "start" : 40357
+    },
+    {
+      "end" : 40627,
+      "start" : 40571
+    },
+    {
+      "end" : 40674,
+      "start" : 40627
+    },
+    {
+      "end" : 40864,
+      "start" : 40790
+    },
+    {
+      "end" : 41072,
+      "start" : 40998
+    },
+    {
+      "end" : 41290,
+      "start" : 41223
+    },
+    {
+      "end" : 41488,
+      "start" : 41420
+    },
+    {
+      "end" : 41665,
+      "start" : 41571
+    },
+    {
+      "end" : 41829,
+      "start" : 41749
+    },
+    {
+      "end" : 42016,
+      "start" : 41959
+    },
+    {
+      "end" : 42199,
+      "start" : 42115
+    },
+    {
+      "end" : 42328,
+      "start" : 42260
+    },
+    {
+      "end" : 42490,
+      "start" : 42421
+    },
+    {
+      "end" : 42698,
+      "start" : 42618
+    },
+    {
+      "end" : 42922,
+      "start" : 42845
+    },
+    {
+      "end" : 43101,
+      "start" : 43021
+    },
+    {
+      "end" : 43256,
+      "start" : 43193
+    },
+    {
+      "end" : 43436,
+      "start" : 43362
+    },
+    {
+      "end" : 43562,
+      "start" : 43500
+    },
+    {
+      "end" : 43715,
+      "start" : 43646
+    },
+    {
+      "end" : 43888,
+      "start" : 43825
+    },
+    {
+      "end" : 44047,
+      "start" : 43960
+    },
+    {
+      "end" : 44209,
+      "start" : 44130
+    },
+    {
+      "end" : 44355,
+      "start" : 44268
+    },
+    {
+      "end" : 44490,
+      "start" : 44418
+    },
+    {
+      "end" : 44693,
+      "start" : 44576
+    },
+    {
+      "end" : 44752,
+      "start" : 44691
+    },
+    {
+      "end" : 44935,
+      "start" : 44850
+    },
+    {
+      "end" : 45130,
+      "start" : 45040
+    },
+    {
+      "end" : 45262,
+      "start" : 45169
+    },
+    {
+      "end" : 45389,
+      "start" : 45328
+    },
+    {
+      "end" : 45552,
+      "start" : 45478
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 45552,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "at" : 42245,
+        "rule" : "fiveOneOne",
+        "type" : "onsetTrue"
+      },
+      {
+        "at" : 48292,
+        "rule" : "fiveOneOne",
+        "type" : "offsetTrue"
+      }
+    ],
+    "expectedSuspects" : [
+      23,
+      28,
+      66,
+      130
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 36095
+      },
+      {
+        "from" : 36096,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 37453
+      },
+      {
+        "from" : 37454,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 38379
+      },
+      {
+        "from" : 38380,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 38663
+      },
+      {
+        "from" : 38664,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 38960
+      },
+      {
+        "from" : 38961,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 42244
+      },
+      {
+        "from" : 42245,
+        "kind" : "mustFire",
+        "rule" : "fiveOneOne",
+        "to" : 48291
+      },
+      {
+        "from" : 48292,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 48450
+      },
+      {
+        "from" : 48451,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 52751
+      }
+    ]
+  }
+}

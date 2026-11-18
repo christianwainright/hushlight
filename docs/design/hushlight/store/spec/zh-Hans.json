@@ -1,0 +1,132 @@
+{
+  "frames": [
+    {
+      "id": "01-verdict",
+      "source": "../raw/zh-Hans/01-verdict-dark.png",
+      "appearance": "dark",
+      "eyebrow": "那通电话",
+      "headline": "节奏到了，它就会说。",
+      "subline": "对照 5-1-1、4-1-1 或 3-1-1 — 医护人员给你的那个标准。"
+    },
+    {
+      "id": "02-timing",
+      "source": "../raw/zh-Hans/02-timing-dark.png",
+      "appearance": "dark",
+      "eyebrow": "两次轻点",
+      "headline": "开始时点一下，缓下来再点一下。",
+      "subline": "屏幕整个下半部分都是按钮。为漆黑的房间和一只手而做。"
+    },
+    {
+      "id": "03-rest",
+      "source": "../raw/zh-Hans/03-rest-light.png",
+      "appearance": "light",
+      "eyebrow": "数据只在本机 · 无账号 · 无广告",
+      "headline": "打开就是按钮。",
+      "subline": "没有问卷、没有注册、没有引导挡在一次已经开始的宫缩前面。"
+    },
+    {
+      "id": "04-building",
+      "source": "../raw/zh-Hans/04-building-dark.png",
+      "appearance": "dark",
+      "eyebrow": "依据够了才说",
+      "headline": "它不猜。",
+      "subline": "在计时到足以说明问题之前不会出现数字。是一道破折号，不是零。"
+    },
+    {
+      "id": "05-lockscreen",
+      "source": "../raw/zh-Hans/05-lockscreen-dark.png",
+      "appearance": "dark",
+      "eyebrow": "实时活动",
+      "headline": "在锁定屏幕上开始和结束。",
+      "subline": "不用解锁，也不用找应用。次数就在你看得见的地方继续。"
+    },
+    {
+      "id": "06-history",
+      "source": "../raw/zh-Hans/06-history-light.png",
+      "appearance": "light",
+      "eyebrow": "记录",
+      "headline": "每一阵，都留在你的手机里。",
+      "subline": "每一阵都有自己的平均值。点错了可以撤销。什么都不会离开设备。"
+    },
+    {
+      "id": "07-guidance",
+      "source": "../raw/zh-Hans/07-guidance-dark.png",
+      "appearance": "dark",
+      "eyebrow": "你的医护人员的标准",
+      "headline": "他们的标准、他们的号码，一点即到。",
+      "subline": "把他们给的标准设好，打电话就是一次轻点，不必在凌晨三点翻通讯录。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "a1",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Two taps.",
+      "subline": null
+    },
+    {
+      "id": "a2",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "Start when it begins.",
+      "subline": null
+    },
+    {
+      "id": "a3",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "End when it eases.",
+      "subline": null
+    },
+    {
+      "id": "a4",
+      "appearance": "dark",
+      "eyebrow": "The call",
+      "headline": "When the pattern is there, it says so.",
+      "subline": null
+    },
+    {
+      "id": "a5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    },
+    {
+      "id": "b1",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Start it in the app.",
+      "subline": null
+    },
+    {
+      "id": "b2",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Lock the phone.",
+      "subline": null
+    },
+    {
+      "id": "b3",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "It keeps counting on the Lock Screen.",
+      "subline": null
+    },
+    {
+      "id": "b4",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "End it there. No unlocking.",
+      "subline": null
+    },
+    {
+      "id": "b5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+1. WHAT IT IS AND WHO IT IS FOR
+A stopwatch with arithmetic. It measures contractions and reports the pattern against the guideline you chose. It does not diagnose labor, and it is not medical advice — your provider's instructions always come first. When unsure, call.
+
+For the hours before someone leaves for the hospital: people in late pregnancy and early labour, and the partner holding the phone. A provider says "call when they are five minutes apart, lasting a minute, for an hour" — and at 3am there is no knowing whether that has arrived without something doing the arithmetic. Free, nothing to buy, works offline.
+
+2. ACCESS AND SETUP — NOTHING IS REQUIRED
+No account, login, demo credentials or sample files. Launch it and the button is on the screen. One optional setting: a provider phone number, typed on Guidance, which enables the Call button. A record is two timestamps in the app's local store, visible to no one else, so there is no user-generated content to report or block, and no paid content.
+
+3. EXTERNAL SERVICES, TOOLS AND PLATFORMS — NONE
+No data provider, authentication, payment, AI, analytics, advertising or crash-reporting service, and no third-party code; every Swift package is local. No networking code — no URLSession, no Network framework, no sockets — and no network entitlement; it behaves identically in airplane mode. Apple frameworks only: SwiftUI, UIKit, SwiftData, ActivityKit, AppIntents, MetricKit, StoreKit, os. MetricKit keeps crash summaries on device, transmitted nowhere; StoreKit is the system rating prompt only, with no In-App Purchase products. Anything that leaves the device does so by her own tap: Call dials the number she typed; Report a problem opens a mail draft she sends or does not; the For the call card's Copy and Share put its summary on the pasteboard or into the system share sheet; the policy links open Safari.
+
+4. REGIONAL DIFFERENCES — NONE
+Identical in every region: no geo-gating, no regional content, no server. Nine languages change words only; every figure and verdict is computed identically whatever the locale.
+
+5. REGULATION AND THIRD-PARTY MATERIAL — NEITHER (1.4.1)
+Not a medical device, and it makes no medical claim. Intervals are measured start-to-start, the clinically standard frequency measure; "5-1-1" means contractions about five minutes apart, each about a minute long, sustained for about an hour. It does not diagnose, never says whether the user is in labour, and issues no instruction: when the pattern meets the guideline she selected it reports the measurement and says calling her provider is reasonable. A reference card lists what warrants a call regardless of any timer. No licensed or third-party material: 5-1-1 is widely published guidance and every word is original.
+
+PRIVACY (5.1.1 / 5.1.3)
+Nothing is collected or transmitted; App Privacy is "Data Not Collected" throughout; no HealthKit, no notifications. The local SwiftData store declares cloudKitDatabase: .none and there is no iCloud entitlement, so data appears only in the user's own device backup. Clear All History deletes everything from inside the app.
+
+HOW TO TEST — IPHONE OR IPAD
+The app runs on iPhone and iPad and has no Home Screen widget; its one extension renders the Live Activity (on the Lock Screen once "Allow Live Activities from Hushlight?" is accepted) and a Control Center control that starts or ends a contraction, also on the Action button and in Siri. On iPad, History sits beside the timer; on iPhone Duo stood half open, the lower half is the button. Tap the large button at the bottom — Start, then End — and repeat; figures appear as the evidence floors are met. The full verdict needs the guideline's hour; an early verdict ("closer together than the guideline asks") appears after about 20 minutes of minute-long contractions started two minutes apart, as in the screen recording. The For the call card opens from the verdict. Lock the device mid-contraction for the Live Activity.

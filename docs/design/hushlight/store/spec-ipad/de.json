@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/de/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "In der Hand",
+      "headline": "Der Verlauf neben dem Timer.",
+      "subline": "Für die Person, die mitschreibt: jede Wehe, live, direkt neben der Zählung."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/de/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "Auf dem Ständer",
+      "headline": "Vom anderen Ende des Zimmers lesbar.",
+      "subline": "Auf den Beistelltisch gestellt. Die Zählung ist so groß wie das Zimmer."
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,14 @@
+# Preview A — the whole product in two taps, then the verdict.
+# Re-cut 2026-09-09 (App Review round 2): full-bleed, no bezel. The in/out points come
+# from a contact sheet of the take, not from wall-clock logging — the tap tool returns
+# well after the tap lands, and a clock read afterwards is fourteen seconds late.
+appearance dark
+seg  ../rec/a-two-taps-1.mov  22.5  25.5    # resting on a young pattern
+seg  ../rec/a-two-taps-1.mov  25.5  32.0    # Start: the numeral counts up, the ember breathes
+seg  ../rec/a-two-taps-1.mov  70.5  78.0    # ...0:44 → End: the bar lands on the tape
+seg  ../rec/a-two-taps-2.mov  0.5   10.3    # the verdict met
+card a1  0.0   2.8
+card a2  3.3   8.5
+card a3  9.0   15.5
+card a4  16.0  20.8
+card a5  21.3  25.3

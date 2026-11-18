@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/zh-Hans/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "拿在手里",
+      "headline": "记录就在计时器旁边。",
+      "subline": "给负责记录的人：每一次宫缩都实时列在计数旁边。"
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/zh-Hans/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "立在支架上",
+      "headline": "隔着房间也看得清。",
+      "subline": "立在床边桌上。计数放大到整个房间都能看见。"
+    }
+  ],
+  "cards": []
+}

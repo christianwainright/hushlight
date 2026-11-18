@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/fr/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "À moitié ouvert",
+      "headline": "Le pli fait la ligne.",
+      "subline": "Posé sur la table de chevet. Le compte regarde le lit ; la moitié à plat est le bouton."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/fr/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Ouvert à plat",
+      "headline": "L’historique à côté du chronomètre.",
+      "subline": "Chaque contraction de la série, en direct, à côté du compte."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/fr/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Fermé",
+      "headline": "Une main, dans le noir.",
+      "subline": "Le même chronomètre sur l’écran extérieur, à un pouce de Démarrer."
+    }
+  ],
+  "cards": []
+}

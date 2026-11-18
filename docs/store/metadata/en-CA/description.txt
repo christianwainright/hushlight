@@ -1,0 +1,29 @@
+A contraction timer that does one thing at 3am: tells you what your contractions are actually doing.
+
+Tap the bar when a contraction starts. Tap it again when it ends. That's the whole job — the rest builds from those two taps.
+
+FREE, FOREVER. NO ADS.
+Not a trial, not a subscription, not a free tier with the timer behind it. There is nothing to buy inside this app and nothing sold to anyone else.
+
+IT OPENS ON THE BUTTON.
+No quiz, no sign-up, no walkthrough standing between you and a contraction that has already started. A card explaining how it works is one tap away, once, and never again unless you ask for it.
+
+MEASURED THE WAY YOUR PROVIDER WILL ASK.
+Intervals are timed start to start — the clinical standard. You'll see how far apart they are, how long they last, and how long the pattern has held, against the guideline you selected: 5-1-1, 4-1-1, or 3-1-1.
+
+IT WON'T GUESS.
+No figure appears until there's enough timed to mean something — an em dash, never a zero, and never an average built from two intervals. If you forget to tap the end, that contraction is flagged and left out of the averages instead of quietly distorting them.
+
+BUILT FOR A DARK ROOM AND ONE HAND.
+The button is the whole lower half of the screen. Start and stop from the Lock Screen without unlocking. Or from Control Center, the Action button, or Siri. Full support for larger text and VoiceOver, because the middle of the night is when accessibility settings matter most.
+
+EVERYTHING STAYS ON YOUR DEVICE.
+No account, no analytics, no network code at all. Your contractions are two timestamps each, stored on your device, deletable whenever you want.
+
+ON AN IPAD, HISTORY SITS BESIDE THE TIMER.
+Prop it on a stand and the count reads from across the room; hold it and every contraction of this stretch is listed next to the timer, live, for whoever is keeping the record. The iPad keeps its own record — nothing is shared between devices, or with anyone.
+
+ON AN IPHONE DUO, THE FOLD IS THE LINE.
+Stand it half open on the nightstand: the count faces you on the upper half, and the half lying flat is the button. Open it flat and history sits beside the timer, as on an iPad. Closed, it is the same one-handed timer.
+
+A stopwatch with arithmetic. It measures contractions and reports the pattern against the guideline you chose. It does not diagnose labour, and it is not medical advice — your provider's instructions always come first. When unsure, call.

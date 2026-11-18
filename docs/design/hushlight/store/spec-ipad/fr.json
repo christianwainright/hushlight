@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/fr/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "En main",
+      "headline": "L’historique à côté du chronomètre.",
+      "subline": "Pour la personne qui tient le relevé : chaque contraction, en direct, près du compte."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/fr/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "Sur un support",
+      "headline": "Lisible de l’autre bout de la pièce.",
+      "subline": "Posé sur la tablette du lit. Le compte est à l’échelle de la pièce."
+    }
+  ],
+  "cards": []
+}

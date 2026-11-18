@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/es/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "En la mano",
+      "headline": "El historial junto al temporizador.",
+      "subline": "Para quien lleva el registro: cada contracción, en vivo, al lado del contador."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/es/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "Sobre un soporte",
+      "headline": "Léelo desde el otro lado de la habitación.",
+      "subline": "Apóyalo en la mesa auxiliar. El contador es del tamaño de la habitación."
+    }
+  ],
+  "cards": []
+}

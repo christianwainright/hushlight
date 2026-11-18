@@ -1,0 +1,1 @@
+„Problem melden“ zeigt jetzt die Adresse, wenn das Gerät kein Mail-Programm hat, und „Anrufen“ zeigt die Nummer, wenn es nicht anrufen kann. Sonst hat sich nichts geändert.

@@ -1,0 +1,534 @@
+{
+  "actions" : [
+    {
+      "at" : 0,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 70,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 270,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 340,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 670,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 870,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 940,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1270,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1470,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1540,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1870,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2070,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2140,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2400,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2470,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2670,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2740,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3000,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3070,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3270,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3340,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3670,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3870,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3940,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4270,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4470,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4540,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4870,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5070,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5140,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5400,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5470,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5670,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5740,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6000,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6070,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6270,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6340,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6670,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6870,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6940,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7270,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7470,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7540,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7870,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8070,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8140,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8400,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8470,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8670,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8740,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9000,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9070,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9270,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9340,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9670,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9870,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9940,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10270,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10470,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10540,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10870,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11070,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11140,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11400,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11470,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11670,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11740,
+      "kind" : "tapEnd"
+    }
+  ],
+  "archetype" : "boundaryBattery",
+  "generatorVersion" : "1.0.0",
+  "id" : "weakness-w1-flapping",
+  "noiseProfile" : "clean",
+  "paramVariant" : 0,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 0,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 70,
+      "start" : 0
+    },
+    {
+      "end" : 340,
+      "start" : 270
+    },
+    {
+      "end" : 670,
+      "start" : 600
+    },
+    {
+      "end" : 940,
+      "start" : 870
+    },
+    {
+      "end" : 1270,
+      "start" : 1200
+    },
+    {
+      "end" : 1540,
+      "start" : 1470
+    },
+    {
+      "end" : 1870,
+      "start" : 1800
+    },
+    {
+      "end" : 2140,
+      "start" : 2070
+    },
+    {
+      "end" : 2470,
+      "start" : 2400
+    },
+    {
+      "end" : 2740,
+      "start" : 2670
+    },
+    {
+      "end" : 3070,
+      "start" : 3000
+    },
+    {
+      "end" : 3340,
+      "start" : 3270
+    },
+    {
+      "end" : 3670,
+      "start" : 3600
+    },
+    {
+      "end" : 3940,
+      "start" : 3870
+    },
+    {
+      "end" : 4270,
+      "start" : 4200
+    },
+    {
+      "end" : 4540,
+      "start" : 4470
+    },
+    {
+      "end" : 4870,
+      "start" : 4800
+    },
+    {
+      "end" : 5140,
+      "start" : 5070
+    },
+    {
+      "end" : 5470,
+      "start" : 5400
+    },
+    {
+      "end" : 5740,
+      "start" : 5670
+    },
+    {
+      "end" : 6070,
+      "start" : 6000
+    },
+    {
+      "end" : 6340,
+      "start" : 6270
+    },
+    {
+      "end" : 6670,
+      "start" : 6600
+    },
+    {
+      "end" : 6940,
+      "start" : 6870
+    },
+    {
+      "end" : 7270,
+      "start" : 7200
+    },
+    {
+      "end" : 7540,
+      "start" : 7470
+    },
+    {
+      "end" : 7870,
+      "start" : 7800
+    },
+    {
+      "end" : 8140,
+      "start" : 8070
+    },
+    {
+      "end" : 8470,
+      "start" : 8400
+    },
+    {
+      "end" : 8740,
+      "start" : 8670
+    },
+    {
+      "end" : 9070,
+      "start" : 9000
+    },
+    {
+      "end" : 9340,
+      "start" : 9270
+    },
+    {
+      "end" : 9670,
+      "start" : 9600
+    },
+    {
+      "end" : 9940,
+      "start" : 9870
+    },
+    {
+      "end" : 10270,
+      "start" : 10200
+    },
+    {
+      "end" : 10540,
+      "start" : 10470
+    },
+    {
+      "end" : 10870,
+      "start" : 10800
+    },
+    {
+      "end" : 11140,
+      "start" : 11070
+    },
+    {
+      "end" : 11470,
+      "start" : 11400
+    },
+    {
+      "end" : 11740,
+      "start" : 11670
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 11740,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      }
+    ],
+    "expectedSuspects" : [
+
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 14070
+      },
+      {
+        "from" : 14071,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 18939
+      }
+    ]
+  }
+}

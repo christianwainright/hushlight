@@ -1,0 +1,77 @@
+included:
+  - Hushlight
+  - HushlightWidgets
+  - Packages/DesignKit/Sources
+  - Packages/LaborKit/Sources
+  - Packages/LaborSim/Sources
+
+excluded:
+  - Packages/DesignKit/Sources/DesignKit/Tokens
+  - .build
+  - build
+
+disabled_rules:
+  # Fixture files and design-token tables are legitimately long.
+  - file_length
+  # SwiftUI bodies nest deeply by nature; the compiler is the real limit here.
+  - function_body_length
+  - type_body_length
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - last_where
+  - modifier_order
+  - redundant_nil_coalescing
+  - sorted_imports
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace_closing_braces
+
+line_length:
+  warning: 100
+  error: 120
+  ignores_comments: false
+  ignores_urls: true
+
+identifier_name:
+  min_length: 2
+  excluded: [id, x, y, to, up]
+
+custom_rules:
+  no_raw_color_literals:
+    name: "Raw colour outside DesignKit"
+    regex: '(Color\(red:|#colorLiteral|UIColor\(red:)'
+    message: >
+      Colours are defined once, in DesignKit's Palette. Use a semantic role
+      (Palette.tint, Palette.secondaryText …) so both appearances work for free.
+      See DESIGN-SPEC §3 and §8 gate 5.
+    severity: error
+
+  no_fixed_font_sizes:
+    name: "Fixed font size outside DesignKit"
+    regex: '(Font\.system\(size:|\.system\(size:)'
+    message: >
+      Name a type role, not a point size — .dataText(.hero), .dataText(.stat).
+      Fixed sizes bypass Dynamic Type. Roles live in DesignKit's Typography.
+      See DESIGN-SPEC §3 and §8 gate 5.
+    severity: error
+
+  no_ring_gauges:
+    name: "Ring or donut gauge"
+    regex: '(trim\(from:.*to:.*\)\s*\n?\s*\.stroke|Circle\(\)\s*\n?\s*\.trim)'
+    message: >
+      Gauges in this app are linear tick tapes, never rings — an explicit brief
+      guardrail against Activity-ring lookalikes. Use EmberTape.
+    severity: warning
+
+  no_truncating_data_values:
+    name: "Truncated data value"
+    regex: '\.dataText\([^)]*\)\s*\n?\s*\.lineLimit\('
+    message: >
+      Data values never truncate (DESIGN-SPEC §5). Hero roles already shrink to
+      fit; everything else must be free to wrap.
+    severity: error

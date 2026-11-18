@@ -1,0 +1,16 @@
+{
+ "corpusVersion": "3.1.0",
+ "masterSeed": "fnv1a64(archetype) ^ variant, split-mixed; see Packages/LaborSim/Sources/LaborSim/SeededRandom.swift",
+ "generatorVersion": "3.1.0",
+ "generatorRef": "SP-207",
+ "scenarioCount": 414,
+ "contentHash": "543484e58534fff367c8580dfdfa0ed500cb7f737bbf6a611ff872515f41fa39",
+ "pinnedBy": "Packages/LaborSim/Tests/LaborSimTests/CorpusStabilityTests.swift",
+ "composition": {
+  "base": "12 archetypes x 3 param variants x 8 noise runs = 288",
+  "variants": 24,
+  "ruleCoverage": 60,
+  "boundaryBattery": 42
+ },
+ "note": "3.1.0 (SP-207, F-0037): one new boundary-battery case, fastFromTheFirstContraction \u2014 the tight-from-onset precipitous shape decision 0040 was written for, which SP-207's differential sweep proved the sampled precipitous archetype never produces (its log-linear ramp reaches the half-threshold only in a stretch shorter than the windowed share needs). boundaryBattery 41 -> 42, standard corpus 413 -> 414, a minor per this file's semver note: no existing scenario changed, so 3.0.0 rows remain comparable except that 3.1.0 reports carry one extra row. Semver: adding scenarios bumps minor; changing or removing any existing scenario bumps major. Reports are row-comparable only within a version. The digest test fails on any accidental drift. 3.0.0 (SP-203, decision 0032): the suspect predicate gained its short side \u2014 a recorded length under twenty seconds is a tap artifact, flagged and excluded from duration means exactly as the over-three-minute side already was. No scenario changed: the seed refs, the taps, the true contractions and every truth zone are byte-identical, and the ref-digest is unchanged for that reason. What changed is truth.expectedSuspects on existing scenarios and, with it, what a run finds \u2014 measured on this corpus, suppressions 46 -> 41 and false-met scenarios 40 -> 42, the S4-over-S2 trade decision 0021 \u00a72 asks for. Rows in a 3.0.0 run are NOT comparable to a 2.0.0 run's findings even though both ran the same scenarios. generatorVersion now tracks LaborSimVersion.generator again, which 2.0.0's note left to whoever regenerated the goldens next. 2.0.0 (SP-194 fix wave D, F-0024/F-0025/F-0011): five new boundary-battery cases close the W1/W2/W4/W10 RUBRIC seeds and F-0011's negative-figure gap (boundaryBattery 36 -> 41, standard corpus 408 -> 413) \u2014 a minor by itself \u2014 but inductionRamp's tachysystole variant (paramVariant >= 3) also changed shape (its floor now genuinely sustains a dense run instead of the previous no-op tail), which is a major per this file's own semver note even though the corpus's ref-digest cannot see it (the digest hashes seed refs, not generated content). Rows in that run are NOT comparable to any 1.0.0 run. generatorRef names the SP item rather than a commit sha for 3.0.0: an accurate sha would have to name the commit that contains this file, which no single commit can do. The commit is in docs/BUILDLOG.md under SP-203."
+}

@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/it/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "Semiaperto",
+      "headline": "La piega è la linea.",
+      "subline": "Appoggiato sul comodino. Il conteggio guarda il letto; la metà distesa è il pulsante."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/it/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Aperto del tutto",
+      "headline": "La cronologia accanto al timer.",
+      "subline": "Ogni contrazione di questa fase, in diretta, accanto al conteggio."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/it/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Chiuso",
+      "headline": "Una mano, al buio.",
+      "subline": "Lo stesso timer sullo schermo esterno, a un pollice da Avvia."
+    }
+  ],
+  "cards": []
+}

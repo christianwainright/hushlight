@@ -1,0 +1,222 @@
+{
+  "actions" : [
+    {
+      "at" : 0,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 60,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 300,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 360,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 660,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 900,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 960,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1260,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1500,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1560,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1800,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1860,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2100,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2160,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2400,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2460,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2700,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2760,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3000,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3060,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3300,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3360,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3660,
+      "kind" : "tapEnd"
+    }
+  ],
+  "archetype" : "boundaryBattery",
+  "expectedDetection" : [
+    "mean interval exactly at 5-1-1's 300s threshold: met side"
+  ],
+  "generatorVersion" : "3.0.0",
+  "id" : "boundaryBattery-intervalExactly300",
+  "noiseProfile" : "clean",
+  "paramVariant" : 0,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 0,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 60,
+      "start" : 0
+    },
+    {
+      "end" : 360,
+      "start" : 300
+    },
+    {
+      "end" : 660,
+      "start" : 600
+    },
+    {
+      "end" : 960,
+      "start" : 900
+    },
+    {
+      "end" : 1260,
+      "start" : 1200
+    },
+    {
+      "end" : 1560,
+      "start" : 1500
+    },
+    {
+      "end" : 1860,
+      "start" : 1800
+    },
+    {
+      "end" : 2160,
+      "start" : 2100
+    },
+    {
+      "end" : 2460,
+      "start" : 2400
+    },
+    {
+      "end" : 2760,
+      "start" : 2700
+    },
+    {
+      "end" : 3060,
+      "start" : 3000
+    },
+    {
+      "end" : 3360,
+      "start" : 3300
+    },
+    {
+      "end" : 3660,
+      "start" : 3600
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 3660,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      }
+    ],
+    "expectedSuspects" : [
+
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 1199
+      },
+      {
+        "from" : 1200,
+        "kind" : "mustNotFire",
+        "reason" : "sustained",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 6000
+      },
+      {
+        "from" : 6001,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 10859
+      }
+    ]
+  }
+}

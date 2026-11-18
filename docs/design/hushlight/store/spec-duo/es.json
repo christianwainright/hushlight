@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/es/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "Medio abierto",
+      "headline": "El pliegue es la línea.",
+      "subline": "Déjalo en la mesita de noche. El contador mira a la cama; la mitad apoyada es el botón."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/es/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Abierto del todo",
+      "headline": "El historial junto al temporizador.",
+      "subline": "Cada contracción de esta racha, en vivo, al lado del contador."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/es/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Cerrado",
+      "headline": "Una mano, a oscuras.",
+      "subline": "El mismo temporizador en la pantalla exterior, a un pulgar de Iniciar."
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,132 @@
+{
+  "frames": [
+    {
+      "id": "01-verdict",
+      "source": "../raw/ja/01-verdict-dark.png",
+      "appearance": "dark",
+      "eyebrow": "その電話",
+      "headline": "間隔がそろえば、そう伝えます。",
+      "subline": "5-1-1、4-1-1、3-1-1 — 医療者から言われた目安に照らして読みます。"
+    },
+    {
+      "id": "02-timing",
+      "source": "../raw/ja/02-timing-dark.png",
+      "appearance": "dark",
+      "eyebrow": "タップ2回",
+      "headline": "始まったらタップ。ゆるんだらタップ。",
+      "subline": "画面の下半分すべてがボタンです。暗い部屋と片手のために。"
+    },
+    {
+      "id": "03-rest",
+      "source": "../raw/ja/03-rest-light.png",
+      "appearance": "light",
+      "eyebrow": "端末内完結 · アカウント不要 · 広告なし",
+      "headline": "開くとすぐボタン。",
+      "subline": "アンケートも登録も案内も、もう始まっている陣痛の前には入りません。"
+    },
+    {
+      "id": "04-building",
+      "source": "../raw/ja/04-building-dark.png",
+      "appearance": "dark",
+      "eyebrow": "判断できる材料がそろうまで",
+      "headline": "推測はしません。",
+      "subline": "意味を持つだけ計測できるまで数字は出ません。ダッシュであって、ゼロではありません。"
+    },
+    {
+      "id": "05-lockscreen",
+      "source": "../raw/ja/05-lockscreen-dark.png",
+      "appearance": "dark",
+      "eyebrow": "ライブアクティビティ",
+      "headline": "ロック画面から開始と終了。",
+      "subline": "解除もアプリ探しもなし。回数は見えるところで進みます。"
+    },
+    {
+      "id": "06-history",
+      "source": "../raw/ja/06-history-light.png",
+      "appearance": "light",
+      "eyebrow": "履歴",
+      "headline": "どの一連も、この端末の中に。",
+      "subline": "一連ごとの平均つき。押し間違いは取り消せます。端末の外には出ません。"
+    },
+    {
+      "id": "07-guidance",
+      "source": "../raw/ja/07-guidance-dark.png",
+      "appearance": "dark",
+      "eyebrow": "あなたの医療者の目安",
+      "headline": "その目安と、その番号を、タップひとつで。",
+      "subline": "言われた目安を設定しておけば、連絡はタップ1回。午前3時に連絡先を探さずに済みます。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "a1",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Two taps.",
+      "subline": null
+    },
+    {
+      "id": "a2",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "Start when it begins.",
+      "subline": null
+    },
+    {
+      "id": "a3",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "End when it eases.",
+      "subline": null
+    },
+    {
+      "id": "a4",
+      "appearance": "dark",
+      "eyebrow": "The call",
+      "headline": "When the pattern is there, it says so.",
+      "subline": null
+    },
+    {
+      "id": "a5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    },
+    {
+      "id": "b1",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Start it in the app.",
+      "subline": null
+    },
+    {
+      "id": "b2",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Lock the phone.",
+      "subline": null
+    },
+    {
+      "id": "b3",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "It keeps counting on the Lock Screen.",
+      "subline": null
+    },
+    {
+      "id": "b4",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "End it there. No unlocking.",
+      "subline": null
+    },
+    {
+      "id": "b5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    }
+  ]
+}

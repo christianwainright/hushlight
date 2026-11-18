@@ -1,0 +1,5 @@
+Hushlight now runs on iPad and iPhone Duo. On iPad, history sits beside the timer, and the count reads from across the room on a stand. Stand an iPhone Duo half open on the nightstand: the count faces you on the upper half, and the half lying flat is the button. Each device keeps its own record; nothing is shared between them.
+
+You can now start and end a contraction from Control Center, the Action button, or Siri.
+
+Report a problem now shows the address when this device has no mail app, and Call shows the number when it cannot place calls.

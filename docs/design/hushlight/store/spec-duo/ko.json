@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/ko/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "반쯤 펼쳐서",
+      "headline": "접히는 선이 경계선.",
+      "subline": "협탁에 세워 두세요. 카운트는 침대를 향하고, 바닥에 놓인 절반이 버튼입니다."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/ko/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "완전히 펼쳐서",
+      "headline": "타이머 옆에 기록.",
+      "subline": "이번 흐름의 모든 진통이 카운트 옆에 실시간으로."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/ko/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "접어서",
+      "headline": "한 손으로, 어둠 속에서.",
+      "subline": "바깥 화면에서도 같은 타이머. 시작은 엄지 하나 거리에."
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,1 @@
+Relatar um problema agora mostra o endereço quando o aparelho não tem app de e-mail, e Ligar mostra o número quando não consegue ligar. Nada mais mudou.

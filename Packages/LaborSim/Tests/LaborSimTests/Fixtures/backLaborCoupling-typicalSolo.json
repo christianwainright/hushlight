@@ -1,0 +1,617 @@
+{
+  "actions" : [
+    {
+      "at" : 5,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 51,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 535,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 576,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1036,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1060,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1532,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1572,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1962,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2021,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2606,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2634,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3117,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3154,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3702,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3729,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4193,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4237,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4639,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4701,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5042,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5115,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5451,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5501,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5815,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5852,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5854,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6250,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6320,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6676,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6713,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6762,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6805,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7451,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7485,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7562,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8171,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8302,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8879,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8986,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8986,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9043,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9567,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9617,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9879,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9934,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10193,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10246,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10283,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10352,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10694,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10722,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10947,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10994,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11296,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11347,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11680,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11731,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11908,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11944,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12201,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12256,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12433,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12490,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12646,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12696,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12698,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12821,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12876,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13065,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13122,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13382,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13385,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13416,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13822,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13870,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13919,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13977,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 14352,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 14392,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 14465,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 14503,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 14752,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 14811,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 15026,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 15335,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 15554,
+      "kind" : "tapStart"
+    }
+  ],
+  "archetype" : "backLaborCoupling",
+  "expectedDetection" : [
+    "archetype:backLaborCoupling",
+    "noise:typicalSolo",
+    "falsePositiveProbe",
+    "suspectExpected"
+  ],
+  "generatorVersion" : "3.0.0",
+  "id" : "backLaborCoupling-v2-typicalSolo-r0-fiveOneOne-B06CCB321BFDE107",
+  "noiseProfile" : "typicalSolo",
+  "paramVariant" : 2,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 12712759264238493959,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 51,
+      "start" : 0
+    },
+    {
+      "end" : 576,
+      "start" : 532
+    },
+    {
+      "end" : 1060,
+      "start" : 1016
+    },
+    {
+      "end" : 1572,
+      "start" : 1525
+    },
+    {
+      "end" : 2021,
+      "start" : 1959
+    },
+    {
+      "end" : 2634,
+      "start" : 2588
+    },
+    {
+      "end" : 3154,
+      "start" : 3103
+    },
+    {
+      "end" : 3729,
+      "start" : 3694
+    },
+    {
+      "end" : 4237,
+      "start" : 4188
+    },
+    {
+      "end" : 4701,
+      "start" : 4634
+    },
+    {
+      "end" : 5115,
+      "start" : 5038
+    },
+    {
+      "end" : 5501,
+      "start" : 5446
+    },
+    {
+      "end" : 5852,
+      "start" : 5808
+    },
+    {
+      "end" : 6320,
+      "start" : 6246
+    },
+    {
+      "end" : 6713,
+      "start" : 6670
+    },
+    {
+      "end" : 6805,
+      "start" : 6754
+    },
+    {
+      "end" : 7485,
+      "start" : 7436
+    },
+    {
+      "end" : 7613,
+      "start" : 7555
+    },
+    {
+      "end" : 8230,
+      "start" : 8171
+    },
+    {
+      "end" : 8367,
+      "start" : 8302
+    },
+    {
+      "end" : 8932,
+      "start" : 8879
+    },
+    {
+      "end" : 9043,
+      "start" : 8986
+    },
+    {
+      "end" : 9617,
+      "start" : 9562
+    },
+    {
+      "end" : 9934,
+      "start" : 9873
+    },
+    {
+      "end" : 10246,
+      "start" : 10180
+    },
+    {
+      "end" : 10352,
+      "start" : 10278
+    },
+    {
+      "end" : 10722,
+      "start" : 10683
+    },
+    {
+      "end" : 10994,
+      "start" : 10939
+    },
+    {
+      "end" : 11347,
+      "start" : 11289
+    },
+    {
+      "end" : 11731,
+      "start" : 11677
+    },
+    {
+      "end" : 11944,
+      "start" : 11899
+    },
+    {
+      "end" : 12256,
+      "start" : 12194
+    },
+    {
+      "end" : 12490,
+      "start" : 12427
+    },
+    {
+      "end" : 12696,
+      "start" : 12641
+    },
+    {
+      "end" : 12876,
+      "start" : 12815
+    },
+    {
+      "end" : 13122,
+      "start" : 13060
+    },
+    {
+      "end" : 13416,
+      "start" : 13361
+    },
+    {
+      "end" : 13870,
+      "start" : 13810
+    },
+    {
+      "end" : 13977,
+      "start" : 13913
+    },
+    {
+      "end" : 14392,
+      "start" : 14342
+    },
+    {
+      "end" : 14503,
+      "start" : 14444
+    },
+    {
+      "end" : 14811,
+      "start" : 14739
+    },
+    {
+      "end" : 15111,
+      "start" : 15020
+    },
+    {
+      "end" : 15404,
+      "start" : 15335
+    },
+    {
+      "end" : 15612,
+      "start" : 15554
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 15612,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      }
+    ],
+    "expectedSuspects" : [
+      35
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 1958
+      },
+      {
+        "from" : 1959,
+        "kind" : "mustNotFire",
+        "reason" : "sustained",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 10179
+      },
+      {
+        "from" : 10180,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 11676
+      },
+      {
+        "from" : 11677,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 11771
+      },
+      {
+        "from" : 11772,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 18044
+      },
+      {
+        "from" : 18045,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 22811
+      }
+    ]
+  }
+}

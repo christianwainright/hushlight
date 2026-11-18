@@ -1,0 +1,5 @@
+Hushlight fonctionne désormais sur iPad et iPhone Duo. Sur iPad, l’historique est à côté du chronomètre, et sur un support le compte se lit de l’autre bout de la pièce. Posez un iPhone Duo à moitié ouvert sur la table de chevet : le compte vous fait face sur la moitié haute, et la moitié à plat est le bouton. Chaque appareil garde son propre relevé ; rien n’est partagé entre eux.
+
+Vous pouvez maintenant démarrer et arrêter une contraction depuis le centre de contrôle, le bouton Action ou Siri.
+
+Signaler un problème affiche désormais l’adresse quand l’appareil n’a pas d’app de courrier, et Appeler affiche le numéro quand il ne peut pas appeler.

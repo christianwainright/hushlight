@@ -1,0 +1,20 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1180, "h": 880, "title": "Brand board" },
+    { "file": "Welcome.dc.html", "x": 0, "y": 1030, "w": 390, "h": 844, "title": "First launch" },
+    { "file": "Timer.dc.html", "x": 470, "y": 1030, "w": 390, "h": 844, "title": "Timer — resting" },
+    { "file": "Timing.dc.html", "x": 940, "y": 1030, "w": 390, "h": 844, "title": "Timer — mid-contraction" },
+    { "file": "Verdict.dc.html", "x": 1410, "y": 1030, "w": 390, "h": 844, "title": "Verdict — go time" },
+    { "file": "History.dc.html", "x": 1880, "y": 1030, "w": 390, "h": 844, "title": "History" },
+    { "file": "Daylight.dc.html", "x": 470, "y": 2010, "w": 390, "h": 844, "title": "Timer — daytime" },
+    { "file": "FirstLight.dc.html", "x": 1410, "y": 2010, "w": 390, "h": 844, "title": "Alternate: First Light" }
+  ],
+  "annotations": [
+    { "id": "name-research", "x": -340, "y": 20, "w": 310, "text": "The name: two research rounds, 52 candidates, 12 fully vetted against the App Store, USPTO, domains, and dark associations.\n\nHushlight won as the only name with zero exact-name apps in either store, no software or health trademark, and lullaby warmth built in - it names the object this identity turns the app into: a small warm lamp at 3am.\n\nRunner-up: Soonrise (also fully clear; trades the lamp for the dawn promise, but blurs into 'sunrise' when spoken).\n\nEvery warm dictionary word tried in round 1 (Soon, Lull, Exhale, Steady, Held) was already mined out by existing apps." },
+    { "id": "how-chosen", "x": 1230, "y": 20, "w": 300, "text": "How this direction was chosen: three identities were drafted and scored against the 3am-labor reality. Nightstand won (44/50) over First Light (43) and Slack Tide (33) - it is the only one designed primarily for the moment the app earns its existence: night. First Light's export report, crash-safe timer, merge affordance and dawn choreography are folded in." },
+    { "id": "flow-note", "x": -340, "y": 1030, "w": 280, "text": "Core flow, night theme (the default room). Labor mostly ramps at night - dark is the identity, not a variant. Nothing red exists anywhere in the shipped app." },
+    { "id": "daylight-note", "x": 130, "y": 2060, "w": 280, "text": "Daytime is a first-class translation: same room with the curtains open - warm paper, deep amber ink. Not an inverted afterthought." },
+    { "id": "alt-note", "x": 1080, "y": 2060, "w": 280, "text": "The runner-up direction, kept for comparison: First Light - sunrise neutrals, rose live-state, light-first. Scored one point behind Nightstand; its warmth survives as grafts in the winner. Its rose live-state (visible on this tape) drifting toward warm-red was one of the reasons it lost." }
+  ],
+  "launch": { "view": "canvas" }
+}

@@ -1,0 +1,5 @@
+Hushlight ora funziona su iPad e iPhone Duo. Su iPad la cronologia sta accanto al timer, e su un supporto il conteggio si legge dall’altra parte della stanza. Appoggia un iPhone Duo semiaperto sul comodino: il conteggio ti guarda dalla metà superiore e la metà distesa è il pulsante. Ogni dispositivo tiene il proprio registro; niente viene condiviso tra loro.
+
+Ora puoi avviare e terminare una contrazione dal Centro di Controllo, dal tasto Azione o con Siri.
+
+Segnala un problema ora mostra l’indirizzo quando il dispositivo non ha un’app di posta, e Chiama mostra il numero quando non può chiamare.

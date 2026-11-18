@@ -1,0 +1,401 @@
+{
+ "candidates": [
+  {
+   "name": "Swell",
+   "tagline": "Each wave rises, then passes.",
+   "rationale": "In surf and hypnobirthing vocabulary a swell is the wave gathering before it breaks \u2014 and it winks gently at the swell of the belly. One syllable, impossible to misspell at 3am, and warm in the old-fashioned 'that's swell' sense rather than clinical.",
+   "appstore_title": "Swell - Contraction Timer"
+  },
+  {
+   "name": "Lull",
+   "tagline": "Rest lives between the waves.",
+   "rationale": "It names the rest, not the pain \u2014 the lull between waves is literally what the app measures for frequency and interval, and the word carries lullaby softness for a scared, tired user. Four letters, spells itself aloud; the only adjacent brand is a mattress company, nowhere near femtech.",
+   "appstore_title": "Lull - Contraction Timer"
+  },
+  {
+   "name": "Exhale",
+   "tagline": "Breathe out. It's working.",
+   "rationale": "The one instruction every birth class gives mid-contraction, so the brand IS the coaching: open the app, exhale, tap. 'I used Exhale for the birth' sounds completely natural said aloud, and it is pure breath vocabulary with zero medical chill.",
+   "appstore_title": "Exhale - Contraction Timer"
+  },
+  {
+   "name": "Cadence",
+   "tagline": "Your rhythm, gently counted.",
+   "rationale": "The 5-1-1 pattern is a cadence, so the name matches the app's calm, numerate soul \u2014 rhythm detected, never alarm raised. It is also a beloved girl's name, which lands sweetly with expecting parents and makes it effortless to say and spell.",
+   "appstore_title": "Cadence - Contraction Timer"
+  },
+  {
+   "name": "Springtide",
+   "tagline": "The tide that brings her home.",
+   "rationale": "A spring tide is the strongest tide in the cycle \u2014 the moment the pattern peaks and it's time to go \u2014 while 'springtide' is also an old word for springtime and new life. Doubly on-metaphor for a verdict-giving app, and at 10 characters it fits the 30-char title exactly.",
+   "appstore_title": "Springtide - Contraction Timer"
+  },
+  {
+   "name": "Shore",
+   "tagline": "Every wave is closer to shore.",
+   "rationale": "Reframes every contraction as progress: one wave closer to shore, to meeting the baby \u2014 the destination, not the storm, which is the opposite of competitors' red-alert framing. Five friendly letters anyone can spell after hearing once.",
+   "appstore_title": "Shore - Contraction Timer"
+  },
+  {
+   "name": "Ebb",
+   "tagline": "It rises. It always ebbs.",
+   "rationale": "The core hypnobirthing promise in three letters: every wave ebbs \u2014 which also mirrors the app's own 'easing off' trend language. Shortest possible brand leaves maximum subtitle keyword room; distinct from every listed competitor, though note Headspace's AI companion 'Ebb' in the adjacent wellness space.",
+   "appstore_title": "Ebb - Contraction Timer"
+  },
+  {
+   "name": "Moontide",
+   "tagline": "Calm timing for the big night.",
+   "rationale": "The moon pulling the tide is the oldest image of gentle, inevitable rhythm \u2014 nothing to fight, only to time \u2014 and it suits an app most used in the middle of the night. A unique coinage with no collisions, easy to say and to spell exactly as heard.",
+   "appstore_title": "Moontide - Contraction Timer"
+  },
+  {
+   "name": "Soon",
+   "tagline": "Know when it's really time",
+   "rationale": "The single word every 38-week household is already living in \u2014 warm, tiny, and instantly sayable ('I used Soon for the birth'). Four letters leaves maximum App Store headroom for keywords, and nothing in the femtech space owns it.",
+   "appstore_title": "Soon - Contraction Timer"
+  },
+  {
+   "name": "Any Minute",
+   "tagline": "For the any-minute-now days",
+   "rationale": "It bottles the exact phrase friends and family keep texting her, so the brand feels like it already knows her situation. Reads gentle and expectant rather than clinical, and the full title lands at exactly the 30-char limit.",
+   "appstore_title": "Any Minute - Contraction Timer"
+  },
+  {
+   "name": "Go Time",
+   "tagline": "It tells you when to go",
+   "rationale": "Names the app's one job \u2014 answering 'is it time to go?' \u2014 in the plainspoken language of a partner grabbing the hospital bag. Memorable at 3am, trivially spellable, and clearly differentiated from the flowery competitor set (Bloom, Freya).",
+   "appstore_title": "Go Time - Contraction Timer"
+  },
+  {
+   "name": "Almost",
+   "tagline": "You're almost there. Breathe.",
+   "rationale": "The word a birth partner actually whispers between contractions, so the brand voice and the moment of use are the same sentence. Warm and reassuring by default, which directly counters the red-alert fear language users hate in competitors.",
+   "appstore_title": "Almost - Contraction Timer"
+  },
+  {
+   "name": "Cusp",
+   "tagline": "Counting quietly with you",
+   "rationale": "'On the cusp' captures the threshold moment without any medical or stopwatch flavor, and the crisp four-letter mark is highly brandable and collision-free. One syllable, easy to say and spell after hearing it once.",
+   "appstore_title": "Cusp - Contraction Timer"
+  },
+  {
+   "name": "Threshold",
+   "tagline": "Minds the 5-1-1 while you rest",
+   "rationale": "Double meaning that maps perfectly to the product: the doorway she's about to cross into parenthood, and the literal 5-1-1 threshold the app watches for her. Slightly weightier than the others, but it dignifies the moment instead of gamifying it.",
+   "appstore_title": "Threshold - Contraction Timer"
+  },
+  {
+   "name": "Arrival",
+   "tagline": "Quiet timing for the big day",
+   "rationale": "Reframes the whole night away from fear and toward the person who's coming \u2014 the arrival, not the emergency. Universally understood, warm without being cutesy, and distinct from every listed competitor and femtech brand.",
+   "appstore_title": "Arrival - Contraction Timer"
+  },
+  {
+   "name": "Kairos",
+   "tagline": "The right moment, made clear",
+   "rationale": "Greek for the opportune moment as opposed to clock time \u2014 precisely the app's anti-stopwatch philosophy of judging readiness, not counting seconds. The most distinctive and trademark-friendly option, at the cost of a spelling hint on first hearing (KY-ross).",
+   "appstore_title": "Kairos - Contraction Timer"
+  },
+  {
+   "name": "Held",
+   "tagline": "Through every wave, together",
+   "rationale": "One syllable she can manage mid-contraction, and it names exactly what she needs at 3am \u2014 the sense of being held through it \u2014 with zero cutesy notes. Also quietly describes the one-handed grip on the phone.",
+   "appstore_title": "Held - Contraction Timer"
+  },
+  {
+   "name": "Steady",
+   "tagline": "A calm hand through the night",
+   "rationale": "It is literally the word a partner murmurs with a hand on her shoulder, and it doubles as a promise about the app's tone \u2014 level, numerate, never shouting. Adult and reassuring without a hint of nursery.",
+   "appstore_title": "Steady - Contraction Timer"
+  },
+  {
+   "name": "Beside",
+   "tagline": "With you, wave after wave",
+   "rationale": "Names the app's honest role: it sits beside her on the nightstand keeping count, so her partner's hands stay free to hold hers. Warm through companionship rather than sentiment.",
+   "appstore_title": "Beside - Contraction Timer"
+  },
+  {
+   "name": "Welcome",
+   "tagline": "Ready for the first hello",
+   "rationale": "Puts the destination \u2014 greeting a new person \u2014 on the home screen instead of the pain, which is exactly the non-alarmist frame competitors miss. A common word she can spell after hearing it once.",
+   "appstore_title": "Welcome - Contraction Timer"
+  },
+  {
+   "name": "Closer",
+   "tagline": "Every wave brings them nearer",
+   "rationale": "Mirrors the app's own trend verdict ('getting closer') with the emotional truth that each contraction is one closer to meeting the baby \u2014 feature and feeling in a single word. Simple to say in the sentence 'I used Closer for the birth.'",
+   "appstore_title": "Closer - Contraction Timer"
+  },
+  {
+   "name": "Firstlight",
+   "tagline": "The night before you meet",
+   "rationale": "Dawn after the long night \u2014 the moment she first sees her child \u2014 captured without preciousness; it flatters the 3am reality instead of denying it. Ten characters, filling the 30-char title exactly; distinct in word and register from 'Glow.'",
+   "appstore_title": "Firstlight - Contraction Timer"
+  },
+  {
+   "name": "Homecoming",
+   "tagline": "The night your family grows",
+   "rationale": "Frames labor as the beginning of bringing someone home rather than a medical event, and speaks to the partner as much as to her. A single familiar word \u2014 easy to spell, warm without being soft-focus.",
+   "appstore_title": "Homecoming - Contraction Timer"
+  },
+  {
+   "name": "Sway",
+   "tagline": "Move with it. We'll count.",
+   "rationale": "Swaying is what laboring women actually do through a contraction, so the name mirrors her body at 3am while the app does the arithmetic. Real word, zero clinical baggage, no collision with any femtech or timer brand.",
+   "appstore_title": "Sway - Contraction Timer"
+  },
+  {
+   "name": "Onda",
+   "tagline": "Every wave, gently counted",
+   "rationale": "Spanish and Italian for 'wave' \u2014 reads as a pure coinage to English ears, giving Calm/Clue-style ownability with a hidden meaning that matches the wave metaphor midwives already use. Four letters, spelled exactly as it sounds.",
+   "appstore_title": "Onda - Contraction Timer"
+  },
+  {
+   "name": "Nona",
+   "tagline": "Nine months end here, calmly",
+   "rationale": "Latin for 'ninth' \u2014 the ninth month \u2014 with an accidental echo of the Italian grandmother (nonna), so it carries both numeracy and warmth in four letters. Distinct in sound from Luna, Ovia, and every listed competitor.",
+   "appstore_title": "Nona - Contraction Timer"
+  },
+  {
+   "name": "Wavely",
+   "tagline": "Wave by wave, you're ready",
+   "rationale": "Classic app-brand morphology (Grammarly, Bitly): a friendly -ly suffix on the wave metaphor makes it instantly parse as a product, not a medical tool. Fully coined, so search results and the trademark lane are clear.",
+   "appstore_title": "Wavely - Contraction Timer"
+  },
+  {
+   "name": "Anyday",
+   "tagline": "Any day now \u2014 be ready, calmly",
+   "rationale": "Repurposes the phrase every full-term mom hears on repeat \u2014 'any day now' \u2014 into a single warm, grinning brand word. Emotionally exact for the 36-41 week window and memorable enough to recommend aloud.",
+   "appstore_title": "Anyday - Contraction Timer"
+  },
+  {
+   "name": "Marea",
+   "tagline": "The tide knows. So will you.",
+   "rationale": "Spanish for 'tide' \u2014 waves that build in rhythm on a schedule you can read, which is precisely the 5-1-1 story the app tells. Feels coined and premium in English, five letters, phonetic to spell (mah-RAY-ah).",
+   "appstore_title": "Marea - Contraction Timer"
+  }
+ ],
+ "finalists": [
+  {
+   "name": "Lull",
+   "score": 92,
+   "tagline": "Rest lives between the waves.",
+   "appstore_title": "Lull - Contraction Timer",
+   "why": "The only name that brands the thing the app actually measures \u2014 the rest interval between contractions \u2014 so product and identity are the same idea. Lullaby-soft for a scared user without being saccharine, four self-spelling letters, zero femtech collision (the mattress brand is a different aisle entirely), and it stands out as the one gentle word in a results list of clinical 'Counter & Tracker' names. Icon draws itself: a flat calm stretch between two rises on a linear tick-tape, perfectly on house style."
+  },
+  {
+   "name": "Exhale",
+   "score": 88,
+   "tagline": "Breathe out. It's working.",
+   "appstore_title": "Exhale - Contraction Timer",
+   "why": "The brand is the coaching: the one instruction every birth class gives is the word on her home screen at 3am. 'I used Exhale for the birth' is the most natural spoken sentence of the whole set, and it counters competitors' red-alert framing by embodying calm rather than claiming it. Docked a few points for a mildly crowded adjacent wellness space (an existing Exhale well-being app and spa brand), though nothing in the birth/timer category collides."
+  },
+  {
+   "name": "Steady",
+   "score": 86,
+   "tagline": "A calm hand through the night",
+   "appstore_title": "Steady - Contraction Timer",
+   "why": "Literally the word a partner murmurs with a hand on her shoulder, and simultaneously a tone-of-voice promise \u2014 level, numerate, never shouting \u2014 that matches the app's calm 5-1-1 verdict character exactly. Adult and reassuring with zero nursery notes, trivially spellable, and its icon (a steady level line) is the linear tick-tape house style made into a mark. Speaks to the partner persona as strongly as to her."
+  },
+  {
+   "name": "Firstlight",
+   "score": 84,
+   "tagline": "The night before you meet",
+   "appstore_title": "Firstlight - Contraction Timer",
+   "why": "Dawn after the long night \u2014 it honors the 3am reality instead of denying it, and points at the moment she first sees her child rather than at the pain. Emotionally the deepest name in the set, fills the 30-char title exactly, and the icon is obvious and on-system: a horizon line at dawn, rendered as a linear gauge. Loses points only for length (10 chars leaves no title slack) and mild semantic adjacency to 'Glow', though the register is clearly different."
+  },
+  {
+   "name": "Held",
+   "score": 81,
+   "tagline": "Through every wave, together",
+   "appstore_title": "Held - Contraction Timer",
+   "why": "One syllable she can manage mid-contraction, naming precisely what a frightened 38-week user needs \u2014 to feel held through it \u2014 with the quiet bonus of describing the one-handed grip on the phone. Completely collision-free, unmistakable in a results list, and the icon (cupped hands cradling a small rise) is immediate. Slightly unusual as a past-participle brand, which costs a little spoken-sentence smoothness."
+  },
+  {
+   "name": "Soon",
+   "score": 79,
+   "tagline": "Know when it's really time",
+   "appstore_title": "Soon - Contraction Timer",
+   "why": "The single word every full-term household is already living inside \u2014 warm, tiny, and emotionally exact for the 36-41 week window, with maximum keyword headroom left in the title. Its tagline doubles as the app's literal job description (the 5-1-1 verdict). Ranked last of the six because a common adverb is harder to own in search and the icon is the least self-evident of the group \u2014 it needs a designed mark (a soft approaching pulse) rather than an obvious image."
+  }
+ ],
+ "vetted": [
+  {
+   "name": "Lull",
+   "verdict": "risky",
+   "collisions": [
+    "Lull Mattresses (lull.com) \u2014 major DTC consumer sleep brand ('America's most-loved memory foam mattress', 50k+ reviews, sold at Mattress Firm and Amazon); owns lull.com and dominates general web search for the word. Live USPTO registrations (e.g. Reg 5628138; SN 90616263, Lull Ventures LLC) in classes 20/24/35 (beds, mattresses, retail) \u2014 not software.",
+    "Lull : Baby Sleep Tracker (iOS, id6781260696) \u2014 EXACT same name, mother/baby category, and near-identical positioning: one-tap logging, one-handed night mode, works offline, 'logs stay securely on your device', free-with-Pro. Targets the same customer a few weeks after birth.",
+    "Lulla \u2014 Baby Heartbeat Monitor (iOS, id6765852828) \u2014 a PREGNANCY app with a confusingly similar name (one letter added); plus Lulla \u2014 Baby Sleep Tracker (id6759900470) and getlulla.app on Android/web.",
+    "Six-plus additional live iOS apps branded exactly 'Lull', mostly Health & Fitness/sleep: Lull AI: Sleep Tracker & Coach (id6772794959), Lull - Sleep & Relax Sounds (id6759092798), Lull - White Noise For Sleep (id1500423385), Lull: Private Mood Journal (id6783383787), Lull: Books Pods & Night Noise (id6775313582), Lull Glow (id6751430580), Moon Lull (id6754218061).",
+    "LULL, Reg 6149554 (InclineRx LLC, Seattle) \u2014 registered 2020 in toys/sporting goods (class 28).",
+    "Adjacent name-space clutter in baby apps: NapLull (naplull.com), Luli: Baby Sleep Tracker, LullabAI \u2014 the lull/lulla/luli cluster is already a crowded convention in this exact audience."
+   ],
+   "trademark_risk": "Low-to-moderate legal risk, but near-zero ownability. No live LULL registration was found in class 9/42 (downloadable software), so a lawsuit is unlikely: 'lull' is a dictionary word in a crowded field, and the mattress company's registrations (classes 20/24/35) don't reach a medical-adjacent app. However, the flip side of a dilute mark is that the developer could never enforce it either \u2014 at least six iOS apps already trade as 'Lull' with common-law rights in software, one of them ('Lull : Baby Sleep Tracker') in the mother/baby space with the same privacy-first pitch. Apple's exact-title uniqueness check would likely still accept 'Lull - Contraction Timer', but App Review name-confusion flags and user confusion with the baby sleep tracker are realistic. Practical risk is reversed from the usual: not being sued, but being invisible and interchangeable.",
+   "domain_notes": "lull.com is the mattress company \u2014 unobtainable. lull.app is parked on GoDaddy's aftermarket (307-redirects to forsale.godaddy.com), i.e. buyable only at a premium dictionary-word price. getlull.com currently serves no content (status unclear \u2014 possibly parked without a page); getlulla.app is already a competing baby-sleep product, which poisons the get- prefix pattern. Realistic fallbacks would be contrived (lull.baby, lulltimer.app), which defeats the point of a clean four-letter name.",
+   "aso_notes": "In a 'contraction timer' results list, 'Lull - Contraction Timer' (23/30 chars, room for more keywords) would actually read beautifully against 'Contraction Timer & Counter 9m' and 'Contraction Timer & Tracker' \u2014 short, calm, non-alarmist, and semantically perfect (the lull IS the interval between contractions, the exact thing the app measures). That's the pull. The drag is the brand query: searching 'Lull' on the App Store surfaces a wall of sleep-sound apps, an AI sleep tracker, a mood journal, and a baby sleep tracker named exactly Lull, with the mattress brand owning web search on top. The app would rank fine for 'contraction timer' (that's the generic term) but would likely never own its own name \u2014 and word-of-mouth ('download Lull') would routinely land users on someone else's app, including a same-audience baby app.",
+   "notes": "Verdict rationale: 'risky', at the unfavorable end. Not 'blocked' \u2014 no existing contraction timer or labor app uses the name, no famous mark covers software, and the title would probably clear App Review. But three independent problems stack: (1) an exact-name, same-audience collision with 'Lull : Baby Sleep Tracker', whose pitch (one-tap, one-handed, offline, on-device privacy, free) is almost word-for-word this product's positioning \u2014 a reviewer or user would reasonably assume they're siblings; (2) a heavily diluted name (6+ App Store apps plus a national mattress brand) that can never be owned, defended, or ranked for; (3) the whole lull/lulla/luli cluster is already the naming convention of the adjacent baby-sleep niche, so the name reads 'sleep app', not 'labor app'. The semantic fit (the calm between contractions) is genuinely the best of any sleep-adjacent word, so if the team accepts never owning the brand query and coexisting with the baby sleep tracker, it is survivable \u2014 but a name with this much semantic aptness and zero ownability is a worse trade than it looks at 3am in an App Store search box. Key sources: apps.apple.com listings ids 6781260696, 6772794959, 6759092798, 1500423385, 6783383787, 6775313582, 6751430580, 6765852828; lull.com; uspto.report/TM/90616263; trademarkia.com/lull-88728902 (Reg 6149554); lull.app GoDaddy redirect observed directly."
+  },
+  {
+   "name": "Exhale",
+   "verdict": "risky",
+   "collisions": [
+    "Exhale Spa / exhale Everywhere (Hyatt-owned national wellness, spa, barre-fitness brand since 2001; has its own iOS app 'exhale Everywhere' / 'exhale On Demand') \u2014 health & wellness services + fitness app",
+    "EXHALE App by Katara McCarty (widely publicized emotional-wellbeing app for Black, Indigenous, and Women of Color, launched 2020; on iOS as 'Exhale App' and Google Play as com.app.exhaleapp) \u2014 women's health/wellbeing app, closest audience overlap",
+    "Exhale - Anxiety Assistant (iOS, breathing/anxiety-relief app since ~2018) \u2014 mental-health/breathing app",
+    "Exhale - Quit Vaping Now (iOS, 2024-25) \u2014 health app",
+    "Exhale Performance (iOS fitness platform) \u2014 fitness app",
+    "Exhale AI (exhale-ai.com, AI-guided meditation app) \u2014 meditation app",
+    "Exhale & Relax Skin Body, Club Exhale, Inhale Exhale Studio, Exhala (assorted iOS wellness/studio apps)",
+    "EXHALE & RELEASE (USPTO application SN 98241167, Lighthouse Energy LLC, 2023, downloadable health-and-wellness mobile app software) \u2014 pending/filed mark in the exact software class"
+   ],
+   "trademark_risk": "Moderate-to-high in the relevant classes, though not from a single blocking owner. No EXHALE mark was found covering pregnancy/labor tracking specifically, but the word is heavily occupied in health-and-wellness app space: Hyatt's Exhale Spa is a famous wellness mark with an App Store presence, Katara McCarty's EXHALE is a well-known women's-wellbeing app (nearly identical audience framing: an app for women's health moments), and at least one filed mark (EXHALE & RELEASE, SN 98241167) covers downloadable health/wellness mobile-app software outright. A crowded field narrows everyone's scope \u2014 which is why five-plus EXHALE apps already coexist \u2014 so a contraction timer could plausibly squeeze in as one more, but any of these owners (especially Hyatt or the EXHALE App, both serving women's wellness) has a colorable likelihood-of-confusion argument, and clearing/registering EXHALE for a health app in Class 9 would likely draw a 2(d) refusal citing existing wellness-app marks. Direct source not verified against USPTO full-text (Justia and uspto.report both blocked automated access); a real knockout search should confirm registration numbers before committing.",
+   "domain_notes": "exhale.app is parked and listed for sale on GoDaddy's aftermarket (premium purchase, not standard registration). exhaleapp.com appears held but dead (TLS failure, no live site) \u2014 likely associated with or squatted near Katara McCarty's EXHALE App, whose Play package is literally com.app.exhaleapp. exhale-ai.com and exhalepeople.com are live competitor wellness apps. Realistic options are compounds like getexhale.app or exhalelabor.com, which weakens the clean-name appeal.",
+   "aso_notes": "The word itself is a strong fit for the product voice \u2014 calm, breath-through-it, non-alarmist \u2014 and \"Exhale - Contraction Timer\" is 26 characters, comfortably inside the 30-char field. In a results list it would read distinctively human next to \"Contraction Timer & Counter 9m\" and \"Contraction Timer & Tracker\". But brand-term search is a serious liability: a query for \"exhale\" on the App Store already returns seven-plus established wellness apps (anxiety, barre, quit-vaping, BIWOC wellbeing, fitness), so word-of-mouth users searching the bare name will land on the wrong app; the contraction timer would rank behind entrenched incumbents on its own brand term indefinitely. Discovery via \"contraction timer\" keyword still works, but the brand half of the ASO equation is permanently contested.",
+   "notes": "Not blocked \u2014 no contraction-timer or pregnancy app named Exhale exists, and the crowded field means no single owner monopolizes the word for apps. But this is the definition of a contested name: a Hyatt-owned famous wellness brand, a prominent women's-wellbeing app with near-identical emotional positioning, several other health apps, a filed wellness-app trademark, and a premium-priced .app domain. The conceptual fit (exhale through the contraction) is genuinely good, and that same fit is why the wellness category has already mined the word out. If chosen, budget for a trademark attorney's knockout search, expect to operate without the exact-match domain, and accept never owning the brand-name search term. A more distinctive coinage would trade a little poetry for a namespace this solo, free, private app could actually own. Sources: apps.apple.com listings for Exhale - Anxiety Assistant (id1397666857), exhale Everywhere (id1416842781), Exhale App (id1527534625), Exhale - Quit Vaping Now (id6756926563), Exhale Performance (id6773696341); exhalespa.com and Hyatt acquisition coverage (hotelmanagement.net, skift.com); EXHALE App coverage (wordinblack.com, ibj.com, kataramccarty.com); USPTO SN 98241167 via trademarks.justia.com search snippet; exhale.app GoDaddy forsale redirect observed directly."
+  },
+  {
+   "name": "Steady",
+   "verdict": "risky",
+   "collisions": [
+    "Steady (Steady Platform Inc., steadyapp.com) \u2014 funded Atlanta fintech/income app on iOS since 2018, Wikipedia page, millions of users; owns the exact word in App Store consumer mindshare (finance)",
+    "Steady App (Steady Media GmbH / SteadyHQ, steady.page) \u2014 European creator-membership platform, exact name on iOS and Google Play (media/creator tools)",
+    "Steady: Gym Log & Planner \u2014 iOS app, exact brand word, Health & Fitness category (same store category a contraction timer lives in)",
+    "Steady - Weight Tracker \u2014 iOS app, exact brand word, Health & Fitness category",
+    "Hello Steady \u2014 iOS app for substance-use recovery support (health)",
+    "IM Steady \u2014 iOS app id1558949044 (health/balance)",
+    "Steady - Smart Money Tracker and Debt & Budget Tracker: Steady \u2014 two more exact-name iOS finance apps",
+    "SteadyMD \u2014 50-state telehealth platform acquired by DocGo (Nasdaq: DCGO) in Oct 2025; large, active health-services mark confusingly similar in the health space",
+    "Steady Space Corp (runsteady.com) \u2014 'human-agent teamwork OS'; owns the steady.app domain",
+    "Steady Technologies, Inc. \u2014 live USPTO trademark filing (serial 97901445)",
+    "Apple itself uses 'Walking Steadiness' as a Health-app feature name \u2014 not a legal conflict, but the word is already Apple-health vocabulary"
+   ],
+   "trademark_risk": "Moderate-to-high. No exact STEADY mark found in pregnancy/femtech specifically, but the word is a crowded field in Class 9 downloadable software: Steady Platform Inc. and Steady Media GmbH both use the bare word for consumer apps (registrations in Class 9/36/42 are near-certain for the fintech, which has operated at scale since 2017), Steady Technologies Inc. has a live USPTO filing (97901445), and SteadyMD is a substantial registered health-services brand one letter-pair away in the exact category (health) this app occupies. Two exact-name indie apps already sit in the iOS Health & Fitness category. Practical upshot: a new STEADY application for health software would likely draw a 2(d) likelihood-of-confusion refusal or opposition citing existing Class 9 marks, and the name can never be exclusively owned \u2014 at best it coexists as one more weak user of a diluted dictionary mark. Litigation risk from the fintech is low (different class) but SteadyMD/DocGo enforcement in health is a live possibility.",
+   "domain_notes": "All obvious domains are gone: steady.app is owned by Steady Space Corp (301-redirects to runsteady.com); steadyapp.com is the fintech; steady.page is the creator platform; getsteady.com is registered and parked ('coming soon' placeholder \u2014 someone is sitting on it, not for free). A usable domain would need a modifier (steadylabor.app, steadybirth.app style), which concedes the naming fight up front.",
+   "aso_notes": "\"Steady - Contraction Timer\" is 26 characters \u2014 fits the 30-char field with room to spare. Semantically it is genuinely strong in a results list: among \"Contraction Timer & Counter 9m\"-style clones it reads calm, non-alarmist, and clinically apt (providers literally ask whether contractions are \"regular and steady\"), a better tonal fit for the 3am user than most competitors. But the brand token is unwinnable in search: typing \"steady\" surfaces a funded fintech with years of install history plus a half-dozen other exact-name apps (two in Health & Fitness) before any new indie; word-of-mouth (\"download Steady\") will strand users on the wrong app. One competitor's marketing even uses the phrase \"Steady Support.\" The brand half of the title would do differentiation work in a contraction-timer results list but zero acquisition work of its own.",
+   "notes": "Verdict is \"risky,\" not \"blocked,\" only because the rubric's blocking triggers are narrowly missed: no famous mark owns STEADY, and no pregnancy/labor/femtech app uses it. Everything short of that cuts against the name: at least eight live iOS apps use the exact word, two of them in the same Health & Fitness shelf; a large telehealth company (SteadyMD, now DocGo) patrols the adjacent health-services space; every natural domain is taken or parked; and Apple's own Health app has claimed \"steadiness\" vocabulary. If chosen, the app would be the ninth \"Steady\" in the store, permanently unfindable by brand name, with trademark clearance that is survivable but never ownable. The word's tonal fit for this product is excellent \u2014 which suggests keeping the quality (\"steady\") as positioning language or a tagline and picking a more defensible brand token for the name itself. Sources consulted: Apple App Store listings (apps.apple.com), Wikipedia \"Steady (app)\", steadymd.com and DocGo press release (businesswire.com), uspto.report/TM/97901445, trademarks.justia.com, runsteady.com, getsteady.com, help.steadyhq.com."
+  },
+  {
+   "name": "Firstlight",
+   "verdict": "risky",
+   "collisions": [
+    "FirstLight Home Care \u2014 230+ location US senior home-care franchise (Cincinnati); owns registered marks 'FirstLight Home Care' (2011) and 'FIRSTLIGHT HEALTHCARE SOLUTIONS' (Reg. 6322739, registered Apr 2021) covering telehealth software and remote patient vital-sign monitoring \u2014 category: healthcare services + health software",
+    "FirstLight Health System (Mora, MN hospital) \u2014 forced by FirstLight Home Care's trademark claim to rebrand to 'Welia Health' in 2019; proof the mark is actively enforced against healthcare users of the name",
+    "FirstLight Mobile Banking \u2014 FirstLight Federal Credit Union iOS app (id1108030207) \u2014 category: finance",
+    "Filmic Firstlight \u2014 photo app from FiLMiC (id1482338564), a well-known iOS software brand \u2014 category: photography",
+    "Firstlight App (id1038452792, church app), Firstlight online (id1466704607) and Firstlight TV (id1529678070, Firstlight Broadcasting Network), FIRSTLIGHT READER (id1542218189, education) \u2014 multiple existing iOS apps already using the exact name",
+    "First Light (first-light.app) \u2014 stargazing/photography forecast app; First Light (atfirstlight.app) \u2014 long-distance-couples app \u2014 category: consumer apps squatting the .app namespace",
+    "FirstLight Ireland (firstlight.ie) \u2014 national baby-loss / sudden infant death bereavement charity (formerly ISIDS) \u2014 perinatal category, emotionally adjacent in the worst possible way for a labor app",
+    "FirstLight Fiber (firstlight.net, telecom marketing to healthcare), FirstLight Power, First Light Fusion, First-Light USA (tactical lights), Firstlight Products (UK lighting) \u2014 heavy cross-category dilution"
+   ],
+   "trademark_risk": "HIGH for a health-category app. FIRSTLIGHT HEALTHCARE SOLUTIONS (Reg. 6322739, live, registered 2021) explicitly covers 'computer software for providing telehealth services that track the monitoring of patient vital signs' \u2014 a contraction timer is health-monitoring software with the identical dominant element FIRSTLIGHT. Worse, the owner (FirstLight Home Care) has a documented enforcement history: in 2019 it pushed an entire Minnesota hospital system that had used 'FirstLight' since 2011 into a full rebrand (Welia Health). A pregnancy app is not senior care, so a defense exists, but this is exactly the kind of health-software use they have shown they police. Outside health, the word is thickly registered (banking, media, lidar, lighting), so no clean lane anywhere.",
+   "domain_notes": "Nothing clean. firstlight.app \u2014 taken, live server (redirects to an install page). getfirstlight.com \u2014 taken, Aurora WDC's 'FirstLight' SaaS intelligence platform. first-light.app and atfirstlight.app \u2014 taken by two other consumer apps. firstlightapp.com resolves to a GoDaddy parking/sales page, so it may be buyable, but building on it while first-light.app is a different live app invites permanent confusion.",
+   "aso_notes": "Exactly 30 chars: 'Firstlight - Contraction Timer' fits with zero slack. Emotionally it reads beautifully next to 'Contraction Timer & Counter 9m' and 'Contraction Timer & Tracker' \u2014 warm, calm, dawn-after-the-long-night, on-voice for a non-alarmist brand. But the keyword 'firstlight' itself is polluted: an App Store search surfaces a credit union, a church, a broadcaster, a reader app, and Filmic's photo app, so the brand word earns no category traffic and the '- Contraction Timer' suffix does all the ASO work. Multiple identically-named apps already on the store also means no exact-name uniqueness and possible IP-claim exposure via Apple's dispute process.",
+   "notes": "Not blocked under the strict rubric \u2014 no contraction-timer or femtech app uses the name and no single famous consumer mark owns it \u2014 but this is the risky end of risky. Three independent strikes: (1) a live registered US mark covering health-monitoring software with an owner that has already forced one healthcare rebrand; (2) a crowded App Store namespace (five-plus existing 'Firstlight' iOS apps including a known software brand, Filmic); (3) the emotional landmine that in Ireland 'FirstLight' is the national sudden-infant-death bereavement charity \u2014 the exact opposite association a labor app wants, in a market of English-speaking expectant parents. Domains are also fully occupied. Recommendation: keep the warm 'dawn' concept but pick a coined or less-saturated word; if Firstlight is pursued anyway, get a real trademark clearance opinion focused on Reg. 6322739 before committing."
+  },
+  {
+   "name": "Held",
+   "verdict": "blocked",
+   "collisions": [
+    "held (joinheld.com) \u2014 postpartum depression & anxiety support app for new mothers; pre-launch (2025 Techstars winner, waitlist live). Maternal health / femtech \u2014 the exact same user a contraction timer serves, a few weeks later.",
+    "(held) (held.app, App Store id6753862783) \u2014 wellness / nervous-system-regulation iOS app, Health & Fitness; in beta now, broad App Store launch September 2026; $22/mo subscription; owns held.app.",
+    "Held. by Crossuite (App Store id1641085727) \u2014 live US App Store app, Medical category; patient-provider communication.",
+    "Held (ikbenheld.app) \u2014 Dutch health-management app in the .app namespace.",
+    "HELD+ \u2014 Redsky Technologies US trademark filing for E911/emergency-location software (software class; different field but 'emergency' adjacency).",
+    "Held \u2014 established German motorcycle apparel brand, 75+ years (held.de, rideheld.com); plus Held Technologie GmbH and Held Brands furniture \u2014 out of category, adds search noise."
+   ],
+   "trademark_risk": "High. No blocking USPTO registration for bare 'HELD' in health-app classes surfaced, but at least two active startups ((held) at held.app and held at joinheld.com) are building brand equity in 'Held' for health and maternal-mental-health apps right now and either could file first in class 9/42/44; HELD+ already sits in the software class for emergency-location systems and could be cited depending on goods description. As a common dictionary word the mark would be weak even if obtained \u2014 hard to register, harder to enforce \u2014 while the maternal-health 'held' creates real reverse-confusion exposure in exactly this niche.",
+   "domain_notes": "held.app is taken by the (held) wellness startup; joinheld.com by the postpartum app; held.de/rideheld.com by the motorcycle brand; ikbenheld.app by a Dutch health app. Every natural domain is occupied by an active product, most of them in health \u2014 any get/use/try-style workaround would be marketing against funded incumbents on their own name.",
+   "aso_notes": "In a results list, 'Held - Contraction Timer' (25 chars, fits the 30-char field) would read beautifully against the 'Contraction Timer & Counter 9m'-style clones \u2014 warm, calm, exactly the non-alarmist emotional register the brief wants. But the token itself is unwinnable: an App Store search for 'held' already returns the Crossuite Medical app, will return the (held) wellness app from September 2026, and the postpartum 'held' after that \u2014 three health-category apps splitting the same weak dictionary word. Worse, the confusion is bidirectional with joinheld.com inside the motherhood aisle: her hospital-bag app and her postpartum-depression app would appear to be the same brand and are not. As a generic past-tense verb it also drowns in organic search ('held app' matches news headlines and every 'X held...' string).",
+   "notes": "The emotional fit is genuinely strong \u2014 'held' is the register this product wants \u2014 which is precisely why three health startups already grabbed it. The decisive conflicts are in-category on the same store: an exact-name Medical app live today, an exact-name Health & Fitness app launching broadly next month, and a same-audience maternal-health brand pre-launch. Recommend dropping the name rather than trying to outrun them; if the team loves the feeling, look for an adjacent coinage that keeps the meaning without the collision (must still fit '<Name> - Contraction Timer' in 30 chars, i.e. 10 chars or fewer)."
+  },
+  {
+   "name": "Soon",
+   "verdict": "risky",
+   "collisions": [
+    "Soon: The social watchlist (Beginner AB) \u2014 live iOS app, TechCrunch-covered, owns soonapp.co and @getsoonapp; top App Store result for 'soon' today (entertainment/social)",
+    "Soon (soon.app) \u2014 YC-backed automated crypto-investing platform, active 2017\u20132024+, featured in TechCrunch/Yahoo Finance (fintech/crypto)",
+    "SOON (SVM rollup blockchain + SOON token, listed on CoinMarketCap/Forbes crypto) \u2014 growing crypto-infrastructure brand (crypto)",
+    "SOON / Soon Health \u2014 'Fasting For Weight Loss App' by North Mobile Limited, live in Health & Fitness \u2014 the closest in-category iOS collision",
+    "Multiple live iOS countdown apps literally named Soon: 'Soon! ' (Fun Lau), 'Soon-ish', 'Soon \u2013 Simple Daily Countdowns', 'Soon. - Days Until Big Events', 'Countdown Reminder: Soon', 'Soon+', 'make it soon' (productivity/utilities)",
+    "Soon (soon.works) \u2014 shift-scheduling SaaS for teams (B2B software)",
+    "USPTO live registrations for the exact word SOON: Reg 4915228 (Luo, ZhiJun \u2014 Class 9 phone cases/cameras/headsets), Soon Skin Care Inc. (Regs 6631944, 5644971 \u2014 cosmetics), Judith Alessi (apparel), Seiko (eyewear)"
+   ],
+   "trademark_risk": "Moderate but real. No exact 'SOON' registration surfaced for downloadable software/mobile apps (Class 9 software or Class 42), so a filing for a contraction-timer app is not facially blocked \u2014 but the exact word is already registered in Class 9 for phone accessories (Reg 4915228), and SOON is in live use as a brand by a YC-backed fintech app, a crypto chain with a traded token, a health-category iOS app, and a half-dozen countdown apps. A common English adverb this diluted is a weak mark: hard for anyone to enforce against you, but equally impossible for you to own or defend. Expect coexistence, not exclusivity, and a nonzero chance the Health & Fitness 'SOON' fasting app or the fintech Soon objects if either ever registers broadly.",
+   "domain_notes": "All the obvious homes are taken: soon.app is the YC crypto-investing company, soonapp.co and the @getsoonapp handle belong to the Beginner AB social app, soon.works is the scheduling SaaS, and soonapp.co/getsoon already exists as that app's download page. You would be shopping for compromises like trysoon.app, soonlabor.com, or soonbaby.app from day one \u2014 a bad sign for a name this short.",
+   "aso_notes": "In a results list, 'Soon - Contraction Timer' (25 chars, fits the 30-char field) reads genuinely lovely against the generic clones \u2014 warm, calm, non-alarmist, and the meaning (baby coming soon) lands instantly, which is exactly the brand voice wanted. The problem is the other direction: a live iTunes search for 'soon' returns the social watchlist app, four countdown apps named Soon, a fasting app, and Zoom noise \u2014 this app would struggle to rank for its own brand name, and word-of-mouth searches ('that app called Soon') will land on competitors. 'Soon' is also a near stop-word appearing in countless descriptions ('coming soon'), so the brand token contributes almost nothing as a keyword; all discovery weight falls on 'Contraction Timer'.",
+   "notes": "Verdict is risky, not blocked: nothing in pregnancy/femtech uses the name (searches for 'Soon pregnancy/baby/contraction' found no collision), no famous mark owns the word outright, and legal exposure is limited by dilution. What makes it risky is crowding rather than any single blocker \u2014 at least five live iOS apps are literally named Soon (one of them in Health & Fitness, the likely category for this app), two funded tech companies (soon.app fintech, SOON blockchain) actively brand on it, and every natural domain/handle is occupied. Practical consequences: near-zero brand-search ownability on the App Store, awkward domain, and a name the developer can never enforce. If the emotional register of 'Soon' is the goal, a more distinctive coinage in the same key (still short, still calm) would keep the feeling without inheriting six neighbors. Sources: apps.apple.com listings for Soon!/Soon-ish/Soon: The social watchlist/make it soon/Fasting For Weight Loss App; soon.app; soonapp.co and techcrunch.com (2015 launch coverage); soon.works; coinmarketcap.com and forbes.com/digital-assets on SOON; trademarks.justia.com serials 86594640, 90465809, 87673429, 87780782, 86834241, 77093795; iTunes Search API live results for term=soon (US)."
+  }
+ ],
+ "verdict": {
+  "ranking": [
+   {
+    "name": "Soon",
+    "appstore_title": "Soon - Contraction Timer",
+    "tagline": "Know when it's really time",
+    "warmth": 8,
+    "distinctiveness": 4,
+    "aso": 4,
+    "risk": 6,
+    "total": 22,
+    "summary": "The only vetted name with zero collision in pregnancy, birth, or baby apps and no plausible trademark plaintiff \u2014 dilution across countdown and fintech apps makes it unenforceable against you, and you against no one, which is the safest posture available to a solo developer. Emotionally exact for the 36-41 week window ('baby coming soon'), 25/30 chars leaves title headroom, and its weakness (a stop-word brand token that earns no search traffic) is shared by every name on this list."
+   },
+   {
+    "name": "Lull",
+    "appstore_title": "Lull - Contraction Timer",
+    "tagline": "Rest lives between the waves.",
+    "warmth": 9,
+    "distinctiveness": 4,
+    "aso": 4,
+    "risk": 4,
+    "total": 21,
+    "summary": "Best semantic fit of the set \u2014 it brands the rest interval the app actually measures \u2014 and lawsuit risk is low, but the collision risk is disqualifying in practice: 'Lull : Baby Sleep Tracker' is an exact-name, same-audience app with near word-for-word identical positioning (one-tap, one-handed, on-device, free), so word-of-mouth installs would routinely land on someone else's product. Six-plus existing 'Lull' iOS apps plus the mattress brand mean the name can never be owned, and the lull/lulla/luli cluster makes it read 'sleep app,' not 'labor app.'"
+   },
+   {
+    "name": "Exhale",
+    "appstore_title": "Exhale - Contraction Timer",
+    "tagline": "Breathe out. It's working.",
+    "warmth": 8,
+    "distinctiveness": 4,
+    "aso": 4,
+    "risk": 4,
+    "total": 20,
+    "summary": "The brand-is-the-coaching concept is genuinely strong, but the word is mined out: a Hyatt-owned famous wellness mark with its own app, a prominent women's-wellbeing app with near-identical emotional positioning, five-plus other health apps, and a filed trademark covering wellness mobile-app software. Clearing it would likely draw a 2(d) refusal, the .app domain is premium-parked, and the brand query is permanently contested \u2014 too much friction for a solo developer to carry."
+   },
+   {
+    "name": "Steady",
+    "appstore_title": "Steady - Contraction Timer",
+    "tagline": "A calm hand through the night",
+    "warmth": 7,
+    "distinctiveness": 3,
+    "aso": 4,
+    "risk": 4,
+    "total": 18,
+    "summary": "Excellent tonal fit ('regular and steady' is literally provider language), but this app would be roughly the ninth 'Steady' on the store \u2014 two already in Health & Fitness \u2014 with a funded fintech owning consumer mindshare, SteadyMD/DocGo patrolling the adjacent health space, and every natural domain gone. The word is better kept as positioning language than spent as an unownable brand token."
+   },
+   {
+    "name": "Firstlight",
+    "appstore_title": "Firstlight - Contraction Timer",
+    "tagline": "The night before you meet",
+    "warmth": 7,
+    "distinctiveness": 5,
+    "aso": 3,
+    "risk": 2,
+    "total": 17,
+    "summary": "Emotionally the deepest name, but it carries the worst non-blocked legal profile: a live registered mark (FIRSTLIGHT HEALTHCARE SOLUTIONS) explicitly covering patient vital-sign monitoring software, held by an owner that already forced a hospital system to rebrand \u2014 exactly the fight a solo developer cannot afford. Add five-plus existing 'Firstlight' iOS apps, a zero-slack 30-character title, and the Irish infant-loss bereavement charity of the same name \u2014 the single worst possible association for a labor app."
+   },
+   {
+    "name": "Held",
+    "appstore_title": "Held - Contraction Timer",
+    "tagline": "Through every wave, together",
+    "warmth": 9,
+    "distinctiveness": 3,
+    "aso": 3,
+    "risk": 1,
+    "total": 10,
+    "summary": "Blocked \u2014 total capped at 10 per the rubric. The emotional register is the best in the set, which is exactly why three health startups already occupy it: an exact-name Medical app live on the US store today, an exact-name wellness app launching broadly in September 2026 that owns held.app, and a same-audience postpartum maternal-health brand pre-launch. Bidirectional confusion inside the motherhood aisle makes this unrunnable regardless of feeling."
+   }
+  ],
+  "recommendation": "Ship it as Soon \u2014 \"Soon - Contraction Timer.\" It is the only name that survived vetting with zero collision anywhere in pregnancy, birth, or baby apps and no plausible trademark plaintiff, which matters more than raw brand appeal for a solo developer who cannot fight a dispute; its dilution is among countdown and fintech apps, not this audience, and dilution cuts both ways \u2014 nobody can credibly come after a dictionary adverb. Since ~65% of installs arrive via the generic \"contraction timer\" query that the title's keyword suffix wins regardless of brand, Soon's weak search token costs little, while the word itself is emotionally perfect for a 40-week household: warm, tiny, non-alarmist, and its tagline is literally the app's 5-1-1 job description. Lull scored nearly as high but its exact-name, same-positioning baby-sleep-tracker collision would send word-of-mouth installs to a competitor \u2014 a cost Soon never pays."
+ }
+}

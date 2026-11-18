@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/de/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "Halb aufgeklappt",
+      "headline": "Das Scharnier ist die Linie.",
+      "subline": "Auf den Nachttisch gestellt. Die Zählung schaut zum Bett; die flache Hälfte ist der Knopf."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/de/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Ganz aufgeklappt",
+      "headline": "Der Verlauf neben dem Timer.",
+      "subline": "Jede Wehe dieser Serie, live, direkt neben der Zählung."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/de/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Zugeklappt",
+      "headline": "Eine Hand, im Dunkeln.",
+      "subline": "Derselbe Timer auf dem Außendisplay, einen Daumen von Start entfernt."
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,1 @@
+Segnala un problema ora mostra l’indirizzo quando il dispositivo non ha un’app di posta, e Chiama mostra il numero quando non può chiamare. Nient’altro è cambiato.

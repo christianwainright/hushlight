@@ -1,0 +1,36 @@
+.DS_Store
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+build/
+.build/
+.swiftpm/
+# stray SPM build dirs from direct `swift build` invocations
+Packages/*/.build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+
+# labor QA harness: raw per-run output (the committed report lives in docs/qa/reports/latest.md)
+docs/qa/reports/runs/
+
+# store previews: the simulator recordings and the encoded .mp4s are tens of MB and
+# rebuild from the .edit files (scripts/make-store-preview.sh); the frames are committed
+docs/design/hushlight/store/rec/
+docs/design/hushlight/store/previews/*.mp4
+
+# HL-048: the *localized* raw captures. The framed output under `frames/<lang>/` is
+# committed because CI's metadata push uploads it from a plain checkout — but the raws
+# behind them are 56 MB of intermediate across eight languages, byte-reproducible from
+# `HUSHLIGHT_STORE_LANG=<lang> ./scripts/shoot-store.sh all`, and nothing reads them
+# except the compositor. The seven English raws stay tracked: they predate this and are
+# the reference the other eight were shot to match.
+docs/design/hushlight/store/raw/*/
+__pycache__/
+# HL-058c: the iPad set follows the same rule — the two English raws are tracked, the
+# localized raws are not; frames-ipad/<lang>/ is what the push uploads.
+docs/design/hushlight/store/raw-ipad/*/
+# HL-064: the Duo set too — English raws tracked, localized raws not.
+docs/design/hushlight/store/raw-duo/*/

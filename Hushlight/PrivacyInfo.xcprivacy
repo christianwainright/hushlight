@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Nothing is collected and nothing leaves the device (decision 0018): no
+	     network call, no account, no analytics SDK, no third-party package.
+	     Logging is os.Logger breadcrumbs of app state transitions only — event
+	     names from a closed enum, never a recorded time (decision 0029 §3;
+	     scripts/lint-logging.sh enforces it). The three arrays below are empty
+	     because they are empty, not because the answer was inconvenient to work
+	     out. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<!-- The one required-reason API this app touches. `UserDefaults` stores small
+	     preferences and local diagnostics only: the selected guideline rule
+	     (guidelineRule), whether the How It Works card has been seen
+	     (hasSeenHowItWorks), the optional provider number (providerNumber),
+	     the last few MetricKit crash/hang summaries (diagnosticSummaries, decision
+	     0029 §3), and the review-prompt guards (firstLaunchDate,
+	     reviewPromptAttempted, lastClearAllDate — SP-216, decision 0029 §2), and
+	     the heartbeat and breath-pacer toggles
+	     (heartbeatWhileTiming, breathPacerWhileTiming — HL-012, HL-017). No contraction data goes near it; records live in the app's own
+	     SwiftData store. CA92.1 is the same-app reason: this app declares no App
+	     Group, so its defaults domain is reachable by nothing else. -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

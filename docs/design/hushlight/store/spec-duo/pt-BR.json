@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/pt-BR/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "Meio aberto",
+      "headline": "A dobra é a linha.",
+      "subline": "Em pé no criado-mudo. A contagem olha para a cama; a metade deitada é o botão."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/pt-BR/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Aberto por inteiro",
+      "headline": "O histórico ao lado do cronômetro.",
+      "subline": "Cada contração desta sequência, ao vivo, ao lado da contagem."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/pt-BR/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Fechado",
+      "headline": "Uma mão, no escuro.",
+      "subline": "O mesmo cronômetro na tela externa, a um polegar de Iniciar."
+    }
+  ],
+  "cards": []
+}

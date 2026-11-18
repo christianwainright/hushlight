@@ -1,0 +1,5 @@
+O Hushlight agora funciona no iPad e no iPhone Duo. No iPad, o histórico fica ao lado do cronômetro, e num suporte a contagem se lê do outro lado do quarto. Deixe um iPhone Duo meio aberto no criado-mudo: a contagem fica de frente para você na metade de cima, e a metade deitada é o botão. Cada aparelho mantém o próprio registro; nada é compartilhado entre eles.
+
+Agora você pode começar e terminar uma contração pela Central de Controle, pelo botão de Ação ou pela Siri.
+
+Relatar um problema agora mostra o endereço quando o aparelho não tem app de e-mail, e Ligar mostra o número quando não consegue ligar.

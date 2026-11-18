@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "records": [
+    {"startOffsetSeconds": -182, "endOffsetSeconds": -120},
+    {"startOffsetSeconds": -422, "endOffsetSeconds": -360},
+    {"startOffsetSeconds": -662, "endOffsetSeconds": -600},
+    {"startOffsetSeconds": -902, "endOffsetSeconds": -840},
+    {"startOffsetSeconds": -1142, "endOffsetSeconds": -1080},
+    {"startOffsetSeconds": -1382, "endOffsetSeconds": -1320},
+    {"startOffsetSeconds": -1622, "endOffsetSeconds": -1560}
+  ]
+}

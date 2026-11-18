@@ -1,0 +1,1 @@
+Report a problem now shows the address when this device has no mail app, and Call shows the number when it cannot place calls. Nothing else changed.

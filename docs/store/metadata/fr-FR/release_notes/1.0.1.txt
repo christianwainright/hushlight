@@ -1,0 +1,1 @@
+Signaler un problème affiche désormais l’adresse quand l’appareil n’a pas d’app de courrier, et Appeler affiche le numéro quand il ne peut pas appeler. Rien d’autre n’a changé.

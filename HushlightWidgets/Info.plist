@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- The generated-plist flow drops NSExtension for extension targets, and an appex
+     without it fails install with "invalid placeholder attributes". This stub is
+     merged into the generated plist; everything else stays generated. -->
+<dict>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.widgetkit-extension</string>
+	</dict>
+	<!-- Versions come from the target's MARKETING_VERSION/CURRENT_PROJECT_VERSION
+	     (project.yml) so a release bump has one home; hard-coding them here would
+	     shadow it. -->
+</dict>
+</plist>

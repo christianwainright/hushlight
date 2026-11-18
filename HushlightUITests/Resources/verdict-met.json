@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "records": [
+    {"startOffsetSeconds": -182, "endOffsetSeconds": -120},
+    {"startOffsetSeconds": -472, "endOffsetSeconds": -410},
+    {"startOffsetSeconds": -762, "endOffsetSeconds": -700},
+    {"startOffsetSeconds": -1052, "endOffsetSeconds": -990},
+    {"startOffsetSeconds": -1342, "endOffsetSeconds": -1280},
+    {"startOffsetSeconds": -1632, "endOffsetSeconds": -1570},
+    {"startOffsetSeconds": -1922, "endOffsetSeconds": -1860},
+    {"startOffsetSeconds": -2212, "endOffsetSeconds": -2150},
+    {"startOffsetSeconds": -2502, "endOffsetSeconds": -2440},
+    {"startOffsetSeconds": -2792, "endOffsetSeconds": -2730},
+    {"startOffsetSeconds": -3082, "endOffsetSeconds": -3020},
+    {"startOffsetSeconds": -3372, "endOffsetSeconds": -3310},
+    {"startOffsetSeconds": -3662, "endOffsetSeconds": -3600},
+    {"startOffsetSeconds": -3952, "endOffsetSeconds": -3890},
+    {"startOffsetSeconds": -4242, "endOffsetSeconds": -4180}
+  ]
+}

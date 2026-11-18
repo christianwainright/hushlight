@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "raw-ipad/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "In a hand",
+      "headline": "History beside the timer.",
+      "subline": "For whoever is keeping the record: every contraction, live, next to the count."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "raw-ipad/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "On a stand",
+      "headline": "Read it from across the room.",
+      "subline": "Prop it on the tray table. The count is the size of the room."
+    }
+  ],
+  "cards": []
+}

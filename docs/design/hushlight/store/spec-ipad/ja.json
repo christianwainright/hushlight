@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/ja/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "手に持って",
+      "headline": "タイマーの横に履歴。",
+      "subline": "記録係のために。すべての陣痛が、カウントのすぐ隣にリアルタイムで並びます。"
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/ja/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "スタンドに置いて",
+      "headline": "部屋の向こうからでも読める。",
+      "subline": "ベッドサイドのテーブルに立てて。カウントは部屋の大きさで表示されます。"
+    }
+  ],
+  "cards": []
+}

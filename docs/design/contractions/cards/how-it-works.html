@@ -1,0 +1,73 @@
+<!-- @dsCard group="Screens" -->
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contractions · How It Works</title>
+<style>
+  :root{--screen:#000;--fill:#1C1C1E;--primary:#FFF;--secondary:rgba(235,235,245,.6);--hairline:rgba(84,84,88,.65);--tint:#0A84FF;--mono:ui-monospace,'SF Mono',Menlo,monospace;--prose:-apple-system,system-ui,sans-serif}
+  body{margin:0;background:#0A0A0B;font-family:var(--prose);padding:24px;display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start}
+  .phone{width:310px;background:var(--screen);border:1px solid var(--hairline);border-radius:28px;padding:20px 18px;color:var(--primary)}
+  .sheet-grab{width:36px;height:5px;border-radius:3px;background:var(--hairline);margin:0 auto 16px}
+  h2{font-size:20px;font-weight:700;margin:0 0 2px}
+  .sub{font-size:12px;color:var(--secondary);margin:0 0 18px}
+  .sec{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
+  .art{width:64px;flex:none;display:flex;justify-content:center;padding-top:2px}
+  .sec h3{font-size:13px;font-weight:600;margin:0 0 3px}
+  .sec p{font-size:11.5px;color:var(--secondary);line-height:1.5;margin:0}
+  .mini-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,#4a94ff,#0064ed);display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;box-shadow:0 0 14px rgba(10,132,255,.4)}
+  .mini-cols{font-family:var(--mono);font-size:8px;color:var(--secondary);text-align:center;letter-spacing:.06em}
+  .mini-cols b{display:block;font-size:13px;color:var(--primary);letter-spacing:0}
+  .arc{position:relative;width:58px;height:30px}
+  .arc i{position:absolute;bottom:0;width:10px;height:10px;border-radius:50%;border:1.4px solid var(--hairline)}
+  .arc i:first-child{left:2px;background:var(--tint);border-color:var(--tint)}
+  .arc i:last-child{right:2px}
+  .arc svg{position:absolute;left:6px;top:0}
+  .mini-tl{display:flex;flex-direction:column;align-items:center;gap:2px}
+  .mini-tl i{width:9px;height:9px;border-radius:50%;border:1.3px solid var(--hairline)}
+  .mini-tl i.on{background:var(--tint);border-color:var(--tint)}
+  .mini-tl s{width:1.3px;height:9px;background:var(--hairline)}
+  .chip{font-family:var(--mono);font-size:9px;color:var(--primary);border:1px solid var(--hairline);border-radius:999px;padding:3px 8px}
+  .mini-lock{width:50px;border:1.3px solid var(--hairline);border-radius:8px;padding:5px 4px;font-family:var(--mono);font-size:7px;color:var(--secondary);text-align:center}
+  .mini-lock b{display:block;color:var(--primary);font-size:9px}
+  .cta{margin-top:6px;background:var(--tint);border-radius:999px;text-align:center;padding:12px;font-size:14px;font-weight:600;color:#fff}
+  .notes{max-width:300px;font-size:12.5px;color:var(--secondary);line-height:1.65}
+  .notes h1{font-size:12px;letter-spacing:.12em;color:var(--secondary);font-family:var(--mono);font-weight:400;margin:0 0 14px}
+  .notes b{color:var(--primary)}
+  .notes li{margin-bottom:8px}
+</style></head><body>
+
+<div class="phone">
+  <div class="sheet-grab"></div>
+  <h2>How it works</h2>
+  <p class="sub">Thirty seconds, and it's also under ? any time.</p>
+
+  <div class="sec"><div class="art"><div class="mini-circle">Start</div></div>
+    <div><h3>One button</h3><p>Tap when a contraction begins, tap again when it ends. That's the whole job. Mis-taps get fixed in History — swipe to delete, Undo takes back the last touch.</p></div></div>
+
+  <div class="sec"><div class="art"><div class="arc"><svg width="46" height="22"><path d="M2 20 Q23 -6 44 20" fill="none" stroke="#0A84FF" stroke-width="1.6" stroke-dasharray="3 3"/></svg><i></i><i></i></div></div>
+    <div><h3>Interval is start-to-start</h3><p>"Every 5 minutes" measures the gap between the <b>beginnings</b> of contractions — the way providers measure. Duration is how long each lasts; Pattern is how long this stretch has been going.</p></div></div>
+
+  <div class="sec"><div class="art"><div class="mini-tl"><i class="on"></i><s></s><i></i><s></s><i></i></div></div>
+    <div><h3>The timeline reads downward</h3><p>Newest at the top, the gap between each pair printed right where it happened. Numbers show nothing until there's enough to mean something — a dash is honest, a guess isn't.</p></div></div>
+
+  <div class="sec"><div class="art"><span class="chip">5-1-1 ›</span></div>
+    <div><h3>Your guideline</h3><p>Every 5 minutes, lasting a minute, for an hour — the widely used rule. Providers differ; the chip up top sets yours. When your pattern truly meets it, the app says so and suggests the call.</p></div></div>
+
+  <div class="sec"><div class="art"><div class="mini-lock"><b>0:38</b>lock screen</div></div>
+    <div><h3>Lock the phone freely</h3><p>Timing runs on the clock, not the screen. Once a pattern is going, the button lives on the lock screen too — start and end without unlocking.</p></div></div>
+
+  <div class="sec"><div class="art" style="font-size:20px">🔒</div>
+    <div><h3>Yours alone</h3><p>No account, no ads, no network. Everything stays on this phone; Clear All History removes it whenever you choose.</p></div></div>
+
+  <div class="cta">Got it</div>
+</div>
+
+<div class="notes">
+  <h1>RULES</h1>
+  <ul>
+    <li><b>A reference card, not a ritual.</b> Shows once as a sheet on first launch, dismisses with one tap or a swipe, and never gates the timer. The competitor's quiz is the anti-pattern.</li>
+    <li><b>Teaches with the app's own parts</b> — the mini circle, the interval arc, the timeline silhouette, the real chip. No stock pregnancy art.</li>
+    <li><b>Always one tap away afterward:</b> a ? in the timer's toolbar opens the same screen. Mechanics live here; the medical "when to call regardless" stays in Guidance.</li>
+    <li><b>The interval-is-start-to-start diagram is the one lesson that matters most</b> — it's the thing other timers get wrong and users mismeasure by hand.</li>
+  </ul>
+</div>
+
+</body></html>

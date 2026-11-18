@@ -1,0 +1,43 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contractions · Episode timeline</title>
+<style>
+  :root{--screen:#000;--fill:#1C1C1E;--primary:#FFF;--secondary:rgba(235,235,245,.6);--hairline:rgba(84,84,88,.65);--tint:#0A84FF;--mono:ui-monospace,'SF Mono',Menlo,monospace;--prose:-apple-system,system-ui,sans-serif}
+  body{margin:0;background:var(--screen);color:var(--primary);font-family:var(--prose);padding:24px;display:flex;gap:40px;flex-wrap:wrap}
+  h1{font-size:12px;letter-spacing:.12em;color:var(--secondary);font-family:var(--mono);font-weight:400;margin:0 0 14px}
+  .tl{width:300px}
+  .node{display:grid;grid-template-columns:96px 28px 1fr;align-items:center;min-height:44px}
+  .dur{font-family:var(--mono);font-size:20px;text-align:right;padding-right:14px}
+  .at{font-family:var(--mono);font-size:11px;color:var(--secondary);text-align:right;padding-right:14px;letter-spacing:.06em}
+  .dot{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--hairline);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:var(--secondary);justify-self:center}
+  .dot.live{border-color:var(--tint);background:var(--tint);color:#fff;box-shadow:0 0 0 6px rgba(10,132,255,.18)}
+  .conn{display:grid;grid-template-columns:96px 28px 1fr;align-items:center;height:34px}
+  .line{width:1.5px;height:100%;background:var(--hairline);justify-self:center}
+  .gap{font-family:var(--mono);font-size:12px;color:var(--secondary);padding-left:12px}
+  .flag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--secondary);padding-left:12px}
+  .notes{max-width:330px;font-size:12.5px;color:var(--secondary);line-height:1.65}
+  .notes b{color:var(--primary);font-weight:600}
+  .notes li{margin-bottom:8px}
+</style></head><body>
+<div class="tl">
+  <h1>EPISODE TIMELINE · NEWEST AT TOP</h1>
+  <div class="node"><div><div class="dur" style="color:var(--tint)">0:38</div><div class="at">RUNNING</div></div><div class="dot live">7</div><div></div></div>
+  <div class="conn"><div></div><div class="line"></div><div class="gap">4:12 apart</div></div>
+  <div class="node"><div><div class="dur">1:04</div><div class="at">9:41 PM</div></div><div class="dot">6</div><div></div></div>
+  <div class="conn"><div></div><div class="line"></div><div class="gap">4:50 apart</div></div>
+  <div class="node"><div><div class="dur">0:58</div><div class="at">9:36 PM</div></div><div class="dot">5</div><div></div></div>
+  <div class="conn"><div></div><div class="line"></div><div class="gap">5:07 apart</div></div>
+  <div class="node"><div><div class="dur">4:20</div><div class="at">9:31 PM</div></div><div class="dot">4</div><div class="flag">CHECK · OVER 3 MIN</div></div>
+</div>
+<div class="notes">
+  <h1>RULES</h1>
+  <ul>
+    <li><b>The story reads downward into the past.</b> The newest contraction sits at the top where the thumb parks; a live one fills its node with tint and counts in place.</li>
+    <li><b>Intervals live on the connector,</b> start-to-start, exactly where the gap they measure is drawn. Never between the wrong pair.</li>
+    <li><b>Numbers are episode ordinals,</b> not lifetime counts — the nurse's question is "how many this stretch".</li>
+    <li><b>A suspect duration says CHECK in words.</b> No color panic: orange belongs to the suite's semantic roles and never appears here. The row keeps its place; averages already exclude it.</li>
+    <li><b>Four rows maximum on the timer screen.</b> The full episode and past episodes stay in History. No scrolling fights with the button.</li>
+    <li><b>No minimum to render</b> — this is raw record, not a derived figure. One contraction is one node. Evidence floors apply to averages and verdicts, never to facts.</li>
+  </ul>
+</div>
+</body></html>

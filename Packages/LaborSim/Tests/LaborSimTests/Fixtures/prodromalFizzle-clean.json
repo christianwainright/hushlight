@@ -1,0 +1,621 @@
+{
+  "actions" : [
+    {
+      "at" : 0,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 35,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 374,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 409,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 923,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 973,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1245,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1285,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1644,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1676,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2032,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2077,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2371,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2420,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 2692,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 2730,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3215,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3258,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3484,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3522,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3928,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3967,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4265,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4311,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4551,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4605,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5019,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5053,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5626,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5676,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 5992,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6040,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6426,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6483,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 6761,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 6812,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7108,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7162,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7428,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7468,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 7940,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 7977,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8332,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8368,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 8755,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 8801,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9342,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9403,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 9937,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 9976,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10272,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10311,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10493,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10546,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 10785,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10835,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11358,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11399,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11671,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 11746,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 11970,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12013,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12260,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12300,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 12684,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 12726,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13049,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13122,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13468,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 13526,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 13985,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 14060,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 14617,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 14666,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 15186,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 15246,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 15776,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 15813,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 16278,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 16314,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 17108,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 17157,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 17941,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 17997,
+      "kind" : "tapEnd"
+    }
+  ],
+  "archetype" : "prodromalFizzle",
+  "expectedDetection" : [
+    "archetype:prodromalFizzle",
+    "noise:clean",
+    "falsePositiveProbe",
+    "fizzle"
+  ],
+  "generatorVersion" : "3.0.0",
+  "id" : "prodromalFizzle-v0-clean-r0-fiveOneOne-59AA6E55DA700D66",
+  "noiseProfile" : "clean",
+  "paramVariant" : 0,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 6461097930432449894,
+  "simulatorCheckpoint" : {
+    "liveTailSeconds" : 240,
+    "seedThroughAction" : 82
+  },
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 35,
+      "start" : 0
+    },
+    {
+      "end" : 409,
+      "start" : 374
+    },
+    {
+      "end" : 973,
+      "start" : 923
+    },
+    {
+      "end" : 1285,
+      "start" : 1245
+    },
+    {
+      "end" : 1676,
+      "start" : 1644
+    },
+    {
+      "end" : 2077,
+      "start" : 2032
+    },
+    {
+      "end" : 2420,
+      "start" : 2371
+    },
+    {
+      "end" : 2730,
+      "start" : 2692
+    },
+    {
+      "end" : 3258,
+      "start" : 3215
+    },
+    {
+      "end" : 3522,
+      "start" : 3484
+    },
+    {
+      "end" : 3967,
+      "start" : 3928
+    },
+    {
+      "end" : 4311,
+      "start" : 4265
+    },
+    {
+      "end" : 4605,
+      "start" : 4551
+    },
+    {
+      "end" : 5053,
+      "start" : 5019
+    },
+    {
+      "end" : 5676,
+      "start" : 5626
+    },
+    {
+      "end" : 6040,
+      "start" : 5992
+    },
+    {
+      "end" : 6483,
+      "start" : 6426
+    },
+    {
+      "end" : 6812,
+      "start" : 6761
+    },
+    {
+      "end" : 7162,
+      "start" : 7108
+    },
+    {
+      "end" : 7468,
+      "start" : 7428
+    },
+    {
+      "end" : 7977,
+      "start" : 7940
+    },
+    {
+      "end" : 8368,
+      "start" : 8332
+    },
+    {
+      "end" : 8801,
+      "start" : 8755
+    },
+    {
+      "end" : 9403,
+      "start" : 9342
+    },
+    {
+      "end" : 9976,
+      "start" : 9937
+    },
+    {
+      "end" : 10311,
+      "start" : 10272
+    },
+    {
+      "end" : 10546,
+      "start" : 10493
+    },
+    {
+      "end" : 10835,
+      "start" : 10785
+    },
+    {
+      "end" : 11399,
+      "start" : 11358
+    },
+    {
+      "end" : 11746,
+      "start" : 11671
+    },
+    {
+      "end" : 12013,
+      "start" : 11970
+    },
+    {
+      "end" : 12300,
+      "start" : 12260
+    },
+    {
+      "end" : 12726,
+      "start" : 12684
+    },
+    {
+      "end" : 13122,
+      "start" : 13049
+    },
+    {
+      "end" : 13526,
+      "start" : 13468
+    },
+    {
+      "end" : 14060,
+      "start" : 13985
+    },
+    {
+      "end" : 14666,
+      "start" : 14617
+    },
+    {
+      "end" : 15246,
+      "start" : 15186
+    },
+    {
+      "end" : 15813,
+      "start" : 15776
+    },
+    {
+      "end" : 16314,
+      "start" : 16278
+    },
+    {
+      "end" : 17157,
+      "start" : 17108
+    },
+    {
+      "end" : 17997,
+      "start" : 17941
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 17997,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      },
+      {
+        "at" : 14743,
+        "type" : "fizzle"
+      }
+    ],
+    "expectedSuspects" : [
+
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 1643
+      },
+      {
+        "from" : 1644,
+        "kind" : "mustNotFire",
+        "reason" : "sustained",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 12355
+      },
+      {
+        "from" : 12356,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 12683
+      },
+      {
+        "from" : 12684,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 12942
+      },
+      {
+        "from" : 12943,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 13048
+      },
+      {
+        "from" : 13049,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 13872
+      },
+      {
+        "from" : 13873,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 13984
+      },
+      {
+        "from" : 13985,
+        "kind" : "mustNotFire",
+        "reason" : "frequency",
+        "rule" : "fiveOneOne",
+        "to" : 18786
+      },
+      {
+        "from" : 18787,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 25196
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canvas" : {
+    "height" : 1920,
+    "width" : 886
+  },
+  "fullBleed" : true,
+  "screen" : {
+    "height" : 1920,
+    "width" : 886,
+    "x" : 0,
+    "y" : 0
+  }
+}

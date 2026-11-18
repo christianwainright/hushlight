@@ -1,0 +1,391 @@
+{
+ "teardowns": [
+  {
+   "apps": [
+    {
+     "name": "Freya \u2022 Surge Timer (The Positive Birth Company)",
+     "positioning": "\"The world's first hypnobirthing-friendly birth timer\" \u2014 a $5.99 one-time-purchase companion to The Positive Birth Company's hypnobirthing course ecosystem (founder Siobhan Miller's voice is one of the 4 birth coaches). It is a timer second and a 'virtual birth partner' first: guided breathing with counted breaths (4/8 or 3/6), guided relaxations, positive affirmations, ambient music, 4 coach voices, Apple Watch app, 6 languages. Rebrands contractions as 'surges' per hypnobirthing doctrine. Marketing is emotive and companionable: 'Never birth alone with Freya by your side.' 4.5 stars / 173 US ratings, #12 in Medical; ~4.8-4.9 and 100k+ installs on Android. Established brand with a large Instagram/TikTok funnel \u2014 installs come from the course community as much as search.",
+     "visual_language": "Soft pastel color-coding by mode, verified from the live App Store screenshots: lavender/purple for the surge/breathing screen, periwinkle blue for between-surge relaxation, sage green for the progress log, pink for coach selection \u2014 all with darker organic blob shapes drifting in the background, spa-app mood ('like Headspace, but for labor', per a 5-star review). Primary control is one large soft circle centered on screen; the signature visual is a 'gentle expanding visualisation' (a slowly growing/shrinking bubble) you sync breathing to. White rounded sans type on pastel; the green log screen leads with big numerals (surge count, seconds, frequency). Photographic circular avatars for the human coaches. App icon is the parent brand: white 'pb' smiley monogram on light blue \u2014 brand-first, says nothing about contractions or timing. Overall mood: dreamy, feminine, deliberately un-clinical; screens designed to be stared at through a contraction, not read.",
+     "strengths": [
+      "Ownable emotional territory: it treats labor as an experience to be coached through, not a dataset \u2014 breathing guidance DURING the contraction is the feature users credit for their whole birth ('The counting for my breaths was a lifesaver')",
+      "Genuinely calm surfaces: reviewers explicitly praise 'a very clean and calming format', 'slow bubble movement', and 'no distracting words or pop ups'",
+      "Mode-per-color pastel system gives each phase of labor its own room; the app feels like a place, not a form",
+      "Trust moat: real named expert (Siobhan Miller), award claims, 100k+ installs, course ecosystem, 4 coach voices, Apple Watch app, 6 languages",
+      "Smart audio coexistence (runs alongside Spotify; mutable in-app without touching phone volume) and shareable surge log for midwife/partner",
+      "One-time $5.99 \u2014 no subscription resentment in reviews"
+     ],
+     "weaknesses": [
+      "The timer is the weak half: a 2-star review calls the interface 'clunky ESPECIALLY once I was in labor. Kind of gave up on it by the time I was in transition'; others report 'didn't capture properly half the time so couldn't track gaps' and data-loss complaints",
+      "No pattern analysis: it only announces 'labour is established' \u2014 reviewer explicitly wanted 5-1-1 legs and pattern notes: 'not \"now you're ~5-1-1\"\u2026 it's not analyzing the data much' \u2014 this is precisely Setpoint's verdict feature, absent from the category leader",
+      "History editing is delete-only (can't shorten an accidentally-running surge), and deletes sometimes fail, leaving confusing 3-second entries the user then shares with her midwife",
+      "All-or-nothing audio mixing (music vs voice volume) \u2014 a top recurring complaint",
+      "Its established-labor notification can land as a jolt: one otherwise-glowing review says she was 'shocked and a little scared' when it fired at 2-minute spacing \u2014 the calm cracks exactly at the decision moment, because the app gives comfort but no graded, numerate lead-up to the call",
+      "Paid up front ($5.99) with hypnobirthing framing \u2014 excludes anyone who didn't buy into the methodology or the price; 'surge' vocabulary alienates non-hypnobirthing users searching 'contraction'",
+      "No accessibility features declared on the App Store; brand-first 'pb' icon has zero category recognition in search results",
+      "Collects contact info/usage/diagnostics (not identity-linked) \u2014 fine, but not a privacy story"
+     ],
+     "review_signals": "Tone: universally described as calming, supportive, un-clinical \u2014 the anti-alarmist benchmark of the category, and users choose it FOR that. Love: the breathing counting during contractions, the bubble animation, distraction-free screens, using it muted as a pure timer, sending the log to midwives/family. Hate/friction: clunky timing UI under real labor conditions (the 'in transition I gave up' review), missed/mis-captured surges, un-editable log entries, no 5-1-1/pattern analysis ('would have preferred a more interactive app for that'), coarse audio controls, thin content library. Night/labor usability: pastel-with-white-text screens are soft but it is not a dark theme; nobody praises it for 3am legibility \u2014 they praise it for keeping panic away. Net signal: the emotional layer is beloved, the instrument layer is under-engineered \u2014 the exact inverse of what a numerate, verdict-giving timer would offer."
+    },
+    {
+     "name": "Contraction Timer - Bloom (Matija Gunther)",
+     "positioning": "New (v1.0 Jan 2026, v1.1 Apr 2026), zero ratings so far. Subtitle 'Labor tracker by experts' \u2014 no experts are named anywhere; the developer is a solo template-portfolio indie whose other apps are a gym rest timer, an app-pricing tool, a headache tracker, a water reminder, an AI journal, and a pet-care tracker. Pitch: 'We aren't another complicated pregnancy app' \u2014 a pure timer with 5-1-1/4-1-1 active-labour alerts, one-tap timing with large buttons, breathing animations (added in 1.1), trend charts, editable history, intensity logging. Free with in-app purchases: $5.99 WEEKLY or $5.99 lifetime \u2014 a short-lifecycle subscription trap for an app used for roughly two weeks. iOS 18.6+, iPhone/iPad, English only, 13.7 MB. It is the closest feature-set competitor to Setpoint's verdict concept (it names the 5-1-1 pattern and tells you to consider going), but with none of the trust scaffolding.",
+     "visual_language": "Verified from live App Store screenshots. App icon: glossy 3D white fetus curled on a lavender-purple squircle with a golden sprig of leaves growing upward \u2014 literal 'bloom' metaphor, womb-pink-adjacent but purple. In-app: light theme only (white cards over lavender-to-purple layered arc/wave shapes), a single large purple circular start button with a play glyph, a 'Ready Meter' horizontal progress bar filling toward labor, a stat row (count / avg duration / avg frequency), 'Recent' list, and a Labor Trends screen with stat chips plus two default-styled bar charts in unrelated blue and orange. The 5-1-1 alert screen leads with a RED/amber hazard triangle above 'Contraction Pattern Detected' and a purple 5-1-1 chip, then hedged copy ('This pattern may indicate that labor is progressing. Consider contacting your healthcare provider\u2026'). Store marketing frames are big black condensed ALL-CAPS: 'TRACK WITH CONFIDENCE', 'GET TO THE HOSPITAL ON TIME', 'KNOW WHEN IT'S TIME TO LEAVE'. Mood: generic pastel-SaaS \u2014 competent, template-clean, emotionally flat, and its one high-stakes moment is styled as a hazard warning.",
+     "strengths": [
+      "Feature parity with Setpoint's core idea on paper: named 5-1-1/4-1-1 detection with an explicit go-to-hospital recommendation, plus honest hedged wording under the alert",
+      "Simplicity positioning ('not another complicated pregnancy app') matches what the audience actually wants and what Freya's critics ask for",
+      "Big single-tap circular start button and editable/deletable history \u2014 fixes Freya's two worst timer complaints",
+      "'Ready Meter' is a genuinely interesting progress-summary concept (even if gamified in execution)",
+      "Breathing animations added fast (v1.1) \u2014 the developer reads the category and iterates",
+      "Tiny (13.7 MB), modern floor (iOS 18.6), free to try \u2014 low install friction"
+     ],
+     "weaknesses": [
+      "Zero trust: no ratings, 'by experts' subtitle with no experts, a Google-Docs privacy policy, and a portfolio of unrelated template apps \u2014 everything a scared 38-weeks-pregnant user would bounce off",
+      "$5.99/WEEK subscription on a two-week-lifecycle app is a dark pattern that reviews will eventually punish; 'free' claim in third-party listings conflicts with the paywall",
+      "Privacy is actively bad for the category: Usage Data, Diagnostics, and 'Other Data' collected and LINKED TO IDENTITY \u2014 the exact opposite of on-device-only, and unusual even among competitors (Freya's is not identity-linked)",
+      "The decisive moment is alarmist: the 5-1-1 verdict screen opens with a red hazard triangle, and store copy shouts 'GET TO THE HOSPITAL ON TIME' \u2014 fear iconography and urgency framing wrapped in 'stay relaxed' body copy",
+      "Light theme only in every screenshot \u2014 nothing suggests a 3am/dark-labor-ward mode",
+      "Visually anonymous: default-looking blue/orange charts that ignore its own purple palette, no monospaced or considered numerals, no coherent data-display language; the 'Ready Meter' progress bar edges into gamifying labor",
+      "No accessibility features declared; English only; no Apple Watch"
+     ],
+     "review_signals": "No user reviews exist yet (App Store shows 'hasn't received enough ratings'), so signals must be read from the artifact itself: the copy promises calm ('relaxed, confident, and supported', 'calming visual aids', v1.1 notes about steadying breath 'when things get intense') while the visuals deliver urgency (red warning triangle on the verdict, ALL-CAPS hospital-deadline headlines). That contradiction is exactly the pattern users punish competitors for \u2014 the category's top complaint is red DANGER-style alerts \u2014 and Bloom has rebuilt it in miniature. Strategic read for Setpoint: Bloom proves the 5-1-1-verdict feature is obvious enough that template developers are shipping it, but nobody yet delivers it with a calm, numerate visual grammar, a real dark/night mode, radical on-device privacy, and no subscription. That intersection \u2014 Freya's calm without its analytical emptiness, Bloom's verdict without its alarm triangle, identity-linked analytics, and weekly paywall \u2014 is wide open."
+    }
+   ]
+  },
+  {
+   "apps": [
+    {
+     "name": "Full Term - Contraction Timer (Mustansir Golawala, id382013176)",
+     "positioning": "The incumbent elder statesman: 'the most used and trusted Contraction Timer in the App Store,' endorsed-by-doctors-and-doulas framing, recommended by DONA (doula org). Free with a $0.99 one-time remove-ads IAP \u2014 no subscription. Positioned as a simple 'Pregnancy Toolkit' (contraction timer + kick counter + weight tracker + reference), Medical category, 7.2K ratings at 4.7. It deliberately does NOT interpret: it logs and averages, leaving the go/no-go call to the user.",
+     "visual_language": "Utilitarian, pre-SwiftUI iOS-7-era flat design. One giant bright-green start button dominates the timer screen; 'clean and clutter-free' is the developer's explicit design creed. History is a plain table of duration/frequency over the last 1-6 hours; intensity rated on a linear scale. Has an explicit Dark Theme Mode marketed for low-light labor-room use. Typography and layout are stock-era UIKit, no illustration, no brand color system beyond the green button. Frozen in time: last version 3.7.1 shipped September 2019, so no Lock Screen widgets, no modern materials, and it visibly predates a decade of iOS design language. Mood: clinical stopwatch, not a companion.",
+     "strengths": [
+      "The big-button ideal everyone still copies: reviewers repeatedly say the 'large button to start the timer made it easy to hit... and still accurately track' mid-contraction",
+      "So legible that partners can operate it 'without me having to explain' \u2014 a real one-handed 3am virtue",
+      "Dark mode called out specifically for labor at night, years before it was standard",
+      "Honest monetization: $0.99 one-time to kill ads, no subscription, no paywall during labor",
+      "Never alarms: because it does not interpret, it never issues a false 'GO NOW' \u2014 zero fear-language complaints",
+      "Massive earned trust: doula/doctor endorsements, DONA writeup, 4-star clinical review (Healthify NZ), Apple Watch support"
+     ],
+     "weaknesses": [
+      "Effectively abandoned \u2014 no update since 2019; feels dated and will eventually break",
+      "No decision support at all: Healthify's OB reviewer notes it gives no interpretation of patterns or red flags; the IO competitor accurately attacks this ('a simple log may leave more interpretation to you while you are tired, uncomfortable, or unsure') \u2014 this is exactly the 5-1-1-verdict gap the new app fills",
+      "Ads present in the free tier of a labor tool; Healthify found no privacy policy at all",
+      "English only",
+      "Visuals read as old: green-button flat UI, stock tables, no modern data visualization of trend or pattern",
+      "Toolkit sprawl (kicks, weight, reference) mildly dilutes the single-moment product"
+     ],
+     "review_signals": "Users love that it 'calculates for you, so that you don't have to calculate' and that it is 'very user friendly during labor' \u2014 the big button and dark mode are the two most-praised design facts. No alarmism complaints because it never renders a verdict \u2014 but that same silence is its criticized gap: the clinical reviewer dinged it for offering no guidance on red-flag patterns. Zero recent momentum; modern roundups treat it as the respected-but-aging default."
+    },
+    {
+     "name": "Contraction Timer & Tracker IO / ContractionTimer.io (ATN Marketing SRL, id1633196366)",
+     "positioning": "The keyword-first modern challenger: 'the easiest Contraction Timer,' claims 'trusted by 500K+ parents' against only ~60-73 App Store ratings (4.8) \u2014 heavy trust-signal inflation. Free core with a $1.99/WEEK subscription or $4.99 lifetime unlock. Sells decision support as the differentiator: labor-phase detection (early/active/transition), 5-1-1 hospital-readiness alerts, partner sharing, doctor reports. Also stakes out the privacy/no-ads flank: 'No ads. No interruptions,' works offline, data stored locally. 18 languages, Apple Watch, Lock Screen widgets. Runs an SEO content site (contractiontimer.io) with attack-comparison posts against Full Term.",
+     "visual_language": "Modern iOS-native with purple tones and a soft, calming pastel palette (per its MWM listing screenshots). Large 'STARTED' action button, 'Latest Contractions' list, clear big-type timer readout. Alert copy is coaching-toned rather than sirens: 'Contractions Picking Up,' a 'Get Ready' checklist, then the 5-1-1 match alert. Feature chrome everywhere: Apple Watch complications (Count / Avg Dur), Lock Screen widget, an audio library ('Gentle Waves,' 'Calm Breathing'), hospital-bag and partner checklists, doctor-report exports. Mood: soothing wellness-app purple, competent but generic \u2014 the brand IS the keyword string, and the app has shipped under at least three names (Tracker IO / Counter IO / Tracker +), so there is no stable identity to love.",
+     "strengths": [
+      "Only one of the three with a real, marketed 5-1-1 rule engine plus phase detection \u2014 validates the verdict concept commercially",
+      "Calm, progressive alert ladder ('Contractions Picking Up' \u2192 'Get Ready' \u2192 active-labor alert) instead of a single scary klaxon",
+      "Claims the privacy/offline/local-data flank and 'no ads during labor' \u2014 proof these values are already selling points in the category",
+      "Full modern iOS surface area: Watch, Lock Screen widget, dark mode, 18 languages",
+      "Reviewers praise the hospital-readiness alerts being accurate and the ability to delete an accidental tap"
+     ],
+     "weaknesses": [
+      "$1.99/week subscription on a product used for roughly one week \u2014 the exact 'predatory, presented during active labor' monetization pattern the category's users despise",
+      "Credibility gap: '500K+ parents' vs ~73 ratings; serial renames and SEO attack-blog marketing read as a keyword farm, not a brand",
+      "Feature bloat (audio library, checklists, postpartum guides, weight tracking) buries the one job",
+      "No brandable name \u2014 'Contraction Timer & Tracker IO' has zero identity, zero word-of-mouth handle",
+      "Its own marketing leans on anxiety ('labor is rarely calm and tidy') to sell decision support",
+      "13+ age rating and a paywalled 'plus' tier gate parts of a tool needed at a medical moment"
+     ],
+     "review_signals": "Tiny but positive review base: accurate hospital-readiness alerts, forgiving edit/delete of mis-taps, Watch use during active labor. No alarmism complaints surfaced \u2014 its alert language is genuinely soft. The signal to steal: 'No ads. No interruptions' and offline-local data are already resonating claims; the signal to avoid: weekly-subscription pressure and inflated social proof, both of which a genuinely free-forever app can attack head-on."
+    },
+    {
+     "name": "Contraction Timer & Counter 9m (Aleksei Neiman / Wachanga, id877303791)",
+     "positioning": "The volume leader: 'the most downloaded Contraction Timer app in the world,' '#1 in the USA, UK, Australia, Canada, Italy' \u2014 68K ratings at 4.8, ~1M+ Android installs under Wachanga. Free with ads plus ~$2.99 IAP and a discounted weekly plan pushed at a post-onboarding paywall. Sells interpretation aggressively: tells you your stage of labor 'at any given moment' and when it's time to go to the hospital; also explicitly courts home-birth users. Growth-stack femtech playbook: 8-step 'consultation'-style onboarding collecting obstetric details, social proof up front, soft paywall carousel with 50%-off weekly plan.",
+     "visual_language": "Minimalist but dated (multiple third-party reviews call the design 'outdated'). Signature layout: two full-width stacked buttons at the bottom of the screen \u2014 'Contraction Started' / 'Contraction Stopped' \u2014 with a clean running list of contractions (duration + frequency) above; v3.3 added an optional live 'time since last contraction' readout. Wachanga's house style across its femtech portfolio is soft pastel/pink with rounded cards and friendly illustration, applied thinly here. Alerts are text recommendations ('not in active labour', go-to-hospital advisories) that fire early and often. Mood: reassuring mass-market pastel over a growth-funnel skeleton \u2014 consultation onboarding, benefit carousel, discount timer.",
+     "strengths": [
+      "Unmatched social proof and ASO dominance \u2014 proves the literal-keyword name + simple promise wins search",
+      "The two-button full-width bottom layout is the category's best mid-contraction ergonomics: thumb-reachable, impossible to miss",
+      "History list stays uncluttered: duration and frequency at a glance, nothing else",
+      "Responsive to complaints: v3.3 notes read 'we listened to your feedback and removed full-screen ads between contractions \u2014 so nothing disturbs you', plus editable past entries",
+      "Stage-of-labor feedback loop (after ~4 contractions) gives users the interpretation Full Term refuses to"
+     ],
+     "weaknesses": [
+      "Clinically over-eager alerting: Healthify's OB reviewer (3 stars) found it 'advises you to go to hospital very early on in your labour' and failed to flag a uterine-hyperstimulation pattern as anything but normal active labor \u2014 false alarms AND missed danger",
+      "Alert fatigue is real: users report ignoring repeated go-to-hospital alerts and only going a day later \u2014 the verdict cried wolf",
+      "It ran full-screen ads BETWEEN CONTRACTIONS until 2024/25-era v3.3 \u2014 the category's most notorious sin, only recently repented",
+      "Design widely described as dated; no visual language beyond the two buttons and a list",
+      "Onboarding harvests personal obstetric data before delivering any value, then lands on a discount-pressure paywall \u2014 the opposite of radical privacy",
+      "Premium-upsell nags after contractions (a persistent Android-review complaint) during labor itself"
+     ],
+     "review_signals": "Positive reviews credit it with well-timed 'pack your bags' and go-to-hospital calls and avoiding false alarms; negative signals cluster on exactly the gaps the new app targets: ads and subscription nags interrupting labor, alerts that fire too early and too often (teaching users to distrust the verdict), data-hungry onboarding, and a stale look. Tone-wise it is not red-banner scary, but its early/repeated hospital advisories are the 'alarmist by volume' failure mode \u2014 a calm, numerate, evidence-first verdict that says which 5-1-1 leg is missing is the direct counter-position."
+    }
+   ]
+  }
+ ],
+ "directions": [
+  {
+   "direction_name": "First Light",
+   "concept": "The app is the hour before dawn: warm, quiet, and certain that morning is coming. Where competitors split between panic-red alarm screens (Bloom's hazard triangle) and generic pastel-SaaS purple, First Light owns the one palette nobody in the category has claimed \u2014 sunrise neutrals: cream linen, peach, rose, soft amber over a warm umber night. Every contraction is rendered as a swell of light rising and falling on a horizon line; labor progressing is literally the sky warming; the go-time verdict is a sunrise, not a siren. The dark mode is not inverted-gray but the pre-dawn room itself \u2014 warm brown-black, low luminance, made for a 3am labor ward. The emotional promise: this is the morning your baby arrives, and the app is the steady hand that keeps the numbers while you keep breathing.",
+   "palette": [
+    {
+     "role": "background",
+     "light_hex": "#FAF4EC",
+     "dark_hex": "#1F1613",
+     "note": "Linen cream / pre-dawn umber. Dark is a warm brown-black, never blue-black \u2014 it should feel like a dim bedroom, not an OLED void. Body gets this token explicitly."
+    },
+    {
+     "role": "surface (cards, sheets)",
+     "light_hex": "#FFFDF8",
+     "dark_hex": "#2A1F1B",
+     "note": "One elevation step. Cards separate from background by warmth shift + hairline, not shadows."
+    },
+    {
+     "role": "text-primary",
+     "light_hex": "#33261F",
+     "dark_hex": "#F4EBE1",
+     "note": "Warm espresso / warm cream. Never pure black or pure white \u2014 pure white is painful at 3am. ~12:1 both modes."
+    },
+    {
+     "role": "text-secondary",
+     "light_hex": "#7A6459",
+     "dark_hex": "#BCA895",
+     "note": "Muted taupe. Verified \u22655:1 on both background and surface \u2014 secondary text stays readable in dim light."
+    },
+    {
+     "role": "hairline / tick-rest",
+     "light_hex": "#E7DACB",
+     "dark_hex": "#3D3029",
+     "note": "Separators and unfilled tick-tape ticks. Decorative only; any tick that carries data uses text-secondary to clear 3:1."
+    },
+    {
+     "role": "accent \u2014 Ember (interactive tint)",
+     "light_hex": "#A9512C",
+     "dark_hex": "#F09B6C",
+     "note": "The amber of the sun itself. Buttons, links, selected states, the app's single tint. ~4.8:1 light / ~7:1 dark as text."
+    },
+    {
+     "role": "accent-wash",
+     "light_hex": "#F7E7D8",
+     "dark_hex": "#3F291D",
+     "note": "Soft amber field behind chips and the idle START slab. Always paired with text-primary or Ember on top."
+    },
+    {
+     "role": "timer-active \u2014 Rose (live contraction)",
+     "light_hex": "#A34D64",
+     "dark_hex": "#EE9AA6",
+     "note": "Rose sky. Fills the live swell, tints the elapsed numeral and the STOP state. Deliberately rose, not coral \u2014 nothing in this app may drift toward alarm-red. ~5.4:1 light / ~7.4:1 dark."
+    },
+    {
+     "role": "timer-active-wash",
+     "light_hex": "#F8E7E4",
+     "dark_hex": "#3A2428",
+     "note": "The whole screen 'warms' to this during a contraction \u2014 state change as light change, not layout change."
+    },
+    {
+     "role": "gentle-success \u2014 Sage (go-time verdict)",
+     "light_hex": "#416B4C",
+     "dark_hex": "#A6C8A8",
+     "note": "Eucalyptus, the calmest color in the system, reserved exclusively for the held 5-1-1 pattern and the 'time to call' verdict. ~6:1 light / ~9.6:1 dark. This is what replaces the category's red triangle."
+    },
+    {
+     "role": "success-wash",
+     "light_hex": "#E7EFE4",
+     "dark_hex": "#263427",
+     "note": "Field of the verdict banner. Reads as relief, not warning."
+    }
+   ],
+   "typography": "Four faces, each with one job, all Dynamic Type native and defined only in DesignKit roles (call sites say .dataText(.hero), never a point size). (1) SF Pro Rounded is the instrument voice: the hero elapsed-timer numeral (heavy weight, .monospacedDigit, ~110pt-equivalent at default size), the big stat numerals (time apart / lasting / for), section headings at semibold, and the START/STOP slab label. Rounded terminals echo the swell motif and read warmer than square SF at giant sizes \u2014 this is the face you stare at through a contraction. (2) SF Pro (Text/Display) carries all prose: verdict body copy, settings, labels, empty states; regular and medium weights only \u2014 no ultralight anywhere. (3) SF Mono, medium, owns tabular data: the history table's numerals (start, length, apart \u2014 columns must align), interval readouts, and the exported midwife report. House rule holds: every data numeral in the app is monospaced, via SF Mono in tables and .monospacedDigit elsewhere. (4) New York appears exactly twice \u2014 the first-launch welcome headline and the About/privacy page \u2014 a birth-announcement serif that frames the moment, then gets out of the instrument's way. It never appears on the timer or history screens.",
+   "shape_language": "Continuous (squircle) corners throughout: 12pt chips, 16pt cards, 24pt sheets; the bottom tap slab is full-width, docked, with 28pt top corners only. The core motif is the horizon: a 2pt baseline that runs through the timer and history screens, with everything growing upward out of it like light. The contraction visualization is an explicit, declared evolution of the house tick-tape rule: a live contraction is a light swell \u2014 a smooth, soft-shouldered hill of Rose rising from the horizon in real time (vertical gradient, rose fading to transparent), its crest carrying a small sun-dot beneath the elapsed numeral; when it ends, the hill exhales down and glides left to join the history strip. Past contractions sit as smaller hills along the same axis, so the last 90 minutes read as a skyline \u2014 and 'getting closer' is visible as hills crowding together, no chart-reading required. This stays strictly linear and horizontal: no rings, no donuts, ever. The discrete tick-tape survives where it is strongest \u2014 the 5-1-1 gauge is three mini linear tick tapes, one per leg (apart / lasting / for), ticks filling in Ember as each leg approaches and turning Sage when a leg holds. Illustration style: no mascots, no fetus or womb imagery, no photography \u2014 only light, horizon, and geometry.",
+   "icon_concept": "A sun about to crest. Rounded-rect with a vertical sky gradient \u2014 cream into peach (light variant), pre-dawn umber into dim rose (dark variant) \u2014 a deep-umber horizon line set low in the frame, and a half-disc of Ember amber just breaking over it, with three short tick-mark rays. The tick-rays do double duty: sunrise and stopwatch. No text, no red, reads clean at 29pt. The tinted/monochrome variant is the horizon-plus-half-sun glyph alone. Against a search-results row of purple fetuses, hazard-adjacent branding, and keyword-string icons, a quiet sunrise is instantly ownable \u2014 and it literally illustrates the promise: morning is coming, and you'll know when.",
+   "tone": "Voice: a steady midwife who is good with numbers. Evidence first, then the call; short declaratives; second person; zero exclamation marks, zero fear words, no medical diagnosis language, no cheerleading confetti. The app never shouts and never hedges into uselessness \u2014 it says what the numbers show and what people usually do about it. Examples \u2014 Timer idle: \"Tap when one starts. That's the whole job \u2014 the numbers are mine to keep.\" Mid-contraction: \"0:42 \u2014 with you. Long breath out.\" 5-1-1 partial: \"Two of three: about 5 apart, about 1 long. The hour is at 38 minutes \u2014 keep resting, I'm watching it.\" Verdict/go-time: \"The pattern is holding: 5 minutes apart, around a minute long, for over an hour. This is the point where most providers want a call. There's time \u2014 gather your things, then ring them.\" History empty state: \"Nothing logged yet. When contractions begin, this page becomes the record you can hand to your midwife.\"",
+   "key_screens": "TIMER \u2014 the instrument. Horizon line across the lower-middle; above it the sky holds the two numbers that matter between waves (\"last one: 0:58 \u00b7 6:10 apart\") in Rounded monospaced numerals; below the horizon, the recent-hills strip. The bottom quarter is one full-width cream slab: \"Contraction starting\". On tap, no navigation \u2014 the sky itself warms to the rose wash, the swell begins rising, the hero numeral counts up, and the slab becomes \"It's easing\". State change is light change; nothing moves that she has to re-find. HISTORY \u2014 the skyline. The hill chart scrolls horizontally over a pinned horizon; beneath it, an SF Mono table (started / lasted / apart) with quiet inline editing \u2014 a suspicious 3-second entry gets a gentle \"mis-tap? merge or remove\" affordance right in the row (the fix for Freya's most-hated flaw), and a share action produces a clean, serif-headed one-page report for the midwife. VERDICT BANNER \u2014 lives at the top of the timer as a quiet status card with the three mini tick-tapes, always saying which leg is missing in plain words (\"spacing and length are there; the hour is at 38 minutes\"). When the pattern holds, sage light rises from the horizon and the banner settles in success-wash with the steady-midwife call recommendation and a single \"Call your provider\" button (number stored on-device). No modal, no red, nothing covers the tap slab. FIRST LAUNCH \u2014 a birth announcement, not an onboarding funnel. One screen: New York headline \"For the night the waves begin,\" three short lines \u2014 free forever, no ads, everything stays on this phone \u2014 and one Ember button, \"Begin\". No account, no forms, no obstetric questionnaire, no permission prompts.",
+   "motion": "Character: light changing, not things moving. Durations 300\u2013800ms, high-damping ease-out springs, zero overshoot \u2014 nothing in this app bounces. Contraction start: the background crossfades to timer-active-wash over ~600ms while the swell begins to rise; stop: an 'exhale' \u2014 the hill settles over ~800ms and glides left into the skyline. Breath pacing during a contraction: an optional glow behind the hero numeral brightens over 4 seconds and dims over 6 (the long-exhale pattern), with a whisper-level haptic tick at each turn; it is a glow-and-1.02-scale pulse, deliberately slower than any UI animation around it, so the eye can ride it \u2014 this answers Freya's beloved bubble with something that lives inside the timer instead of replacing it. Verdict arrival: sage light rises from the horizon over ~1s and the banner settles; one soft haptic, no sound ever by default. Reduce Motion: every scale/position animation becomes a pure crossfade and the breathing guide becomes opacity-only at the same cadence, so the pacing feature survives the accessibility setting.",
+   "accessibility": "Built for one thumb, dim light, and a scared operator. One-handed: the start/stop control is the entire full-width bottom slab, \u2265120pt tall, reachable by either thumb with zero precision \u2014 the same target starts and stops, so there is nothing to hunt for mid-contraction, and no modal or sheet is ever allowed to cover it. Panic-proofing: no confirmation dialogs anywhere in the labor path; every action is undoable after the fact instead of guarded before; mis-taps produce a gentle inline merge/remove offer rather than dirty data; the running timer persists its start timestamp to disk immediately, so an app kill, a dead battery, or a reboot loses nothing. Dim light: dark mode is warm and low-luminance by design (cream text, never pure white), the timer screen keeps the device awake at reduced brightness, and every text role is verified \u22654.5:1 in both modes (secondary text \u22655:1), data-carrying graphics \u22653:1. XL Dynamic Type: all type is style-based, layouts stack vertically rather than truncate, and per house rule no text container has a fixed height \u2014 the hero numeral reflows the screen before it ever clips a digit. VoiceOver: the slab is a single well-labeled toggle; start/stop and verdict changes post announcements in the app's own voice (\"Contraction recorded. Fifty-two seconds, four minutes ten since the last\"). Haptics distinguish start (one soft tap) from stop (two), so she can operate it without looking at all."
+  },
+  {
+   "direction_name": "Nightstand",
+   "concept": "The phone lying on the nightstand at 3am is the design brief. Nightstand is a dark-first identity built around one image: a warm near-black room and a single soft ember of lamplight \u2014 the app as a bedside instrument that glows just enough to be read through half-closed eyes and never startles. Everything warm-toned (no blue-black, no clinical white) so the screen reads like lamplight, not a laptop; one amber \"ember\" accent does all the talking, brightening gently while a contraction runs and settling when it eases. The category's incumbents are either beloved-but-analytically-empty (Freya) or verdict-giving-but-alarmist (Bloom's red hazard triangle); Nightstand occupies the open intersection \u2014 a numerate instrument with a midwife's bedside manner, where even the \"time to go\" moment arrives like dawn, not a siren. Light mode is a first-class daytime translation: warm paper and deep amber ink, the same room with the curtains open.",
+   "palette": [
+    {
+     "role": "background",
+     "light_hex": "#FAF6EF",
+     "dark_hex": "#0E0C0A",
+     "note": "Dark: warm near-black charcoal (brown-black, never blue-black) \u2014 OLED-friendly, sits at almost-off so the phone can lie face-up all night. Light: warm paper, like morning light on linen."
+    },
+    {
+     "role": "surface",
+     "light_hex": "#FFFDF8",
+     "dark_hex": "#1A1613",
+     "note": "Cards and sheets. Dark surface is one soft step up from the room, like an object catching lamplight; continuous-corner 24pt."
+    },
+    {
+     "role": "hairline",
+     "light_hex": "#E9E1D4",
+     "dark_hex": "#2B251F",
+     "note": "Separators and tick-tape rest marks. Never pure grey \u2014 always warmed."
+    },
+    {
+     "role": "text-primary",
+     "light_hex": "#2A2520",
+     "dark_hex": "#EDE6DB",
+     "note": "Dark-mode text is deliberately a dimmed warm white (~15:1 on background), not #FFF \u2014 no glare at 3am. Light mode is warm ink, ~13:1."
+    },
+    {
+     "role": "text-secondary",
+     "light_hex": "#6B6154",
+     "dark_hex": "#A89D8F",
+     "note": "Labels, timestamps, hedged sub-copy. ~5.5:1 light / ~7:1 dark \u2014 comfortably above AA even in this muted register."
+    },
+    {
+     "role": "accent-ember",
+     "light_hex": "#A55A24",
+     "dark_hex": "#F0A868",
+     "note": "The one accent: soft apricot-amber lamplight. Buttons, links, 'getting closer' trend, live glow. Amber is melatonin-kind, preserves night vision, and is structurally incapable of reading as an alarm. ~9:1 dark, ~5.2:1 light."
+    },
+    {
+     "role": "timer-active",
+     "light_hex": "#8C4A1B",
+     "dark_hex": "#FFC593",
+     "note": "The ember intensified: the live elapsed numeral, the swelling wave on the tape, the pressed state of the big slab. Brightens from accent-ember over the contraction's first 10s \u2014 the only 'louder' color in the system, and it is still candlelight. ~12:1 dark."
+    },
+    {
+     "role": "gentle-success",
+     "light_hex": "#2F6B45",
+     "dark_hex": "#A9CDA8",
+     "note": "The go-time verdict and completed 5-1-1 legs. A soft sage \u2014 first-light green, not surgical-scrubs green, and never red. The verdict banner uses it as text and a faint tinted wash, no filled alarm blocks. ~10:1 dark, ~5.9:1 light."
+    },
+    {
+     "role": "trend-easing",
+     "light_hex": "#4E6A7E",
+     "dark_hex": "#9FB4C7",
+     "note": "'Easing off' trend only: a cool moonlight grey-blue, the semantic opposite of the warming ember. Warming = closer, cooling = easing \u2014 a nightstand-native metaphor that stays numerate, never judgmental."
+    }
+   ],
+   "typography": "Four faces, each with one job. (1) SF Pro \u2014 the workhorse: all prose, labels, buttons, settings, hedged sub-copy under the verdict; Text/Display optical sizes handled by the system. (2) SF Pro Rounded, Medium/Semibold, with .monospacedDigit() \u2014 the hero instrument: the giant live elapsed-time numeral (a DesignKit role like .dataText(.hero), roughly 84pt at default type size, scaling with Dynamic Type), plus the big interval/duration stat pair on the timer screen. Rounded softens the numerals to lamplight warmth while monospaced digits stop the 3am jitter of proportional figures. (3) SF Mono, Regular, small sizes \u2014 dense data only: the history table's duration/interval/gap columns and tick-tape axis labels, where strict column alignment is the feature. This preserves the house rule that data numerals are monospaced, split by scale: Rounded+monospacedDigit for hero numerals, true SF Mono for tabular data. (4) New York, Medium \u2014 exactly two appearances, as the 'midwife's voice': the first-launch greeting line and the verdict banner's headline ('It looks like time.'). A single warm serif register that marks the moments the app speaks as a person rather than an instrument. Everything rides system text styles; no Font.system(size:) outside DesignKit, no fixed-height text containers.",
+   "shape_language": "Soft, continuous-corner (squircle) geometry throughout: 24pt radius cards, 28pt on the primary slab, full-height pill chips. The core motif is the ember tape \u2014 an explicit evolution of the house linear tick-tape, and still emphatically linear: no rings, no donuts, nothing circular anywhere. Time flows left-to-right along a warm hairline baseline. Each recorded contraction is a rounded amber bar rising from the baseline \u2014 bar width is duration, bar height is a gentle fixed rise (optionally intensity later), and the literal horizontal gap between bars is the interval. This makes the 5-1-1 pattern visible as pure geometry before any copy: bars widening toward a minute, gaps tightening toward five, the tape filling an hour. The in-progress contraction is the motif's live form: at the tape's leading edge a soft-edged luminous mound (timer-active) swells rightward in real time, its glow blooming softly above the bar \u2014 a wave rising and settling, drawn with blurred-edge fills, never hard vector edges. The same single glowing bar, extracted, is the brand mark. Buttons are slabs, not circles: the primary control is a full-width bottom-anchored slab, because a centered circle (Freya, Bloom) wastes the thumb zone. Illustration style: none \u2014 no characters, no botanical clip-art, no fetus imagery; the identity is light, geometry, and type.",
+   "icon_concept": "A single ember: warm near-black (#0E0C0A) squircle field, one rounded amber bar (#F0A868 core to #FFC593 center) sitting low and slightly left of center on a faint warm baseline hairline, with a soft radial bloom of light around it \u2014 a lamp glowing in a dark room, and simultaneously one contraction mark on the tape, the one mark you make when it starts. No fetus, no flower, no moon, no 'pb'-style monogram. Reads at 29pt as 'a calm glowing thing in the dark' \u2014 instantly differentiated in a search-results row of lavender pastels and white circles. iOS 27 appearance variants: dark icon is the primary identity as described; light variant inverts to warm paper (#FAF6EF) with a deep-amber bar (#A55A24) and no bloom; tinted variant survives as bar-plus-baseline silhouette.",
+   "tone": "A steady midwife at 3am: numerate, concrete, evidence-first, then the call \u2014 never exclamation points, never 'DANGER', never all-caps, never hedging into uselessness. Numbers do the reassuring. Five example strings \u2014 Timer idle: 'Resting. Tap anywhere below when the next one begins.' Mid-contraction (under the live numeral): 'Timing. Breathe with the glow \u2014 tap again when it eases.' 5-1-1 partial (status line names the missing leg): 'Two of three: about 5 minutes apart, holding for 1 hour. Durations are averaging 48 seconds \u2014 a little short of a minute. Keep timing.' Verdict / go-time (New York headline, then evidence): 'It looks like time. Contractions about 5 minutes apart, lasting about a minute, steady for the last 70 minutes. A good moment to call your midwife or provider and get moving \u2014 no rush, gather your things.' History empty state: 'Nothing timed yet. When contractions begin, each one becomes a mark here \u2014 durations, gaps, and which way the pattern is heading.'",
+   "key_screens": "Timer \u2014 the dark room. Background is the near-black charcoal edge to edge. Upper third: the hero Rounded numeral in dimmed warm white (idle it shows time-since-last, e.g. '7:42 since last'), with the two companion stats (last duration / average gap) in smaller monospaced pairs. Middle: the ember tape showing the last hour, live mound swelling at its edge during a contraction. Bottom third: one full-width slab, minimum 110pt tall, ember-tinted \u2014 'Contraction started' / pressed becomes timer-active and reads 'Ends when you tap' \u2014 the entire lower third is the target. During a contraction the whole room warms perhaps 4%: the glow is ambient, not a mode change. History \u2014 the tape, unrolled. The ember tape runs across the top (pinch/scroll through hours), an SF Mono table below: start time, duration, gap \u2014 grouped by hour, one thumb-tap opens any row to trim or delete (directly answering Freya's delete-only log complaints), with hourly averages as quiet secondary-text rows. No charts in unrelated colors, no Ready Meter gamification. Verdict banner \u2014 dawn over the tape. It rises between numeral and tape as a sage-washed surface card: three short horizontal leg-meters (linear, of course) labeled '~5 min apart', '~1 min long', 'for 1 hour', each filling in gentle-success as its leg holds; a partial pattern shows exactly which meter is short and by how much. When all three hold, the New York headline fades up with the evidence sentence and one button: 'Call' (opens the pre-set number). Nothing red exists on this screen. First launch \u2014 three promises, then the timer. One dark screen, New York greeting ('For whenever it starts.'), three quiet lines: free forever, everything stays on this phone \u2014 no account, and it will never shout at you. One button: 'Ready'. No obstetric questionnaire, no paywall, no notification pre-prompt \u2014 she may be downloading this between contractions.",
+   "accessibility": "Built for one hand, half-asleep, scared. Reach: the only control that matters is a bottom-anchored full-width slab \u2265110pt tall \u2014 the entire lower third of the screen is the tap target, hittable with either thumb or a knuckle without looking; nothing interactive lives in the top third while timing. Panic-proofing: no destructive confirmations mid-labor; a 3-second mis-tap yields an inline undo ('That one was 0:03 \u2014 remove it?') rather than a modal; ending a contraction can be trimmed after the fact, so a forgotten stop never poisons the log she shows her midwife. Dim light: the screen never auto-locks while timing; all dark-mode pairs hold \u22657:1 (most \u22659:1) so the palette survives Reduce White Point and Night Shift; the dark theme is warm-spectrum by construction. XL Dynamic Type: every string and numeral scales via text styles; at accessibility sizes the timer screen stacks (numeral, then tape, then slab) with the slab growing, and per house rule no fixed frame heights and no truncated data values \u2014 durations wrap before they clip. VoiceOver: the slab announces state ('Contraction running, 42 seconds \u2014 double-tap to end'); elapsed time is polled on demand, not chattered continuously; the verdict reads evidence first, call second, matching the visual order. Haptics: a soft heartbeat tick every 15 seconds while timing (optional) so the phone can sit face-down or in a pocket and still be trusted; distinct start/stop haptics confirm taps without needing to look. StandBy/nightstand mode: a landscape ember-tape clock \u2014 time since last contraction in Rounded numerals on near-black \u2014 because this phone will literally be charging on the nightstand.",
+   "motion": "Slow, breath-paced, and few. The signature behavior: while a contraction runs, the ember glow breathes at a guided respiration rate \u2014 4 seconds swelling, 6 seconds settling (~6 breaths/minute, the physiologically calming cadence) \u2014 so the brightening of the live mound doubles as a breath pacer she can sync to without any 'breathing feature' UI; the counted-breath guidance is the single thing Freya's users credit for their births, delivered here as ambient light instead of a separate mode. Everything else is dusk-slow: 0.4\u20130.8s ease-out fades, soft under-damped springs with no overshoot, no slides that slam. Tap feedback is a radial bloom of warmth from the touch point plus a soft haptic \u2014 light turning on, not a button clacking. The verdict banner fades up over ~1.2s like first light; leg-meters fill with a slow settle when a leg completes. Numerals never spin or roll; monospaced digits simply replace. Reduce Motion honored fully: breathing becomes a gentle opacity cycle or holds static at mid-glow, blooms become simple fades, and nothing in the app ever moves faster because the stakes rose."
+  },
+  {
+   "direction_name": "Slack Tide",
+   "concept": "Labor is a tide coming in: contractions are waves that swell, crest, and recede, and the app is the tide gauge on the shoreline \u2014 a steady, numerate instrument, never an alarm. \"Slack tide\" is the calm water between movements, which is exactly where this app lives: most of its life is spent in the rest between contractions, and the design treats that rest as the default state worth protecting. The direction takes hypnobirthing's real discovery (breath-paced, stare-at-able screens that keep panic away \u2014 the thing Freya's users love) and strips the doctrine: we say \"contraction,\" not \"surge\"; we measure in minutes and seconds, not vibes; and when the 5-1-1 pattern holds, the water simply settles to seafoam and the app speaks like a midwife who has seen a thousand of these. Misty lavender-blue air above a persistent horizontal waterline, layered translucent water below \u2014 the same room in light and dark, because she will meet this app at 2pm on the couch and at 3am in the dark, and it must feel like the same calm place both times.",
+   "palette": [
+    {
+     "role": "background (sea mist / harbor night)",
+     "light_hex": "#F2F5F9",
+     "dark_hex": "#0C141D",
+     "note": "Cool blue-lavender mist in light; dark is deep blue-black, never pure black, so the waterline glow and water bands still read as water at minimum brightness."
+    },
+    {
+     "role": "surface (cards, sheets)",
+     "light_hex": "#FFFFFF",
+     "dark_hex": "#16212E",
+     "note": "Continuous-corner cards float on the mist; in dark they read as wet stone, one step lighter than the night water."
+    },
+    {
+     "role": "water fill (wave bands, sunken areas)",
+     "light_hex": "#DCE6F2",
+     "dark_hex": "#1D2C3D",
+     "note": "The area below the waterline. Rendered as three stacked bands at 24/16/10 percent opacity for depth; this is atmosphere, never a data surface."
+    },
+    {
+     "role": "text primary",
+     "light_hex": "#1B2A3A",
+     "dark_hex": "#E8EEF6",
+     "note": "Deep-water ink, not black; in dark a cool off-white capped below pure white so 3am screens never glare. Both exceed 7:1 on their backgrounds."
+    },
+    {
+     "role": "text secondary",
+     "light_hex": "#52627A",
+     "dark_hex": "#94A3B6",
+     "note": "Slate for labels, captions, table headers. Holds 4.5:1+ at both ends."
+    },
+    {
+     "role": "hairline / waterline",
+     "light_hex": "#C2CFDF",
+     "dark_hex": "#2A3B4E",
+     "note": "The signature horizon line (1.5pt, full-bleed) and all separators. The waterline itself brightens toward accent during an active contraction."
+    },
+    {
+     "role": "accent (interactive)",
+     "light_hex": "#4A5FB5",
+     "dark_hex": "#A9B7F4",
+     "note": "Periwinkle-lavender for buttons, links, selection, the breath crest. The app's one voice color; roughly 5.5:1 light, 8:1 dark."
+    },
+    {
+     "role": "timer-active (swell)",
+     "light_hex": "#2F5C80",
+     "dark_hex": "#9BC7E8",
+     "note": "Deep tide blue that tints the hero numeral, the swelled water crest, and the running-state chrome while a contraction is in progress. The screen cools and deepens rather than lighting up \u2014 activity reads as depth, not urgency."
+    },
+    {
+     "role": "gentle-success (go-time verdict)",
+     "light_hex": "#1F7A64",
+     "dark_hex": "#83D6BF",
+     "note": "Seafoam. The verdict is the calmest moment in the app, not the loudest: a 12 percent seafoam wash behind full-strength seafoam text. There is no red anywhere in this product, in any state."
+    },
+    {
+     "role": "attention-soft (missing 5-1-1 leg, estimates)",
+     "light_hex": "#8C6D40",
+     "dark_hex": "#D9B98A",
+     "note": "Dry sand \u2014 a warm, low-arousal marker for 'this leg not yet' and estimated values. Deliberately sand rather than amber/orange alarm territory; it means 'still filling,' never 'warning.' (Departure from suite rule 'orange is semantic only' is intentional: this standalone app defines sand as its sole warm semantic.)"
+    }
+   ],
+   "typography": "Four faces, each with one job. SF Pro Text/Display carries all prose, labels, table headers, and settings \u2014 regular and medium weights only; nothing in this app is ever bold enough to shout. SF Pro Rounded appears exactly where the app speaks or is spoken to: the two operative verbs (\"Contraction starting\" / \"It's easing\"), the verdict headline (\"It's holding\"), and section headers \u2014 rounded terminals are the typographic equivalent of a softened voice, and rationing them keeps the app an instrument rather than a plush toy. SF Mono owns every numeral: the hero elapsed timer in SF Mono Light at ~84pt (Light keeps huge digits airy instead of monumental), and all history data \u2014 durations, intervals, clock times, deltas \u2014 in SF Mono Regular, honoring the house rule that data numerals are monospaced and making columns of times scan like a tide table. New York appears in precisely one place: the first-launch promise (\"Everything you time stays on this phone.\") and the About page, set in New York Medium \u2014 a single serif moment that reads like a handwritten note from the developer, then never appears again in operative UI. All styles route through DesignKit role tokens (.dataText(.hero), etc., never point sizes) and scale with Dynamic Type; the hero timer uses a custom metric that scales to fit width and wraps its label rather than ever shrinking or truncating a digit.",
+   "shape_language": "Continuous-corner (squircle) geometry throughout: 24pt radius cards, 16pt chips, full capsules for buttons \u2014 nothing sharp, nothing perfectly circular. The core motif is the waterline: a persistent full-bleed 1.5pt horizontal horizon that appears on every screen at a consistent band, with three translucent water bands layered beneath it. It is the brand, the layout armature, and the state indicator in one line. Contraction-in-progress visualization \u2014 an explicit, declared evolution of the house tick-tape, keeping its linear DNA and the hard no-rings/no-donuts rule: (1) LIVE, the water below the waterline swells smoothly upward over the first ~15 seconds and holds while the contraction runs, then recedes when she taps it out. The swell is honest: contractions aren't intensity-measured, so the wave communicates \"in progress\" plus elapsed position against small monospaced tick marks etched on the waterline at 0:30 / 1:00 / 1:30 \u2014 a linear scale wearing a wave, not a gauge pretending to measure strength. (2) HISTORY, the tick-tape becomes the tide tape: a horizontal linear strip where each contraction is a rounded hump \u2014 hump width is duration, gap between humps is interval, height constant. An hour of labor reads at a glance as a rhythm: humps drawing closer and fatter means the tide is coming in. This is the tick-tape's direct descendant \u2014 marks on a line \u2014 so the house guardrail survives the rebrand intact. No figurative illustration anywhere: no babies, storks, or lotus flowers; the only imagery this app owns is water, line, and light.",
+   "icon_concept": "A deep harbor-night squircle (the dark background blue, so the icon looks native beside Clock and Weather at 3am). Across it, one swelling wave drawn as three stacked continuous strokes \u2014 lavender, periwinkle, seafoam, top to bottom \u2014 rising to a single off-center crest, with a thin mist-white waterline running behind them. The crest's silhouette quietly echoes a pregnant profile in side view \u2014 intentional, but deniable; it reads first as a wave. No moon (Luna), no drop, no fetus, no flower. The three strokes double as the three legs of 5-1-1 for anyone who ever notices, which nobody has to. Reduces cleanly to 60px because it is three lines and a horizon; iOS tinted/dark variants render the strokes in monochrome on the system tint. In a search-results row full of pink blobs and glossy 3D fetuses, a dark, confident, almost-nautical mark is the one that looks like it will not panic.",
+   "tone": "Steady midwife: numerate first, warm second, never urgent, never cute mid-contraction. Numbers always come before interpretation; the app recommends, the humans decide; nothing ever ends in an exclamation point. Example strings \u2014 Timer idle: \"When one starts, tap anywhere below the line. That's the whole job.\" Mid-contraction (minimal words, big numbers): \"1:07 \u00b7 out through the crest, long and slow. Tap again when it eases.\" 5-1-1 partial: \"Two of three: about 5 min apart, about 1 min long. The hour is still filling \u2014 24 of 60 minutes in this pattern.\" Verdict/go-time (replaces competitors' red DANGER): \"The pattern has held \u2014 5 minutes apart, about a minute long, for a full hour. This is the pattern providers ask to hear about. When you're ready, make the call.\" History empty state: \"Nothing timed yet, and that's fine. Contractions will settle here as humps on the tape \u2014 width is how long, space is your rest.\"",
+   "key_screens": "TIMER \u2014 the shoreline at night (or in mist, in light mode). Upper half is air: a soft mist gradient holding the hero SF Mono numeral and, small beneath it, \"since last: 6:12\". The waterline crosses at ~55 percent; everything below it is water, and the entire water is the tap target. Idle: still bands, a Rounded caption \u2014 \"Tap anywhere below the line.\" Running: the water swells and holds, the crest breathes in accent lavender at 6 breaths/min, ticks at 0:30/1:00/1:30 glow as the numeral passes them, the whole screen deepens into timer-active blue. A slim verdict chip sits at top showing pattern status without demanding attention. HISTORY \u2014 the tide table. Pinned header: three permanent monospaced stats that ARE the 5-1-1 legs \u2014 \"apart / long / holding\" \u2014 each with a seafoam check or an open sand marker, so the verdict logic is transparent furniture, not a surprise. Beneath: the tide tape (last hour, scrollable back), then a plain table of mono numerals. Rows edit in place \u2014 swipe to trim an end time or delete with confirm \u2014 fixing Freya's delete-only log that pregnant users hand to midwives with garbage 3-second entries. A one-line trend caption with real deltas: \"Gathering \u2014 averaging 5:40 apart, was 7:10 an hour ago.\" VERDICT BANNER \u2014 go-time is the app exhaling, not detonating. Never a modal, never interrupts a running contraction: the banner settles in above the waterline as a seafoam band once the hour completes. Headline in Rounded: \"It's holding.\" Body restates the three numbers, then offers one capsule button \u2014 \"Call your provider\" (dials the locally-saved number) \u2014 plus a quiet \"Not yet\" that simply dismisses. Single soft haptic. If a leg is missing, the same surface names it in sand: \"Not yet an hour \u2014 24 of 60 minutes.\" FIRST LAUNCH \u2014 one screen, night water, the app's only serif: New York Medium, \"Everything you time stays on this phone.\" Three quiet lines beneath: no account, no ads, free forever \u2014 works in airplane mode. Then straight to the timer with a 15-second overlay showing the one tap. No obstetric questionnaire, no due-date harvest, no paywall \u2014 the anti-Wachanga onboarding: value in under 30 seconds, zero data collected because there is nowhere for data to go.",
+   "accessibility": "Built for one thumb, 3am, shaking hands. The tap target is the entire water region \u2014 the full width of the screen and the bottom ~45 percent (300pt+ on every iPhone), operable by thumb, knuckle, or the heel of a hand mid-contraction; the same target starts and stops (toggle semantics), so there is nothing to find and no mode to remember. A 3-second \"undo that tap\" pill catches accidental touches without a modal. No destructive or navigational control lives anywhere in the thumb zone; delete and edit require a deliberate swipe plus confirm on the history screen. Dim-light: dark mode's text tops out at #E8EEF6 (never pure white), hero numerals hold 7:1+ contrast in both appearances, the screen stays awake while timing (idle timer disabled) and auto-dims after 30s of stillness to save battery without sleeping. Dynamic Type: every style scales through XL and AX sizes \u2014 the hero numeral scales to fit width, labels wrap under it, the history table reflows into stacked rows, and per the house rule no text container has a fixed height and no time value ever truncates or auto-shrinks below legibility. VoiceOver: the timer is a single accessible element (\"Contraction timer, not running, double-tap when one starts\"), announces state on toggle and elapsed time on demand rather than chattering continuously; the tide tape carries a plain-language summary (\"6 contractions this hour, averaging 5 minutes 40 apart\"). Reduce Motion replaces the swell with a slow opacity fade and the breath crest with a counted numeric pacer; Reduce Transparency flattens water bands to solid fills. Haptics confirm start and stop so she never has to look, and no interaction anywhere in the app is time-limited \u2014 the tide waits.",
+   "motion": "Everything moves at the speed of calm breathing, and nothing ever bounces. The signature behavior is breath pacing: during a contraction the crest of the swelled water brightens over a 4-second inhale and dims and settles over a 6-second exhale \u2014 6 breaths per minute, the physiological calm-breathing rate \u2014 giving her Freya's beloved \"breathe with the bubble\" companion without leaving the timer or the linear house style. An optional counted pacer (\"in 2 3 4 \u00b7 out 2 3 4 5 6\") rides the crest in small type. State transitions are tidal: start is a single horizontal ripple spreading along the waterline from the tap point plus one soft haptic; the swell rises over ~15s with a critically damped curve and holds; stop recedes over 1.2s as the finished contraction slides onto the tide tape as a new hump. The verdict arrives as an 800ms cross-fade into seafoam \u2014 slack water settling, the app's biggest moment rendered as its slowest, softest transition. Durations 600\u2013900ms, ease-in-out or damped springs only; nothing in the app ever flashes, pulses fast, shakes, or animates red (there is no red). Reduce Motion honored globally: swells become opacity fades, ripples become simple highlights, the pacer goes numeric. Idle water is near-still \u2014 a barely-there band drift on a 20-second cycle \u2014 so the screen breathes without ever demanding to be watched."
+  }
+ ],
+ "judged": {
+  "scores": [
+   {
+    "direction_name": "First Light",
+    "calm_under_stress": 9,
+    "night_usability": 8,
+    "distinctiveness": 9,
+    "warmth": 9,
+    "feasibility": 8,
+    "total": 43,
+    "summary": "Sunrise neutrals (cream/peach/rose/amber over warm umber) with verdict-as-dawn is the strongest emotional metaphor and the warmest identity \u2014 'this is the morning your baby arrives' \u2014 and the palette is genuinely unclaimed against the category's lavender pastels. Loses narrowly because its dark mode, while warm and well-specified, is a translation of a light-first identity rather than the native habitat of an app whose defining moment happens at 3am; the rose active-state also drifts a step closer to warm-red territory than amber ever can."
+   },
+   {
+    "direction_name": "Nightstand",
+    "calm_under_stress": 9,
+    "night_usability": 10,
+    "distinctiveness": 9,
+    "warmth": 8,
+    "feasibility": 8,
+    "total": 44,
+    "summary": "The only direction designed primarily for the moment the app earns its existence: a warm near-black OLED room and a single amber ember, melatonin-kind, glare-free, surviving Reduce White Point and Night Shift, with a StandBy nightstand face no competitor has. The ember tape is the most numerate visualization proposed (bar width = duration, gap = interval \u2014 5-1-1 as visible geometry, a direct descendant of the house tick-tape), amber is structurally incapable of reading as alarm, and a dark confident icon is maximally distinct in a search row of pastel light-theme apps. Slightly less warm than First Light in daytime register, and its glow/bloom rendering resists token-ification a bit more than flat gradient fills \u2014 hence the grafts below."
+   },
+   {
+    "direction_name": "Slack Tide",
+    "calm_under_stress": 9,
+    "night_usability": 6,
+    "distinctiveness": 5,
+    "warmth": 6,
+    "feasibility": 7,
+    "total": 33,
+    "summary": "The best-engineered interaction details in the set (water-as-tap-target, transparent 5-1-1 furniture, honest elapsed ticks, counted pacer), but the identity swims into the category's most crowded water: lavender/periwinkle/blue is Freya's, Bloom's, and IO's shared territory, and waves are hypnobirthing's own iconography. Blue-black is the wrong spectrum for a 3am labor ward (and fights Night Shift), the cool palette undercuts the audience's stated warmth value, an 84pt Light-weight hero numeral is a dim-screen legibility risk, and the stacked-alpha water bands plus the deliberate sand-vs-orange rule departure add implementation friction."
+   }
+  ],
+  "winner": "Nightstand",
+  "grafts": [
+   "First Light's crash-safe timer contract: persist the running contraction's start timestamp to disk the instant the slab is tapped, so an app kill, dead battery, or reboot loses nothing \u2014 directly answers Freya's 'didn't capture properly half the time' data-loss reviews, and Nightstand's spec never states it.",
+   "First Light's shareable midwife report: a clean one-page export from History with a New York serif heading over the SF Mono table (started / lasted / apart). Sharing the log with midwives is Freya's most-used social feature and Nightstand's spec omits export entirely.",
+   "First Light's merge affordance: a suspicious 3-second row offers 'mis-tap? merge or remove' inline, so a double-tap that split one contraction in two can be healed, not just deleted \u2014 Nightstand only trims and deletes, and un-mergeable garbage entries are the exact flaw Freya users hand to their midwives.",
+   "First Light's verdict choreography: when the third leg holds, sage light rises from the tape's baseline over ~1s beneath the settling banner \u2014 go-time rendered literally as dawn breaking over the ember tape, completing Nightstand's own lamplight-to-first-light arc.",
+   "Slack Tide's elapsed-position ticks: etch small monospaced marks at 0:30 / 1:00 / 1:30 on the tape baseline that light up as the live mound passes them \u2014 an honest linear scale on the live swell that keeps the glow numerate instead of purely atmospheric.",
+   "Slack Tide's pinned History header where the three permanent stats ARE the 5-1-1 legs ('apart / long / holding'), each with a filled or open marker \u2014 the verdict logic becomes transparent furniture she watches fill over hours, so the go-time banner can never land as a jolt (Freya's 'shocked and a little scared' failure).",
+   "Slack Tide's optional counted breath pacer ('in 2 3 4 \u00b7 out 2 3 4 5 6') riding Nightstand's 4s/6s ember glow in small type, plus its Reduce Motion fallback where the pacer goes numeric \u2014 preserving the one feature Freya users credit for their entire birth even for users who can't or won't watch an animation.",
+   "Slack Tide's trend caption with real deltas \u2014 'Gathering \u2014 averaging 5:40 apart, was 7:10 an hour ago' \u2014 rendered in Nightstand's warming/easing semantic colors, giving the numerate positioning a sentence-level proof on the History screen.",
+   "Slack Tide's first-launch promise line 'works in airplane mode' added to Nightstand's three quiet promises \u2014 the cheapest possible proof of on-device privacy, and a claim no identity-linked competitor can copy.",
+   "First Light's explicit haptic grammar \u2014 one soft tap on start, two on stop \u2014 so the phone can be operated from a pocket or face-down without looking; Nightstand says 'distinct start/stop haptics' but never specifies the distinction."
+  ]
+ }
+}

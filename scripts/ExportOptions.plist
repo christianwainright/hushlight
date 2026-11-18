@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Export options for the App Store archive (.github/workflows/release.yml).
+
+  `app-store-connect` is the Xcode 15+ spelling of what used to be `app-store`;
+  the old value still exports but warns, and a warning in a release pipeline is a
+  thing nobody reads twice.
+
+  `uploadSymbols` stays true: dSYMs are how a crash report from TestFlight becomes
+  a line number. Decision 0029 §3 keeps crash reporting to Apple's own opt-in
+  channel rather than an SDK, which only works if the symbols are actually there.
+
+  `signingStyle` is automatic, matching project.yml — the workflow hands xcodebuild
+  an App Store Connect API key and `-allowProvisioningUpdates` so profiles are
+  fetched or created at build time. The distribution *certificate* cannot be
+  created that way without piling up against Apple's per-account cap, so it is
+  imported from a secret instead. See the workflow's header.
+-->
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>app-store-connect</string>
+    <key>destination</key>
+    <string>export</string>
+    <key>teamID</key>
+    <string>QZ229U67EE</string>
+    <key>signingStyle</key>
+    <string>automatic</string>
+    <key>uploadSymbols</key>
+    <true/>
+    <!-- Bitcode has been dead since Xcode 14; stated rather than defaulted so a
+         future toolchain change does not silently turn it back on. -->
+    <key>uploadBitcode</key>
+    <false/>
+    <!-- Apple's "manage version and build number" convenience, off deliberately:
+         the build number is an input to the workflow and printed in its summary,
+         so the number that went up is a fact recorded in the run rather than one
+         Apple picked. -->
+    <key>manageAppVersionAndBuildNumber</key>
+    <false/>
+</dict>
+</plist>

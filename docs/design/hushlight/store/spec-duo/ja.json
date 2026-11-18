@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/ja/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "半分開いて",
+      "headline": "折り目が境界線。",
+      "subline": "ナイトテーブルに立てて。カウントはベッドのほうを向き、平らな下半分がボタンです。"
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/ja/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "完全に開いて",
+      "headline": "タイマーの横に履歴。",
+      "subline": "今回の連続の陣痛を、カウントの隣にリアルタイムで。"
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/ja/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "閉じて",
+      "headline": "片手で、暗がりでも。",
+      "subline": "外側の画面でも同じタイマー。開始は親指ひとつの距離に。"
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,502 @@
+name: Release
+
+# **Uploads a build to App Store Connect. It does not release anything.**
+#
+# The build lands in App Store Connect and stops there. Internal testing, external
+# TestFlight, and submitting for review are all decided afterwards, by Christian, in
+# App Store Connect — which is the point rather than an omission. CLAUDE.md's second
+# hard gate covers "Apple ID actions, App Store Connect, external TestFlight", and
+# calls the three gates *segregation of duties, not supervision*. A pipeline that
+# uploaded and then also promoted would collapse that separation into a checkbox.
+#
+# **Manual only, like the macOS test tier and for both of its reasons** (decision
+# 0031): macOS runners bill at the 10x multiplier, and this one additionally produces
+# an artifact that goes to Apple under Christian's account. No push, no PR, no
+# schedule, no tag trigger. Starting it is a deliberate act, every time.
+#
+# ## Secrets this needs, none of which an agent can create
+#
+# | Secret | Where it comes from |
+# |---|---|
+# | `ASC_KEY_ID`        | App Store Connect → Users and Access → Integrations → App Store Connect API. The 10-character Key ID. |
+# | `ASC_ISSUER_ID`     | Same page, shown once at the top. A UUID, shared by every key on the account. |
+# | `ASC_KEY_P8_BASE64` | The `.p8` file downloaded when the key is created — **downloadable exactly once**. `base64 -i AuthKey_XXXX.p8 \| pbcopy`. |
+# | `DIST_CERT_P12_BASE64` | An Apple Distribution certificate exported from Keychain Access as .p12, with its private key. `base64 -i cert.p12 \| pbcopy`. |
+# | `DIST_CERT_PASSWORD`   | The password set when exporting that .p12. |
+#
+# Give the API key the **Admin** role. This was wrong here until HL-036's third run
+# proved it: App Manager is enough for `altool` (it uploaded fine) and *not* enough
+# for xcodebuild's automatic-provisioning service, which 401s on `listTeams` behind
+# the same key. Apple does not let a key's access be raised after creation, so an
+# App Manager key means making a new one. Developer cannot upload at all.
+#
+# ## Why the certificate is a secret but the profile is not
+#
+# `-allowProvisioningUpdates` plus the API key lets xcodebuild fetch or create
+# provisioning profiles at build time, so none are stored here. It can create
+# *certificates* the same way, and that is the trap: Apple caps distribution
+# certificates per account at a small number, and an ephemeral runner would burn a
+# fresh one on every run until the cap is hit and every subsequent build fails. So
+# the certificate is imported from a secret into a keychain that exists for the
+# length of the job and is deleted in an `always()` step.
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_number:
+        description: "CFBundleVersion for this upload. Must be higher than every build already uploaded — App Store Connect rejects a repeat. Spent: 1.0 (1)–(5)."
+        required: true
+        default: "1"
+      push_metadata:
+        # **Off by default**, like `run_tests` and for the same reason (decision 0054):
+        # a release should not silently rewrite fourteen storefronts' copy because
+        # someone bumped a build number. The `metadata` job always prints the diff, so
+        # the safe path is to run a release, read what it says the listing would become,
+        # and turn this on for the next one.
+        description: "Push docs/store/metadata to App Store Connect after the upload. Off by default — the diff is printed either way."
+        type: boolean
+        default: false
+      run_tests:
+        # **Off by default (decision 0054).** Decision 0031 already made this call for
+        # CI — macOS runners bill at 10x and Christian verifies iOS code on his own
+        # machine — and defaulting it on here quietly contradicted that: the 1.0 (2)
+        # run spent 35 minutes re-proving a suite that had gone green locally on the
+        # same commit minutes earlier. LaborSim alone is ~90% of that cost (543 s of
+        # test time on a fast image, and it is pure logic that has no business on a
+        # simulator at all — HL-041).
+        #
+        # What still protects the artifact: the ubuntu gate runs on every push, the
+        # Archive step is a real compile so a broken tree cannot upload, and the tree
+        # is a clean checkout of the pushed ref rather than anyone's worktree. Turn
+        # this on deliberately when you want the second opinion — before a first
+        # submission, or after a toolchain or runner-image change.
+        description: "Run the package tests and the D1 gate before archiving. Off by default (0054) — verification is local; turn on for a second opinion after a toolchain or image change."
+        type: boolean
+        default: false
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    # **A released Xcode, deliberately (HL-040).** This was `xcode-27`, a preview label
+    # carrying the Xcode 27 *beta*, and "Select Xcode" below takes the newest on the
+    # image — so 1.0 (1) went to App Store Connect archived against a beta SDK.
+    # `altool --validate-app` passed it, but validation is not review, and Apple asks
+    # for a released Xcode on submissions. That label existed only to reach the old
+    # iOS 27.0 deployment target; decision 0053 dropped the floor to 18.0, which any
+    # current Xcode builds.
+    #
+    # **Back on `xcode-27` for 1.1 (HL-068), for the SDK and not the floor.** The Duo
+    # code (decision 0066) calls iOS 27.1 API behind `#available`, which still has to
+    # exist in the SDK to compile, and `macos-latest` tops out at Xcode 26.6. The label
+    # now carries released Xcodes beside a release candidate; "Select Xcode" below
+    # takes the newest *released* one, so HL-040's lesson holds.
+    runs-on: xcode-27
+    timeout-minutes: 90
+    environment: appstore
+
+    steps:
+      - uses: actions/checkout@v7
+
+      # Newest Xcode on the image, selected AND exported, so every later step and
+      # every script agrees on one toolchain rather than inheriting the runner's
+      # default. (The scripts no longer carry a DEVELOPER_DIR default of their own —
+      # HL-038 removed the Xcode-beta pin — but pinning it here still makes the
+      # toolchain a recorded fact of the run rather than a property of the image.)
+      #
+      # The beta warning is advisory on purpose. Apple's beta build numbers end in a
+      # lowercase letter (27A5228h) where releases do not (17F113), which is a
+      # reliable-enough signal to surface and far too weak to fail a release on. If it
+      # fires, look at the printed version before uploading — see HL-040.
+      - name: Select Xcode
+        run: |
+          # Real bundles only, named for a release: the image's `Xcode_27.2.app` is a
+          # symlink to `Xcode_27.2_Release_Candidate.app`, so a newest-by-name pick
+          # would archive on the RC (HL-068).
+          XCODE_APP=$(for x in /Applications/Xcode_*.app; do
+                        [[ -L "$x" ]] && continue
+                        [[ "$x" =~ [Bb]eta|Release_Candidate ]] && continue
+                        echo "$x"
+                      done | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE_APP/Contents/Developer"
+          echo "DEVELOPER_DIR=$XCODE_APP/Contents/Developer" >> "$GITHUB_ENV"
+          xcodebuild -version
+          # The marketing version, read once: the artifact name and the summary used
+          # to say "1.0" in a literal and labelled the first 1.1 archive with it.
+          MARKETING_VERSION=$(grep -m1 -E '^[[:space:]]*MARKETING_VERSION:' project.yml | sed -E 's/.*MARKETING_VERSION:[[:space:]]*"?([^"[:space:]]+)"?.*/\1/' || true)
+          [ -n "$MARKETING_VERSION" ] || { echo "::error::No MARKETING_VERSION in project.yml"; exit 1; }
+          echo "MARKETING_VERSION=$MARKETING_VERSION" >> "$GITHUB_ENV"
+          BUILD_VERSION=$(xcodebuild -version | awk '/Build version/ { print $3 }')
+          if [[ "$BUILD_VERSION" =~ [a-z]$ ]]; then
+            echo "::warning::Xcode build $BUILD_VERSION looks like a beta. App Store submissions want a released Xcode (HL-040)."
+          fi
+
+      - name: Generate project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      # **Credentials first, and fail in a minute rather than twenty.**
+      #
+      # The first real run of this workflow spent 20 minutes on tests and then died in
+      # `Archive` with a 401 from Apple and a misleading second error — "no iOS App
+      # *Development* provisioning profiles" — which is what Xcode reports when it
+      # cannot authenticate and falls back to development signing. Neither message
+      # named the actual problem, and nothing before that point had checked whether
+      # the credentials were even well-formed.
+      #
+      # So this runs before anything expensive, and it checks shape before it checks
+      # Apple. Nothing here prints a secret: only lengths, formats, and a
+      # pass/fail from Apple's own endpoint.
+      - name: Preflight the credentials
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+          P12: ${{ secrets.DIST_CERT_P12_BASE64 }}
+          P12_PASSWORD: ${{ secrets.DIST_CERT_PASSWORD }}
+        run: |
+          set -uo pipefail
+          fail=0
+          note() { echo "::error::$1"; fail=1; }
+
+          # A trailing newline survives a paste into the GitHub secrets UI and is
+          # invisible everywhere afterwards. It is the single most likely cause of a
+          # 401 that looks like a wrong key, so it is checked first and by length.
+          for name in ASC_KEY_ID ASC_ISSUER_ID; do
+            raw="${!name}"
+            trimmed=$(printf '%s' "$raw" | tr -d '[:space:]')
+            if [ "${#raw}" -ne "${#trimmed}" ]; then
+              note "$name contains whitespace (${#raw} chars, ${#trimmed} without). Re-paste it with no trailing newline."
+            fi
+          done
+
+          KEY_ID=$(printf '%s' "${ASC_KEY_ID:-}" | tr -d '[:space:]')
+          ISSUER=$(printf '%s' "${ASC_ISSUER_ID:-}" | tr -d '[:space:]')
+
+          # Key IDs are 10 uppercase alphanumerics; issuer IDs are UUIDs. Getting these
+          # two the wrong way round is easy on a page that shows both.
+          echo "$KEY_ID" | grep -qE '^[A-Z0-9]{10}$' \
+            || note "ASC_KEY_ID is not a 10-character key id (got ${#KEY_ID} chars). It is the short code in the key's row."
+          echo "$ISSUER" | grep -qiE '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$' \
+            || note "ASC_ISSUER_ID is not a UUID (got ${#ISSUER} chars). It is the long id above the key table, not a key id."
+
+          if [ -n "${ASC_KEY_P8_BASE64:-}" ]; then
+            if ! echo "$ASC_KEY_P8_BASE64" | base64 --decode > "$RUNNER_TEMP/pre.p8" 2>/dev/null; then
+              note "ASC_KEY_P8_BASE64 is not valid base64."
+            elif ! head -1 "$RUNNER_TEMP/pre.p8" | grep -q "BEGIN PRIVATE KEY"; then
+              note "ASC_KEY_P8_BASE64 decodes, but not to a PEM private key. Re-encode the .p8 itself, not a copy of the page."
+            else
+              echo "ASC key: decodes to a PEM private key ($(wc -c < "$RUNNER_TEMP/pre.p8" | tr -d ' ') bytes)"
+            fi
+          else
+            note "ASC_KEY_P8_BASE64 is unset."
+          fi
+
+          if [ -n "${P12:-}" ]; then
+            if ! echo "$P12" | base64 --decode > "$RUNNER_TEMP/pre.p12" 2>/dev/null; then
+              note "DIST_CERT_P12_BASE64 is not valid base64."
+            else
+              # Confirms the private key travelled with the certificate — a .p12
+              # exported without it signs nothing, and codesign's error does not say so.
+              if openssl pkcs12 -in "$RUNNER_TEMP/pre.p12" -legacy -nocerts -noout \
+                   -passin "pass:${P12_PASSWORD:-}" 2>/dev/null; then
+                echo "Distribution .p12: contains a private key"
+              else
+                note "DIST_CERT_P12_BASE64 has no readable private key with DIST_CERT_PASSWORD. Either the password is wrong, or the .p12 was exported without the key nested under the certificate."
+              fi
+            fi
+          else
+            note "DIST_CERT_P12_BASE64 is unset."
+          fi
+
+          rm -f "$RUNNER_TEMP/pre.p12"
+          [ "$fail" -eq 0 ] || exit 1
+
+          # Shape is fine; now ask Apple. This is the check that would have turned the
+          # first run's 401-after-20-minutes into a 401 after ninety seconds.
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          cp "$RUNNER_TEMP/pre.p8" "$HOME/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8"
+          chmod 600 "$HOME/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8"
+          rm -f "$RUNNER_TEMP/pre.p8"
+          if xcrun altool --list-apps --apiKey "$KEY_ID" --apiIssuer "$ISSUER" >/dev/null 2>"$RUNNER_TEMP/auth.err"; then
+            echo "Apple accepted the API key."
+          else
+            echo "::error::Apple rejected the API key. Most likely: it is an *Individual* key rather than a **Team** key (individual keys cannot perform team operations and 401 on listTeams), the issuer id belongs to a different team, or the key's access is below App Manager."
+            sed 's/^/  /' "$RUNNER_TEMP/auth.err" | head -20
+            exit 1
+          fi
+
+      # Opt-in since decision 0054 — see the `run_tests` input for why. The measured
+      # split is the argument: the D1 gate is 51 seconds and the package tests are 16
+      # minutes on a fast image and ~35 on the standard one, of which LaborSim alone
+      # is 543 seconds of test time. `a11y-ax5.sh` is deliberately *not* here either
+      # — it is the separate manual tier in ci.yml, and doubling a 14-minute simulator
+      # gate onto every upload is how a gate stops being run at all.
+      - name: Package tests and D1 gate
+        if: inputs.run_tests
+        run: |
+          ./scripts/test.sh
+          ./scripts/gate.sh
+
+      - name: Import signing certificate
+        env:
+          P12: ${{ secrets.DIST_CERT_P12_BASE64 }}
+          P12_PASSWORD: ${{ secrets.DIST_CERT_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "${P12:-}" ]; then
+            echo "::error::DIST_CERT_P12_BASE64 is unset. See this workflow's header for the five secrets it needs."
+            exit 1
+          fi
+          # A keychain of its own, with a password generated here and never stored:
+          # the runner is ephemeral, but the login keychain is not the place to put
+          # a distribution identity even for twenty minutes.
+          KEYCHAIN_PASSWORD=$(uuidgen)
+          echo "KEYCHAIN_PATH=$RUNNER_TEMP/release.keychain-db" >> "$GITHUB_ENV"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/release.keychain-db"
+          security set-keychain-settings -lut 3600 "$RUNNER_TEMP/release.keychain-db"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/release.keychain-db"
+          echo "$P12" | base64 --decode > "$RUNNER_TEMP/dist.p12"
+          security import "$RUNNER_TEMP/dist.p12" \
+            -k "$RUNNER_TEMP/release.keychain-db" \
+            -P "$P12_PASSWORD" \
+            -T /usr/bin/codesign -T /usr/bin/security
+          # Without this, codesign blocks on a UI prompt no one can answer and the
+          # job hangs until the timeout rather than failing.
+          security set-key-partition-list -S apple-tool:,apple:,codesign: \
+            -s -k "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/release.keychain-db" >/dev/null
+          security list-keychain -d user -s "$RUNNER_TEMP/release.keychain-db" login.keychain-db
+          rm -f "$RUNNER_TEMP/dist.p12"
+          echo "Imported identities:"
+          security find-identity -v -p codesigning "$RUNNER_TEMP/release.keychain-db"
+
+      - name: Write App Store Connect API key
+        env:
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ASC_KEY_P8_BASE64:-}" ]; then
+            echo "::error::ASC_KEY_P8_BASE64 is unset. See this workflow's header."
+            exit 1
+          fi
+          # xcodebuild's -authenticationKeyPath wants a real file; altool is happy
+          # with the same one, so both steps below share it.
+          mkdir -p "$RUNNER_TEMP/private_keys"
+          echo "$ASC_KEY_P8_BASE64" | base64 --decode \
+            > "$RUNNER_TEMP/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+          chmod 600 "$RUNNER_TEMP/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+          # altool resolves keys by searching a fixed list of directories and only
+          # honours API_PRIVATE_KEYS_DIR on newer toolchains. Writing the canonical
+          # location too costs nothing and removes a version-dependent failure that
+          # would otherwise surface as "could not find the private key".
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          cp "$RUNNER_TEMP/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
+             "$HOME/.appstoreconnect/private_keys/"
+          chmod 600 "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+
+      - name: Archive
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          echo "Stamping $MARKETING_VERSION (${{ inputs.build_number }})"
+          xcodebuild archive \
+            -project Hushlight.xcodeproj \
+            -scheme Hushlight \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/Hushlight.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$RUNNER_TEMP/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
+            CURRENT_PROJECT_VERSION=${{ inputs.build_number }}
+          # No `--keychain` for codesign (HL-068). The archive is signed for
+          # *development* with an identity xcodebuild creates through the API key
+          # mid-run. Under Xcode 26.6 that worked with codesign pinned to the release
+          # keychain; under 27.1 the pinned codesign reported "no identity found" for
+          # the identity xcodebuild had just made, so it is evidently filed elsewhere
+          # (the step below names where if it fails again). The release keychain is already
+          # on the search list; the distribution identity it holds is used by the
+          # export, which re-signs everything.
+
+      # Names and hashes only — what codesign could see when the archive failed,
+      # so a signing failure says which identity was missing rather than leaving it
+      # to inference. Nothing secret is printed: identities are public certificates.
+      - name: Signing identities on failure
+        if: failure()
+        run: |
+          for kc in $(security list-keychains -d user | tr -d '"'); do
+            echo "== $kc"; security find-identity -v -p codesigning "$kc" || true
+          done
+
+      # The check that costs nothing and would have caught a whole class of App
+      # Review rejection: both privacy manifests have to be *in the archive*, not
+      # merely in the repo. An appex that loses its manifest still builds.
+      - name: Verify the archive carries both privacy manifests
+        run: |
+          set -euo pipefail
+          APP="$RUNNER_TEMP/Hushlight.xcarchive/Products/Applications/Hushlight.app"
+          missing=0
+          [ -f "$APP/PrivacyInfo.xcprivacy" ] || { echo "::error::app PrivacyInfo.xcprivacy missing from archive"; missing=1; }
+          if ls "$APP/PlugIns/"*.appex >/dev/null 2>&1; then
+            for ext in "$APP/PlugIns/"*.appex; do
+              [ -f "$ext/PrivacyInfo.xcprivacy" ] || { echo "::error::$(basename "$ext") PrivacyInfo.xcprivacy missing"; missing=1; }
+            done
+          else
+            echo "::warning::No appex found in the archive — the widgets extension did not embed."
+          fi
+          exit $missing
+
+      - name: Export the IPA
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/Hushlight.xcarchive" \
+            -exportOptionsPlist scripts/ExportOptions.plist \
+            -exportPath "$RUNNER_TEMP/export" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$RUNNER_TEMP/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+          ls -la "$RUNNER_TEMP/export"
+          # Resolve the .ipa by glob rather than by assuming it is named after the
+          # scheme — export names it after the product, and a rename would turn a
+          # working pipeline into a "file not found" two steps later.
+          IPA=$(ls "$RUNNER_TEMP/export/"*.ipa 2>/dev/null | head -1 || true)
+          [ -n "$IPA" ] || { echo "::error::No .ipa produced by export"; exit 1; }
+          echo "IPA_PATH=$IPA" >> "$GITHUB_ENV"
+          echo "Exported $(basename "$IPA")"
+
+      # Validation before upload, deliberately as its own step: it catches a bad
+      # entitlement or a missing icon in about a minute, where the same problem
+      # found after upload costs a full processing cycle and burns the build number.
+      - name: Validate
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          export API_PRIVATE_KEYS_DIR="$RUNNER_TEMP/private_keys"
+          xcrun altool --validate-app \
+            -f "$IPA_PATH" \
+            -t ios \
+            --apiKey "$ASC_KEY_ID" \
+            --apiIssuer "$ASC_ISSUER_ID"
+
+      - name: Upload to App Store Connect
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          export API_PRIVATE_KEYS_DIR="$RUNNER_TEMP/private_keys"
+          xcrun altool --upload-app \
+            -f "$IPA_PATH" \
+            -t ios \
+            --apiKey "$ASC_KEY_ID" \
+            --apiIssuer "$ASC_ISSUER_ID"
+
+      # The .xcarchive carries the dSYMs. Keep them: a TestFlight crash report
+      # without symbols is a hex address, and this is the only copy once the runner
+      # is gone.
+      - name: Keep the archive
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Hushlight-${{ env.MARKETING_VERSION }}-${{ inputs.build_number }}-xcarchive
+          path: ${{ runner.temp }}/Hushlight.xcarchive
+          retention-days: 90
+          # hashFiles() cannot guard this: it only sees paths under the workspace,
+          # and the archive is in RUNNER_TEMP, so the condition was always false and
+          # the dSYMs would have been discarded on every run.
+          if-no-files-found: ignore
+
+      # Success only: the text says "Uploaded", and under `always()` it said so
+      # after an archive that never reached App Store Connect.
+      - name: Summary
+        run: |
+          {
+            echo "### Hushlight $MARKETING_VERSION (${{ inputs.build_number }})"
+            echo ""
+            echo "Uploaded to App Store Connect — **nothing has been released.**"
+            echo ""
+            echo "Processing takes a few minutes. Then, in App Store Connect:"
+            echo "- TestFlight → the build appears once processed"
+            echo "- Internal testers need no review; external testers need Beta App Review"
+            echo "- Submitting for App Review is a separate, deliberate action"
+            echo ""
+            echo "If a later upload is needed, raise the build number — $MARKETING_VERSION (${{ inputs.build_number }}) is now spent."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Runs even when an earlier step failed. The runner is ephemeral, so this is
+      # belt and braces — but a signing identity left in a keychain is exactly the
+      # thing that should not depend on the happy path.
+      - name: Remove the keychain
+        if: always()
+        run: |
+          security delete-keychain "$RUNNER_TEMP/release.keychain-db" 2>/dev/null || true
+          rm -rf "$RUNNER_TEMP/private_keys" || true
+
+  # HL-047. The listing, pushed from the same commit that produced the build, so the
+  # two cannot drift by more than one release.
+  #
+  # **`ubuntu-latest`, and that is the whole cost argument.** This is HTTPS and nothing
+  # else — no Xcode, no simulator, no signing — so it bills at 1x where the archive job
+  # above bills at 10x. Measured against that job (4m09s of macOS wall time is roughly
+  # 42 quota-minutes), a metadata push is single-digit quota-minutes: cheap enough to
+  # run on every release without thinking about it, which is the point. The expensive
+  # half — capturing the screenshots, which needs a simulator — deliberately stays off
+  # CI and is committed from a developer machine instead (HL-048).
+  #
+  # ES256 signing comes from the `openssl` CLI via `scripts/asc_jwt.py`, so nothing is
+  # installed and no third-party code enters the release path.
+  metadata:
+    runs-on: ubuntu-latest
+    needs: upload
+    environment: appstore
+    # Only after a build actually landed. A listing that describes a build App Store
+    # Connect never received is worse than a stale one.
+    if: success()
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Write the App Store Connect API key
+        env:
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+        run: |
+          umask 077
+          printf '%s' "$ASC_KEY_P8_BASE64" | base64 --decode > "$RUNNER_TEMP/AuthKey.p8"
+
+      # The diff first, always, and in the log whether or not the push writes. It is
+      # the record of what this run changed about the listing. With no editable
+      # version (the live one is not, and the next has not been created) there is
+      # nothing to diff: `--diff-only` says so and passes, rather than turning a
+      # successful upload's run red.
+      - name: Listing diff
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_PATH: ${{ runner.temp }}/AuthKey.p8
+        run: python3 scripts/push-store-metadata.py --diff-only
+
+      - name: Push the listing
+        if: inputs.push_metadata
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_PATH: ${{ runner.temp }}/AuthKey.p8
+        run: python3 scripts/push-store-metadata.py --apply --screenshots
+
+      - name: Remove the key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/AuthKey.p8"

@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "raw-duo/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "Half open",
+      "headline": "The fold is the line.",
+      "subline": "Stand it on the nightstand. The count faces the bed; the half lying flat is the button."
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "raw-duo/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "Opened flat",
+      "headline": "History beside the timer.",
+      "subline": "Every contraction of this stretch, live, next to the count."
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "raw-duo/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "Closed",
+      "headline": "One hand, in the dark.",
+      "subline": "The same timer on the outer display, a thumb away from Start."
+    }
+  ],
+  "cards": []
+}

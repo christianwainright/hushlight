@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/ko/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "손에 들고",
+      "headline": "타이머 옆에 기록.",
+      "subline": "기록을 맡은 사람을 위해: 모든 진통이 카운트 바로 옆에 실시간으로 쌓입니다."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/ko/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "거치대에 세워",
+      "headline": "방 건너편에서도 읽힙니다.",
+      "subline": "침대 옆 테이블에 세워 두세요. 카운트가 방 크기로 커집니다."
+    }
+  ],
+  "cards": []
+}

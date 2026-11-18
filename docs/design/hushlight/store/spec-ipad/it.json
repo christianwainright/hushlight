@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/it/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "In mano",
+      "headline": "La cronologia accanto al timer.",
+      "subline": "Per chi tiene il registro: ogni contrazione, in diretta, accanto al conteggio."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/it/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "Su un supporto",
+      "headline": "Leggibile dall’altra parte della stanza.",
+      "subline": "Appoggiato sul tavolino. Il conteggio è grande quanto la stanza."
+    }
+  ],
+  "cards": []
+}

@@ -1,0 +1,5 @@
+Hushlight ya funciona en iPad y iPhone Duo. En iPad, el historial va junto al temporizador y, sobre un soporte, el contador se lee desde el otro lado de la habitación. Deja un iPhone Duo medio abierto en la mesita de noche: el contador te mira desde la mitad de arriba y la mitad apoyada es el botón. Cada dispositivo guarda su propio registro; nada se comparte entre ellos.
+
+Ahora puedes iniciar y terminar una contracción desde el centro de control, el botón de acción o Siri.
+
+Reportar un problema ahora muestra la dirección cuando el dispositivo no tiene app de correo, y Llamar muestra el número cuando no puede llamar.

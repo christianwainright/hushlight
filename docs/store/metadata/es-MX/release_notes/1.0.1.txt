@@ -1,0 +1,1 @@
+Reportar un problema ahora muestra la dirección cuando el dispositivo no tiene app de correo, y Llamar muestra el número cuando no puede llamar. Nada más cambió.

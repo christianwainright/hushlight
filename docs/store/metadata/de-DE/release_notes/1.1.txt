@@ -1,0 +1,5 @@
+Hushlight läuft jetzt auf dem iPad und dem iPhone Duo. Auf dem iPad steht der Verlauf neben dem Timer, und auf einem Ständer ist die Zählung vom anderen Ende des Zimmers lesbar. Stell ein iPhone Duo halb aufgeklappt auf den Nachttisch: Oben steht die Zählung, die flach liegende Hälfte ist der Knopf. Jedes Gerät führt seine eigene Aufzeichnung; nichts wird zwischen ihnen geteilt.
+
+Du kannst eine Wehe jetzt auch über das Kontrollzentrum, die Aktionstaste oder Siri starten und beenden.
+
+„Problem melden“ zeigt jetzt die Adresse, wenn das Gerät kein Mail-Programm hat, und „Anrufen“ zeigt die Nummer, wenn es nicht anrufen kann.

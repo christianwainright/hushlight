@@ -1,0 +1,129 @@
+{
+  "actions" : [
+    {
+      "at" : 0,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 70,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 300,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 370,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 600,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 800,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 900,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1100,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1200,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1400,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 1500,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 1700,
+      "kind" : "tapEnd"
+    }
+  ],
+  "archetype" : "boundaryBattery",
+  "generatorVersion" : "1.0.0",
+  "id" : "weakness-w6-one-suspect",
+  "noiseProfile" : "clean",
+  "paramVariant" : 0,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 0,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 70,
+      "start" : 0
+    },
+    {
+      "end" : 370,
+      "start" : 300
+    },
+    {
+      "end" : 670,
+      "start" : 600
+    },
+    {
+      "end" : 1100,
+      "start" : 900
+    },
+    {
+      "end" : 1400,
+      "start" : 1200
+    },
+    {
+      "end" : 1700,
+      "start" : 1500
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 1700,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      }
+    ],
+    "expectedSuspects" : [
+      4,
+      6,
+      8,
+      10
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 3900
+      },
+      {
+        "from" : 3901,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 8899
+      }
+    ]
+  }
+}

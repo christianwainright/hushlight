@@ -1,0 +1,237 @@
+{
+  "actions": [
+    {
+      "at": 0,
+      "kind": "tapStart"
+    },
+    {
+      "at": 52,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 300,
+      "kind": "tapStart"
+    },
+    {
+      "at": 352,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 600,
+      "kind": "tapStart"
+    },
+    {
+      "at": 652,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 900,
+      "kind": "tapStart"
+    },
+    {
+      "at": 952,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 1200,
+      "kind": "tapStart"
+    },
+    {
+      "at": 1252,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 1500,
+      "kind": "tapStart"
+    },
+    {
+      "at": 1552,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 1800,
+      "kind": "tapStart"
+    },
+    {
+      "at": 1852,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 2100,
+      "kind": "tapStart"
+    },
+    {
+      "at": 2152,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 2400,
+      "kind": "tapStart"
+    },
+    {
+      "at": 2452,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 2700,
+      "kind": "tapStart"
+    },
+    {
+      "at": 2752,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 3000,
+      "kind": "tapStart"
+    },
+    {
+      "at": 3052,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 3155,
+      "kind": "tapStart"
+    },
+    {
+      "at": 3166,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 3300,
+      "kind": "tapStart"
+    },
+    {
+      "at": 3352,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 3600,
+      "kind": "tapStart"
+    },
+    {
+      "at": 3652,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 3900,
+      "kind": "tapStart"
+    },
+    {
+      "at": 3952,
+      "kind": "tapEnd"
+    },
+    {
+      "at": 4200,
+      "kind": "tapStart"
+    },
+    {
+      "at": 4252,
+      "kind": "tapEnd"
+    }
+  ],
+  "archetype": "boundaryBattery",
+  "generatorVersion": "3.0.0",
+  "id": "slip-among-good-fiveOneOne",
+  "noiseProfile": "clean",
+  "paramVariant": 0,
+  "pretermContext": false,
+  "rule": "fiveOneOne",
+  "schemaVersion": 1,
+  "seed": 0,
+  "t0": 1800000000,
+  "timeZone": "America/New_York",
+  "trueContractions": [
+    {
+      "start": 0,
+      "end": 52
+    },
+    {
+      "start": 300,
+      "end": 352
+    },
+    {
+      "start": 600,
+      "end": 652
+    },
+    {
+      "start": 900,
+      "end": 952
+    },
+    {
+      "start": 1200,
+      "end": 1252
+    },
+    {
+      "start": 1500,
+      "end": 1552
+    },
+    {
+      "start": 1800,
+      "end": 1852
+    },
+    {
+      "start": 2100,
+      "end": 2152
+    },
+    {
+      "start": 2400,
+      "end": 2452
+    },
+    {
+      "start": 2700,
+      "end": 2752
+    },
+    {
+      "start": 3000,
+      "end": 3052
+    },
+    {
+      "start": 3300,
+      "end": 3352
+    },
+    {
+      "start": 3600,
+      "end": 3652
+    },
+    {
+      "start": 3900,
+      "end": 3952
+    },
+    {
+      "start": 4200,
+      "end": 4252
+    }
+  ],
+  "truth": {
+    "episodesTrue": [
+      {
+        "start": 0,
+        "end": 4252
+      }
+    ],
+    "events": [
+      {
+        "type": "onsetTrue",
+        "rule": "fiveOneOne",
+        "at": 3600
+      }
+    ],
+    "expectedSuspects": [
+      22
+    ],
+    "zones": [
+      {
+        "rule": "fiveOneOne",
+        "kind": "mustNotFire",
+        "from": 0,
+        "to": 3599
+      },
+      {
+        "rule": "fiveOneOne",
+        "kind": "gray",
+        "from": 3600,
+        "to": 7852
+      }
+    ]
+  }
+}

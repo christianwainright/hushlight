@@ -1,0 +1,132 @@
+{
+  "frames": [
+    {
+      "id": "01-verdict",
+      "source": "../raw/pt-BR/01-verdict-dark.png",
+      "appearance": "dark",
+      "eyebrow": "A ligação",
+      "headline": "Quando o padrão está lá, ele diz.",
+      "subline": "Lido em relação a 5-1-1, 4-1-1 ou 3-1-1 — a regra que te deram."
+    },
+    {
+      "id": "02-timing",
+      "source": "../raw/pt-BR/02-timing-dark.png",
+      "appearance": "dark",
+      "eyebrow": "Dois toques",
+      "headline": "Toque quando começa. Toque quando afrouxa.",
+      "subline": "Toda a metade de baixo da tela é o botão. Feito para um quarto escuro e uma mão só."
+    },
+    {
+      "id": "03-rest",
+      "source": "../raw/pt-BR/03-rest-light.png",
+      "appearance": "light",
+      "eyebrow": "Privado · Sem conta · Sem anúncios",
+      "headline": "Abre no botão.",
+      "subline": "Sem questionário, sem cadastro, sem tutorial entre você e uma contração que já começou."
+    },
+    {
+      "id": "04-building",
+      "source": "../raw/pt-BR/04-building-dark.png",
+      "appearance": "dark",
+      "eyebrow": "O piso de evidência",
+      "headline": "Ele não chuta.",
+      "subline": "Nenhum número antes de haver tempo marcado suficiente para significar algo. Um travessão, nunca um zero."
+    },
+    {
+      "id": "05-lockscreen",
+      "source": "../raw/pt-BR/05-lockscreen-dark.png",
+      "appearance": "dark",
+      "eyebrow": "Atividade ao vivo",
+      "headline": "Comece e pare pela tela bloqueada.",
+      "subline": "Sem desbloquear, sem procurar o app. A contagem segue onde você consegue ver."
+    },
+    {
+      "id": "06-history",
+      "source": "../raw/pt-BR/06-history-light.png",
+      "appearance": "light",
+      "eyebrow": "Histórico",
+      "headline": "Cada série, guardada no seu telefone.",
+      "subline": "Cada episódio com suas médias. Desfaça um toque errado. Nada sai do aparelho."
+    },
+    {
+      "id": "07-guidance",
+      "source": "../raw/pt-BR/07-guidance-dark.png",
+      "appearance": "dark",
+      "eyebrow": "A regra de quem te acompanha",
+      "headline": "A regra deles, o número deles, a um toque.",
+      "subline": "Configure a regra que te deram e ligar é um toque, não uma busca nos contatos às 3 da manhã."
+    }
+  ],
+  "cards": [
+    {
+      "id": "a1",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Two taps.",
+      "subline": null
+    },
+    {
+      "id": "a2",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "Start when it begins.",
+      "subline": null
+    },
+    {
+      "id": "a3",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "End when it eases.",
+      "subline": null
+    },
+    {
+      "id": "a4",
+      "appearance": "dark",
+      "eyebrow": "The call",
+      "headline": "When the pattern is there, it says so.",
+      "subline": null
+    },
+    {
+      "id": "a5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    },
+    {
+      "id": "b1",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Start it in the app.",
+      "subline": null
+    },
+    {
+      "id": "b2",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Lock the phone.",
+      "subline": null
+    },
+    {
+      "id": "b3",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "It keeps counting on the Lock Screen.",
+      "subline": null
+    },
+    {
+      "id": "b4",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "End it there. No unlocking.",
+      "subline": null
+    },
+    {
+      "id": "b5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    }
+  ]
+}

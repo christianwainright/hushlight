@@ -1,0 +1,279 @@
+{
+  "actions" : [
+    {
+      "at" : 18,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 34,
+      "kind" : "killApp"
+    },
+    {
+      "at" : 40,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 101,
+      "kind" : "launchApp"
+    },
+    {
+      "at" : 590,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 592,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 606,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3139,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3175,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3293,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3338,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3498,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3518,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 3681,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 3717,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4041,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4091,
+      "kind" : "tapEnd"
+    },
+    {
+      "at" : 4195,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 4941,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5043,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5045,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5192,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 5309,
+      "kind" : "tapStart"
+    }
+  ],
+  "archetype" : "precipitous",
+  "expectedDetection" : [
+    "archetype:precipitous",
+    "noise:exhaustedSolo",
+    "onsetExpected",
+    "suspectExpected"
+  ],
+  "generatorVersion" : "3.0.0",
+  "id" : "precipitous-v1-exhaustedSolo-r0-fiveOneOne-C552CD8DEAB322FD",
+  "noiseProfile" : "exhaustedSolo",
+  "paramVariant" : 1,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 14218652982973768445,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 40,
+      "start" : 0
+    },
+    {
+      "end" : 606,
+      "start" : 569
+    },
+    {
+      "end" : 1207,
+      "start" : 1162
+    },
+    {
+      "end" : 1601,
+      "start" : 1533
+    },
+    {
+      "end" : 1853,
+      "start" : 1803
+    },
+    {
+      "end" : 2161,
+      "start" : 2103
+    },
+    {
+      "end" : 2478,
+      "start" : 2418
+    },
+    {
+      "end" : 2715,
+      "start" : 2660
+    },
+    {
+      "end" : 2906,
+      "start" : 2862
+    },
+    {
+      "end" : 3175,
+      "start" : 3120
+    },
+    {
+      "end" : 3338,
+      "start" : 3273
+    },
+    {
+      "end" : 3545,
+      "start" : 3473
+    },
+    {
+      "end" : 3717,
+      "start" : 3663
+    },
+    {
+      "end" : 3969,
+      "start" : 3888
+    },
+    {
+      "end" : 4091,
+      "start" : 4024
+    },
+    {
+      "end" : 4233,
+      "start" : 4176
+    },
+    {
+      "end" : 4412,
+      "start" : 4338
+    },
+    {
+      "end" : 4536,
+      "start" : 4486
+    },
+    {
+      "end" : 4662,
+      "start" : 4594
+    },
+    {
+      "end" : 4759,
+      "start" : 4699
+    },
+    {
+      "end" : 4886,
+      "start" : 4816
+    },
+    {
+      "end" : 4993,
+      "start" : 4932
+    },
+    {
+      "end" : 5114,
+      "start" : 5043
+    },
+    {
+      "end" : 5258,
+      "start" : 5192
+    },
+    {
+      "end" : 5426,
+      "start" : 5309
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 5426,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "at" : 4770,
+        "rule" : "fiveOneOne",
+        "type" : "onsetTrue"
+      },
+      {
+        "at" : 8300,
+        "rule" : "fiveOneOne",
+        "type" : "offsetTrue"
+      }
+    ],
+    "expectedSuspects" : [
+      4
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 1802
+      },
+      {
+        "from" : 1803,
+        "kind" : "mustNotFire",
+        "reason" : "sustained",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 4769
+      },
+      {
+        "from" : 4770,
+        "kind" : "mustFire",
+        "rule" : "fiveOneOne",
+        "to" : 8299
+      },
+      {
+        "from" : 8300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 8416
+      },
+      {
+        "from" : 8417,
+        "kind" : "mustNotFire",
+        "reason" : "count",
+        "rule" : "fiveOneOne",
+        "to" : 12625
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+name: Hushlight
+
+options:
+  bundleIdPrefix: net.wainright
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    # Device builds. Automatic signing registers the App ID on the developer
+    # account the first time it runs.
+    DEVELOPMENT_TEAM: QZ229U67EE
+    CODE_SIGN_STYLE: Automatic
+    # Generated plists map these to CFBundleShortVersionString/CFBundleVersion.
+    # Apps tolerate their absence; app-extension placeholder validation does not —
+    # an appex without a version fails install with "invalid placeholder attributes".
+    # These project-wide values are the backstop (test bundles, new targets); the
+    # app overrides them per-target below. An appex must always carry the same
+    # version pair as its host app, so the widget target tracks the app's numbers.
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+    # HL-046: the compiler extracts every localizable literal into the String
+    # Catalog as it builds. Off (the default for a project this one generates
+    # rather than clicks together in Xcode) it extracts nothing, and a key that
+    # never reached the catalog falls back to English in silence — which is how
+    # fifty-three keys shipped untranslated or under a key that never resolved,
+    # after HL-006, HL-007 and HL-008 all said they were done. On, the catalog cannot drift from the source, and a
+    # build that changes it is the gate saying a key was added without one.
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+packages:
+  DesignKit:
+    path: Packages/DesignKit
+  LaborKit:
+    path: Packages/LaborKit
+
+targets:
+  # The contraction timer (decision 0018). Deliberately minimal: no entitlements at
+  # all — no App Group (its store is its own sandbox), no HealthKit, no network.
+  Hushlight:
+    type: application
+    platform: iOS
+    sources:
+      - path: Hushlight
+    dependencies:
+      - package: DesignKit
+      - package: LaborKit
+      - target: HushlightWidgets
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: net.wainright.hushlight
+        PRODUCT_NAME: Hushlight
+        MARKETING_VERSION: "1.1"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        # iPhone stays portrait (decision 0018: one hand, in the dark). iPad takes all
+        # four — a stand does not ask which way up it is, and Split View and Stage
+        # Manager require it (HL-058, decision 0064).
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_CFBundleDisplayName: Hushlight
+        INFOPLIST_KEY_NSSupportsLiveActivities: YES
+        # Answered here rather than at every upload. The app links no crypto and
+        # makes no network call at all, so the exemption is a statement of fact
+        # (decision 0018's "no network capability in v1").
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        # iPhone and iPad (HL-058). Until 1.1 this was "1" and the app ran on iPad in
+        # compatibility mode — a phone-shaped window on a black slab.
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ENABLE_PREVIEWS: YES
+        GENERATE_INFOPLIST_FILE: YES
+
+  # The Live Activity renderer (SP-186). No entitlements, same as its app — the
+  # tap intent executes in the app's process, so the extension only draws.
+  HushlightWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: HushlightWidgets
+    dependencies:
+      - package: DesignKit
+      - package: LaborKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: net.wainright.hushlight.widgets
+        PRODUCT_NAME: HushlightWidgets
+        # Tracks the app's versions — an appex must match its host.
+        MARKETING_VERSION: "1.1"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: HushlightWidgets/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: Hushlight
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        # An appex matches its host's device families.
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SKIP_INSTALL: YES
+
+  # The timer's mechanics on glass (SP-193 phase 5). `Resources/` carries the canned
+  # seed snapshots the verdict, forgotten-timer and audit tests write to a temp path
+  # and hand the app via `-laborScenario`.
+  HushlightUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: HushlightUITests
+    dependencies:
+      - target: Hushlight
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Hushlight:
+    build:
+      targets:
+        Hushlight: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - HushlightUITests

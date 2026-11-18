@@ -1,0 +1,60 @@
+# The App Store listing, on its own.
+#
+# `release.yml`'s `metadata` job needs an upload to have happened, which is right for a
+# release and wrong for everything else: reading the live listing, or re-running a push
+# that stopped half way, should not cost a macOS archive at the 10x multiplier. This is
+# the same script with no build in front of it — ubuntu, 1x, about a minute.
+#
+# **The default is read-only.** With `apply` off it prints a field-by-field diff of the
+# repository against App Store Connect and writes nothing, which is the only way to see
+# what fourteen storefronts currently hold without opening fourteen web pages.
+name: Listing
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Write the changes. Off means print the diff and stop."
+        type: boolean
+        default: false
+      screenshots:
+        description: "Also replace the screenshot sets (needs apply)."
+        type: boolean
+        default: false
+      verify:
+        description: "Read every screenshot's delivery state back. Runs automatically after a screenshot push; on its own it needs no write."
+        type: boolean
+        default: false
+
+concurrency:
+  group: listing
+  cancel-in-progress: false
+
+jobs:
+  listing:
+    runs-on: ubuntu-latest
+    environment: appstore
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Write the App Store Connect API key
+        env:
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+        run: |
+          umask 077
+          printf '%s' "$ASC_KEY_P8_BASE64" | base64 --decode > "$RUNNER_TEMP/AuthKey.p8"
+
+      - name: Listing
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_PATH: ${{ runner.temp }}/AuthKey.p8
+        run: |
+          python3 scripts/push-store-metadata.py \
+            ${{ inputs.apply && '--apply' || '' }} \
+            ${{ inputs.screenshots && '--screenshots' || '' }} \
+            ${{ inputs.verify && '--verify' || '' }}
+
+      - name: Remove the key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/AuthKey.p8"

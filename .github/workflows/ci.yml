@@ -1,0 +1,130 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # The only way the macOS tier ever starts. No schedule, no commit-message flag,
+  # not even a PR — see decision 0031. Verification of iOS code happens on
+  # Christian's machine; this exists for the one thing a laptop cannot always do.
+  workflow_dispatch:
+
+# Cancel superseded runs on PRs. Main pushes are gate-only — ~6 seconds on the
+# cheapest runner — so there is no expensive verdict left to protect there, but
+# they still queue rather than cancel: it costs nothing and keeps every commit
+# accounted for. A manual macOS run gets its own group so a push cannot cancel it.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name == 'workflow_dispatch' && 'manual' || 'auto' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  gate:
+    # The §8 grep gate needs no toolchain, so it runs first and fails fast on the
+    # cheapest possible runner. This job is the entire automatic CI surface: the
+    # macOS tier does not run on any automatic trigger at all (decision 0031), so
+    # whatever is caught on a push is caught here or not at all.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # The same script `scripts/gate.sh` runs locally — one definition of the rule,
+      # so a local pass can never mean something different from a CI pass.
+      - name: DESIGN-SPEC §8 gate — no hex or fixed fonts outside DesignKit
+        run: ./scripts/lint-literals.sh
+      - name: Log audit — breadcrumbs only, no user figures (0029 §3)
+        run: ./scripts/lint-logging.sh
+      - name: HL-006 — zero user-facing literals outside a String Catalog
+        run: ./scripts/lint-localizable.sh
+      # F-0057: the reflow class Apple's audit is structurally blind to. Two S2
+      # defects shipped through a green AX5 leg before this existed.
+      - name: HL-033 — multi-figure rows take an accessibility-size branch
+        run: ./scripts/lint-row-figures.sh
+
+      # HL-049. Pure Python over plain text files, so it belongs on the tier that runs
+      # on every push rather than the one that bills at 10x.
+      - name: App Store listing metadata
+        run: ./scripts/lint-store-metadata.sh
+      # HL-055. Also pure Python — gate.sh ran it and this job did not, so a stale
+      # rendering passed every push and failed only on the next local gate.
+      - name: Rendered review notes match Disclaimers.reviewNotes
+        run: ./scripts/render-review-notes.sh --check
+      - name: No analytics SDK, no remote packages
+        run: |
+          # Two greps: `--include` filters file operands too, so the one-line form
+          # never read project.yml. xcodegen spells a remote package `url:` or
+          # `github:`, on its own line or inside an inline map (`Foo: {url: …}`).
+          if grep -rn "url:" --include="Package.swift" Packages/ \
+             || grep -nE "(^|[[:space:]{,])(url|github):" project.yml; then
+            echo "::error::A remote dependency appeared. See the zero-third-party rule."
+            exit 1
+          fi
+      - name: Note the manual tier
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          echo "::notice::macOS build and test does not run on pushes or PRs. Verify locally with ./scripts/test.sh, or start it by hand from the Actions tab (Run workflow) when you need the AX5 gate."
+
+  build-and-test:
+    # `xcode-27` since HL-068: the deployment floor is still iOS 18.0 (decision 0053),
+    # but the Duo code names iOS 27.1 API behind `#available`, and that has to exist
+    # in the SDK to compile. SP-042a is closed: app-target tests run locally now, so
+    # this tier is a second opinion rather than the only place they execute.
+    #
+    # **Manual only, and that is the point (decision 0031).** No push, no PR, no
+    # schedule, no commit-message flag reaches this job — macOS runners bill at the
+    # 10x multiplier, and Christian verifies iOS code on his own machine. Start it
+    # from the Actions tab when you actually want it: before a submission, or for
+    # a second run of the AX5 gate.
+    runs-on: xcode-27
+    needs: gate
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v7
+
+      # Newest Xcode on the image, selected AND exported, so every later step agrees
+      # on one toolchain. (The scripts' own DEVELOPER_DIR default is gone as of
+      # HL-038; before that, it overrode `xcode-select` here and failed the run.)
+      - name: Select Xcode
+        run: |
+          # Released bundles only — see release.yml's Select Xcode (HL-068).
+          XCODE_APP=$(for x in /Applications/Xcode_*.app; do
+                        [[ -L "$x" ]] && continue
+                        [[ "$x" =~ [Bb]eta|Release_Candidate ]] && continue
+                        echo "$x"
+                      done | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE_APP/Contents/Developer"
+          echo "DEVELOPER_DIR=$XCODE_APP/Contents/Developer" >> "$GITHUB_ENV"
+          xcodebuild -version
+
+      # No dependency cache on purpose: the zero-third-party rule means SPM has
+      # nothing to download (every package is local), and xcodebuild builds into
+      # DerivedData, which caches poorly on ephemeral runners.
+      - name: Generate project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Test packages
+        run: ./scripts/test.sh
+
+      # Building the app catches what package tests cannot — a screen that stops
+      # compiling. The packages above already built, so this is mostly incremental.
+      - name: Build the app
+        run: ./scripts/build.sh
+
+      # HL-046. The ubuntu gate's `lint-localizable.sh` is textual and runs on every
+      # push; this one asks the compiler, which is the only thing that knows which
+      # overload a literal resolved to, and fails if the catalogs are not exactly
+      # what it extracts. It needs Xcode, so it can only live on this tier.
+      - name: String Catalogs match the compiler's extraction
+        run: ./scripts/lint-loc-catalog.sh
+
+      # The accessibility gate, at AX5 (SP-195 phase 4). Apple's audit with zero
+      # suppressions, plus the stacked-branch layout invariants.
+      #
+      # The same script runs locally (SP-042a is closed); `scripts/labor-sim.sh`
+      # runs the same two bundles as one of its stages.
+      #
+      # The script creates its own simulator and deletes it in a trap: content size
+      # is a **device-wide** setting, and leaving AX5 on a shared runner would
+      # silently re-size every later job on that machine.
+      - name: Accessibility gate at AX5
+        run: ./scripts/a11y-ax5.sh

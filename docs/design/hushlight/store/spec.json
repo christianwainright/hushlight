@@ -1,0 +1,132 @@
+{
+  "frames": [
+    {
+      "id": "01-verdict",
+      "source": "raw/01-verdict-dark.png",
+      "appearance": "dark",
+      "eyebrow": "The call",
+      "headline": "When the pattern is there, it says so.",
+      "subline": "Read against 5-1-1, 4-1-1 or 3-1-1 — whichever guideline your provider gave you."
+    },
+    {
+      "id": "02-timing",
+      "source": "raw/02-timing-dark.png",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "Start when it begins. End when it eases.",
+      "subline": "The whole lower half of the screen is the button. Made for a dark room and one hand."
+    },
+    {
+      "id": "03-rest",
+      "source": "raw/03-rest-light.png",
+      "appearance": "light",
+      "eyebrow": "Private · No account · No ads",
+      "headline": "Opens on the button.",
+      "subline": "No quiz, no sign-up, no walkthrough between you and a contraction that has already started."
+    },
+    {
+      "id": "04-building",
+      "source": "raw/04-building-dark.png",
+      "appearance": "dark",
+      "eyebrow": "The evidence floor",
+      "headline": "It won’t guess.",
+      "subline": "No figure appears until enough is timed to mean something. An em dash, never a zero."
+    },
+    {
+      "id": "05-lockscreen",
+      "source": "raw/05-lockscreen-dark.png",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Start and stop from the Lock Screen.",
+      "subline": "Without unlocking, without finding the app. The count keeps ticking where you can see it."
+    },
+    {
+      "id": "06-history",
+      "source": "raw/06-history-light.png",
+      "appearance": "light",
+      "eyebrow": "History",
+      "headline": "Every stretch, kept on your phone.",
+      "subline": "Each episode with its own averages. Undo a wrong tap. Nothing leaves the device."
+    },
+    {
+      "id": "07-guidance",
+      "source": "raw/07-guidance-dark.png",
+      "appearance": "dark",
+      "eyebrow": "Your provider’s rule",
+      "headline": "Their guideline, their number, one tap away.",
+      "subline": "Set the rule they gave you and the call is a tap, not a search through Contacts at 3am."
+    }
+  ],
+  "cards": [
+    {
+      "id": "a1",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Two taps.",
+      "subline": null
+    },
+    {
+      "id": "a2",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "Start when it begins.",
+      "subline": null
+    },
+    {
+      "id": "a3",
+      "appearance": "dark",
+      "eyebrow": "Two taps",
+      "headline": "End when it eases.",
+      "subline": null
+    },
+    {
+      "id": "a4",
+      "appearance": "dark",
+      "eyebrow": "The call",
+      "headline": "When the pattern is there, it says so.",
+      "subline": null
+    },
+    {
+      "id": "a5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    },
+    {
+      "id": "b1",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Start it in the app.",
+      "subline": null
+    },
+    {
+      "id": "b2",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "Lock the phone.",
+      "subline": null
+    },
+    {
+      "id": "b3",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "It keeps counting on the Lock Screen.",
+      "subline": null
+    },
+    {
+      "id": "b4",
+      "appearance": "dark",
+      "eyebrow": "Live Activity",
+      "headline": "End it there. No unlocking.",
+      "subline": null
+    },
+    {
+      "id": "b5",
+      "appearance": "dark",
+      "eyebrow": "Hushlight",
+      "headline": "Private. Offline. No account.",
+      "subline": "Nothing you time leaves your phone."
+    }
+  ]
+}

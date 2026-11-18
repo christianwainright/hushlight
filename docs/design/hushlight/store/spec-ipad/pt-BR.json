@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "id": "pad-hand",
+      "device": "ipad",
+      "source": "../raw-ipad/pt-BR/pad-hand.png",
+      "appearance": "light",
+      "eyebrow": "Na mão",
+      "headline": "O histórico ao lado do cronômetro.",
+      "subline": "Para quem está anotando: cada contração, ao vivo, ao lado da contagem."
+    },
+    {
+      "id": "pad-stand",
+      "device": "ipad",
+      "source": "../raw-ipad/pt-BR/pad-stand.png",
+      "appearance": "dark",
+      "eyebrow": "Num suporte",
+      "headline": "Leia do outro lado do quarto.",
+      "subline": "Apoiado na mesinha. A contagem é do tamanho do quarto."
+    }
+  ],
+  "cards": []
+}

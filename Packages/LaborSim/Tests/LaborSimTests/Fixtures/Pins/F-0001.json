@@ -1,0 +1,103 @@
+{
+  "actions" : [
+    {
+      "at" : 0,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 10,
+      "createdBy" : 0,
+      "kind" : "deleteRecord"
+    },
+    {
+      "at" : 20,
+      "kind" : "tapStart"
+    },
+    {
+      "at" : 30,
+      "createdBy" : 0,
+      "kind" : "undoDelete"
+    },
+    {
+      "at" : 40,
+      "kind" : "tapEnd"
+    }
+  ],
+  "archetype" : "boundaryBattery",
+  "expectedDetection" : [
+    "tapEnd after restore-while-running must close the latest-started record"
+  ],
+  "generatorVersion" : "1.0.0",
+  "id" : "boundaryBattery-advRestoreWhileRunning",
+  "noiseProfile" : "clean",
+  "paramVariant" : 26,
+  "pretermContext" : false,
+  "rule" : "fiveOneOne",
+  "schemaVersion" : 1,
+  "seed" : 0,
+  "t0" : 1800000000,
+  "timeZone" : "America/New_York",
+  "trueContractions" : [
+    {
+      "end" : 60,
+      "start" : 0
+    },
+    {
+      "end" : 360,
+      "start" : 300
+    },
+    {
+      "end" : 660,
+      "start" : 600
+    },
+    {
+      "end" : 960,
+      "start" : 900
+    },
+    {
+      "end" : 1260,
+      "start" : 1200
+    },
+    {
+      "end" : 1560,
+      "start" : 1500
+    }
+  ],
+  "truth" : {
+    "episodesTrue" : [
+      {
+        "end" : 1560,
+        "start" : 0
+      }
+    ],
+    "events" : [
+      {
+        "rule" : "fiveOneOne",
+        "type" : "neverQualifies"
+      }
+    ],
+    "expectedSuspects" : [
+
+    ],
+    "zones" : [
+      {
+        "from" : 0,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 3299
+      },
+      {
+        "from" : 3300,
+        "kind" : "gray",
+        "rule" : "fiveOneOne",
+        "to" : 3900
+      },
+      {
+        "from" : 3901,
+        "kind" : "mustNotFire",
+        "rule" : "fiveOneOne",
+        "to" : 8759
+      }
+    ]
+  }
+}

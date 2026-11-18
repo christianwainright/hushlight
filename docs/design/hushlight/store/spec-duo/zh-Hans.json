@@ -1,0 +1,32 @@
+{
+  "frames": [
+    {
+      "id": "duo-tabletop",
+      "device": "duo",
+      "source": "../raw-duo/zh-Hans/duo-tabletop.png",
+      "appearance": "dark",
+      "eyebrow": "半开",
+      "headline": "折痕就是那条线。",
+      "subline": "立在床头柜上。计数朝着床，平放的那一半就是按钮。"
+    },
+    {
+      "id": "duo-open",
+      "device": "duo",
+      "source": "../raw-duo/zh-Hans/duo-open.png",
+      "appearance": "light",
+      "eyebrow": "完全展开",
+      "headline": "记录就在计时器旁边。",
+      "subline": "本轮的每一次宫缩，实时列在计数旁边。"
+    },
+    {
+      "id": "duo-cover",
+      "device": "duo",
+      "source": "../raw-duo/zh-Hans/duo-cover.png",
+      "appearance": "light",
+      "eyebrow": "合上",
+      "headline": "一只手，在黑暗中。",
+      "subline": "外屏上也是同一个计时器，拇指一点就能开始。"
+    }
+  ],
+  "cards": []
+}

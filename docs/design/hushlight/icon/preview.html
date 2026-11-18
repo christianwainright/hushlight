@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hushlight · Icon review</title>
+<style>
+  :root{color-scheme:dark;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;background:#12100e;color:#f8f2e8}
+  *{box-sizing:border-box}body{max-width:1040px;margin:auto;padding:48px 32px 64px}h1{font-size:38px;font-weight:560;letter-spacing:-1.4px;margin:10px 0 12px}p{color:#b8ad9e;line-height:1.6;max-width:680px}header>span{color:#eca965;font-size:12px;letter-spacing:2px;text-transform:uppercase}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:38px 0 48px}figure{margin:0}figure>img{width:100%;max-width:290px;border-radius:22.5%;display:block}figcaption{font-size:14px;color:#b8ad9e;margin-top:14px}figcaption strong{color:#f8f2e8}.variants{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid #332a22;padding-top:30px}.variants figure>img{max-width:150px}.sizes{display:flex;align-items:end;gap:20px;height:102px;margin-top:22px}.sizes div{text-align:center}.sizes img{display:block;border-radius:22.5%}.sizes small{display:block;color:#938878;margin-top:9px;font-size:11px}footer{margin-top:45px;border-top:1px solid #332a22;padding-top:14px;font-size:12px;color:#938878}@media(max-width:600px){body{padding:30px 20px}.comparison{gap:24px}.variants{grid-template-columns:1fr;gap:36px}.variants figure{display:flex;gap:26px;flex-wrap:wrap}.variants figcaption{flex-basis:100%;margin-top:0}.sizes{margin-top:0}h1{font-size:31px}}
+</style>
+<header><span>Hushlight / Icon study</span><h1>A light for the night.</h1><p>A tapered linen shade, a separate brass stem, and a low round base. Warm light gives this classic table lamp depth while carrying the app’s quiet amber identity onto the home screen.</p></header>
+<section class="comparison" aria-label="Before and after">
+  <figure><img src="previous-dark.png" alt="Previous icon: a flat amber trapezoid shade"><figcaption>Previous · flat shade, minimal base</figcaption></figure>
+  <figure><img src="../../../../Hushlight/Assets.xcassets/AppIcon.appiconset/icon-1024-dark.png" alt="Current icon: a tapered ivory and amber lampshade above a separate brass stem and round base"><figcaption><strong>Current · classic table lamp</strong></figcaption></figure>
+</section>
+<section class="variants" aria-label="Appearance variants and small-size review">
+  <figure><img src="../../../../Hushlight/Assets.xcassets/AppIcon.appiconset/icon-1024-dark.png" alt="Dark appearance"><figcaption>Dark / App Store</figcaption><div class="sizes" data-file="icon-1024-dark.png"></div></figure>
+  <figure><img src="../../../../Hushlight/Assets.xcassets/AppIcon.appiconset/icon-1024.png" alt="Light appearance on warm paper"><figcaption>Light</figcaption><div class="sizes" data-file="icon-1024.png"></div></figure>
+  <figure><img src="../../../../Hushlight/Assets.xcassets/AppIcon.appiconset/icon-1024-tinted.png" alt="Neutral grayscale tinted master"><figcaption>Tinted master</figcaption><div class="sizes" data-file="icon-1024-tinted.png"></div></figure>
+</section>
+<footer>1024 × 1024 opaque sRGB exports. App build, design gates and 21 DesignKit tests pass. Masks here approximate home-screen corners. The system applies the chosen tint.</footer>
+<script>
+  document.querySelectorAll('[data-file]').forEach(row=>{
+    [60,40,29].forEach(size=>{
+      const item=document.createElement('div');
+      const img=document.createElement('img');
+      img.src='../../../../Hushlight/Assets.xcassets/AppIcon.appiconset/'+row.dataset.file;
+      img.width=size;img.height=size;img.alt=size+' pixel icon preview';
+      const caption=document.createElement('small');caption.textContent=size+' px';
+      item.append(img,caption);row.append(item);
+    });
+  });
+</script>
+</html>
