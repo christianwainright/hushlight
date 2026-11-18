@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in the app did the wrong thing.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hushlight collects no telemetry, so this report is the only record there is.
+        **Please don't paste real contraction records** unless you're comfortable with them being public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPhone 16 Pro, iOS 27.1
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hushlight version
+      description: Settings ▸ Apps ▸ Hushlight, or the App Store page.
+      placeholder: "1.1 (6)"
+  - type: dropdown
+    id: settings
+    attributes:
+      label: Settings in use
+      multiple: true
+      options:
+        - Larger Text (accessibility sizes)
+        - VoiceOver
+        - Light appearance
+        - Dark appearance
+        - A language other than English
+        - Live Activity on the lock screen
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Crop anything you'd rather keep private.

@@ -4,6 +4,11 @@
 
 # Hushlight
 
+[![CI](https://github.com/christianwainright/hushlight/actions/workflows/ci.yml/badge.svg)](https://github.com/christianwainright/hushlight/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![iOS 18+](https://img.shields.io/badge/iOS-18%2B-lightgrey.svg)
+![No network](https://img.shields.io/badge/network-none-success.svg)
+
 A contraction timer for the night labor starts. Free forever, with no ads, no
 account, and no network. Everything you time stays on your phone.
 
