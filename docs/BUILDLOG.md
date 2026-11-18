@@ -15,6 +15,18 @@ This log restarts at the open-sourcing (decision 0067). The entries before it, f
 the extraction on 2026-08-23 to 1.1 (6), stay in the private repository. The
 decisions in `docs/decisions/` carry the reasoning those entries recorded.
 
+## 2026-11-18 · Outside pull requests need the owner's approval
+**Changed:** the `main` ruleset now requires one code-owner approval, given after the
+latest push; the admin bypass (pull requests only) keeps the owner's own pull
+requests mergeable. CLAUDE.md §Autonomy gains gate 4: no agent approves, merges or
+runs workflows for an outside pull request.
+**Decisions:** 0068.
+**Verified:** the ruleset read back through the API: `required_approving_review_count`
+1, `require_code_owner_review` and `require_last_push_approval` true, bypass
+unchanged. The secret-scanning extras read back disabled (see 0068 §Not done).
+**Next:** a repository-scoped $0 Actions budget, and correcting the "10x billing"
+notes once the usage report shows what the public repository's macOS minutes cost.
+
 ## 2026-11-18 · HL-070 · Published; the public repository is home
 **Changed:** the private repository is now `hushlight-private`; the snapshot went up
 as `christianwainright/hushlight`, which Christian made home. The release secrets

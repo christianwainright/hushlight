@@ -122,7 +122,7 @@ for anything non-obvious. That entry is the review trail; it is not a request fo
 permission. If a hard gate blocks an item, park it with a decision-needed entry and
 move to the next item rather than waiting.
 
-**Three hard gates need Christian.** These are segregation of duties, not
+**Four hard gates need Christian.** These are segregation of duties, not
 supervision:
 
 1. **Money** — purchases, paid services, domains, licensing, final price decisions.
@@ -133,6 +133,10 @@ supervision:
    - No network capability, no entitlements, no analytics, no third-party code.
    - Nothing a user times ever leaves the device.
    - No fear language, anywhere. The app never shouts; red is not in its palette.
+4. **Outside code** (decision 0068). No agent approves, merges or starts a workflow
+   run for a pull request opened by anyone but the owner. The `main` ruleset requires
+   the code owner's approval, but an agent holding the owner's `gh` login *is* the
+   code owner to GitHub, so this line is the only control that tells them apart.
 
 **Public docs (decision 0067).** Nothing personal goes into the repository: no
 family or private-life context, no API key IDs, no other teams, businesses or
