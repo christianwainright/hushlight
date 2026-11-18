@@ -32,6 +32,43 @@ form of the history were Christian's decisions.
   findings, the store copy, the agent charter in `CLAUDE.md`, and the bundle IDs,
   team ID and support address the shipped binary already makes public.
 
+## Home
+
+**This public repository is the home of the project from 2026-11-18** (Christian's
+call). `christianwainright/hushlight-private` keeps the full history and is archived
+once its secrets are deleted; nothing syncs back to it. Its branches and this
+repository's history are unrelated, so work starts from this `main`.
+
+## Secrets
+
+The five release secrets (`docs/submission-checklist-hushlight.md`) are **environment
+secrets on `appstore`**, not repository secrets, and not in a separate private repo.
+A second repo was weighed and rejected: it splits the release YAML from the code it
+builds, adds a cross-repo checkout to keep honest, and its secrets would still be
+guarded only by repository membership. The environment does better than that, and an
+advisor review (Fable) agreed, with the hardening below folded in.
+
+- **The environment gates every use.** Christian is its required reviewer (self-review
+  allowed, since he is the only one), and only `main` may deploy to it. A run of
+  `release.yml` or `listing.yml` waits for his approval before any secret is released,
+  so even a merged workflow change cannot reach them unseen. It was created before any
+  secret was entered, so no secret ever existed unprotected.
+- **Forks cannot reach them.** Fork pull requests get no secrets, and workflows from
+  every outside contributor wait for approval before running at all.
+- **The token is read-only.** The repository default for `GITHUB_TOKEN` is read, each
+  workflow declares `permissions: contents: read`, and Actions may not approve pull
+  requests.
+- **Only GitHub's own actions run.** The Actions allowlist admits `actions/*` and
+  nothing else, which matches the zero-third-party rule.
+- **Inputs are values, not script.** `release.yml` passes `build_number` through the
+  environment, and Archive refuses anything but digits.
+- **Secret scanning and push protection are on.** That setting, not this document, is
+  what enforces "no secrets in Git".
+- **Retiring the old copies:** the five secrets are deleted from `hushlight-private`
+  before it is archived (an archived repo is read-only, and they would sit there
+  indefinitely), and the Admin API key is revoked and reissued, since it has lived in
+  two places.
+
 ## Rules from here
 
 - **Public docs carry no personal life, no account internals and nothing about
@@ -39,9 +76,8 @@ form of the history were Christian's decisions.
   the developer account, and the internals of the monorepo Hushlight came from.
   Name the owner as owner; record a gate result as a fact ("completed on a device"),
   not as a story about whose night it was.
-- **Secrets stay in GitHub Actions secrets.** `release.yml` and `listing.yml` are
-  `workflow_dispatch`-only and run only for people with write access. Pull requests
-  from forks run the ubuntu gate, which reads no secret.
+- **Secrets live on the `appstore` environment, never in Git and never repo-wide.**
+  See §Secrets.
 
 ## Consequences
 

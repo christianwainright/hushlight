@@ -64,10 +64,9 @@ close leaves for a person goes into §2.2 as its own row, not into the closed li
   HL-065). `MARKETING_VERSION` 1.1, `release_notes/1.1.txt` ×14, uploaded through the
   Release workflow as 1.1 (6). Closes when the build has processed in App Store Connect;
   promoting it to testers is §2.2. *→ log 2026-11-02*
-- [R] **HL-070 · S — Open the source.** MIT, a single fresh commit, nothing personal in
-  the tree; public README, `LICENSE`, `CONTRIBUTING.md`. Held by the one step that is
-  Christian's: creating the public repository and pushing the snapshot (gate 2).
-  *→ decision 0067 · log 2026-11-18*
+- [x] **HL-070 · S — Open the source.** MIT, a single fresh commit, nothing personal in
+  the tree; published as `christianwainright/hushlight`, now the home, with the release
+  secrets on a reviewer-gated `appstore` environment. *→ decision 0067 · log 2026-11-18*
 
 - [ ] **HL-059 · XS — The findings register's status table is stale.** The table at the
   top of `docs/qa/FINDINGS.md` still reads `open` for F-0040, F-0041, F-0042, F-0044,
@@ -130,6 +129,7 @@ judgement no agent may make.
 |---|---|---|---|
 | **Check the Live Activity replacement on a phone** (HL-069 changed which activities the sweep ends): start a contraction, change the rule so the activity is replaced, confirm exactly one remains on the lock screen. Then read `docs/qa/AUDIT-2026-11-09.md` — the review list — and say which rows become items. | HL-069 | device · human | 2026-11-09 |
 | **Promote 1.1 (6)** in App Store Connect once it has processed: internal testers first, external through SP-083's group if wanted. Answer the export-compliance question only if it appears (the plist answers it). | HL-068 | 2 | 2026-11-02 |
+| **Secrets to the public repository.** Make a new Admin App Store Connect API key and revoke `ASC_KEY_ID`'s old one. Enter the five secrets as environment secrets on `appstore` in `christianwainright/hushlight` (the environment, its reviewer and branch rule already exist). Delete the five from `hushlight-private`, then archive it. Until then the Release and Listing workflows run only in the private repository. | HL-070 · decision 0067 | 2 | 2026-11-18 |
 | **Before submitting 1.1 for review:** the two iPad frames to the 13" slot (`--screenshots` does it now that the build is "1,2"), the Duo frames by hand (row below), HL-066's medium iPhone set if App Store Connect asks for it, and the Notes from `docs/app-store-review-notes.txt` on `main` — they describe this build. | HL-068 · HL-058c · HL-064 · HL-066 | 2 | 2026-11-02 |
 | Confirm the age-rating questionnaire shows **13+** (medical or treatment information, infrequent) — the 12+ tier the docs name was retired in 2025 and migrated to 13+. | HL-056 | 2 | 2026-09-09 |
 | One sentence on the live privacy page naming Copy and Share on the For the call card as the user's own hand-off, so "nothing is shared" cannot be read against the Share button. | HL-056 | 2 (his site) | 2026-09-09 |
