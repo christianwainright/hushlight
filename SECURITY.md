@@ -1,10 +1,13 @@
 # Security
 
 Hushlight has no network capability, no account and no server, so there is nothing
-remote to attack and no user data anywhere but on the device that recorded it. A
-vulnerability here most likely means one of these:
+remote to attack. The app itself never sends a record anywhere. Records can leave
+the device in two ways the user controls: Copy or Share on the For the call card,
+and the ordinary iPhone or iCloud backup that includes every app's local data. The
+[privacy policy](docs/privacy-policy-hushlight.md) describes both. Neither is a
+vulnerability. One of these would be:
 
-- a way for recorded data to leave the device without the user's hand-off,
+- a way for the app to send recorded data off the device by itself,
 - a way for another app to read Hushlight's sandbox,
 - a problem in the release pipeline or this repository's workflows.
 
