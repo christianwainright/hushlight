@@ -13,6 +13,11 @@ on:
 # cheapest runner — so there is no expensive verdict left to protect there, but
 # they still queue rather than cancel: it costs nothing and keeps every commit
 # accounted for. A manual macOS run gets its own group so a push cannot cancel it.
+# Read-only by default (decision 0067): the repository is public, and no job here
+# writes to it. A job that needs more asks for it by name.
+permissions:
+  contents: read
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name == 'workflow_dispatch' && 'manual' || 'auto' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}

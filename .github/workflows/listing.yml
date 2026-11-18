@@ -26,6 +26,11 @@ on:
         type: boolean
         default: false
 
+# Read-only by default (decision 0067): the repository is public, and no job here
+# writes to it. A job that needs more asks for it by name.
+permissions:
+  contents: read
+
 concurrency:
   group: listing
   cancel-in-progress: false

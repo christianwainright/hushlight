@@ -91,8 +91,10 @@ manifests are actually in the archive, export, **validate**, upload. It is
 `workflow_dispatch`-only and it uploads *only* — TestFlight promotion and submitting for
 review stay here, in App Store Connect, by design.
 
-Before its first run, five secrets have to exist (Settings → Secrets and variables →
-Actions). Only Christian can create these:
+Before its first run, five secrets have to exist as **environment secrets on
+`appstore`** in `christianwainright/hushlight` (Settings → Environments → appstore —
+not repository secrets; decision 0067). Every run waits for the environment's
+approval. Only Christian can create these:
 
 | Secret | Where it comes from |
 |---|---|
